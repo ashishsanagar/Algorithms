@@ -17,7 +17,7 @@ public class IsAnagram {
 	}
 
 	/**
-	 * log(n)
+	 * O(n)
 	 */
 	private static boolean isAnagram(String s1, String s2) {
 
@@ -41,7 +41,7 @@ public class IsAnagram {
 	}
 
 	/**
-	 * log(n2)
+	 * O(n2)
 	 */
 	private static boolean isAnagramInN2(String s1, String s2) {
 
