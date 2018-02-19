@@ -1,0 +1,79 @@
+package com.ashish.algorithms.array;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+/**
+ * @author Ashish Sanagar
+ */
+public class MergeTwoSortedArrays {
+
+	public static void main(String[] args) {
+		int[] a = {1, 2, 4, 6, 8};
+		int[] b = {1, 2, 3, 4};
+
+		//mergeTwoSortedArrays(a, b);
+
+		//variation print only non duplicates
+		mergeAndPrintOnlyNonDuplicates(a, b);
+	}
+
+	private static void mergeAndPrintOnlyNonDuplicates(int[] a, int[] b) {
+
+		Set<Integer> set = new HashSet<>();
+
+		int i = 0;
+		int j = 0;
+
+		while (i < a.length && j < b.length) {
+
+			if (a[i] == b[j]) {
+				i++;
+				j++;
+			} else if (a[i] < b[j]) {
+				set.add(a[i]);
+				System.out.println("adding: " + a[i]);
+				i++;
+			} else {
+				set.add(b[j]);
+				System.out.println("adding: " + b[j]);
+				j++;
+			}
+		}
+
+		if (i < a.length) {
+			for (int k = i; k < a.length; k++) {
+				System.out.println("adding: " + a[k]);
+				set.add(a[k]);
+			}
+		}
+
+		if (j < b.length) {
+			for (int k = i; k < b.length; k++) {
+				System.out.println("adding: " + b[k]);
+				set.add(b[k]);
+			}
+		}
+		System.out.println("non dups: ");
+		for (Integer ele : set) {
+			System.out.print(ele + " ");
+		}
+	}
+
+	private static void mergeTwoSortedArrays(int[] a, int[] b) {
+		Set<Integer> set = new TreeSet<>();
+
+		for (Integer ele : a) {
+			set.add(ele);
+		}
+
+		for (Integer ele : b) {
+			set.add(ele);
+		}
+
+		for (Integer ele : set) {
+			System.out.print(ele + " ");
+		}
+	}
+}
