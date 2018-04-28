@@ -1,0 +1,12 @@
+.gradle/
+.settings/
+.project
+.classpath
+bin/
+.DS_Store
+build/classes/
+classes
+build/
+.build.gradle.swp
+.idea/
+*.iml
