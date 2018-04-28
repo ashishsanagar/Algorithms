@@ -6,8 +6,6 @@ package com.ashish.algorithms.Tree;
 public class LowestCommonAncestorBinaryTree {
 
 	public static void main(String[] args) {
-
-
 		TreeNode root = new TreeNode(1);
 
 		TreeNode n1 = new TreeNode(10);
@@ -23,12 +21,12 @@ public class LowestCommonAncestorBinaryTree {
 		n2.left = n4;
 		n2.right = n5;
 
-		TreeNode node = findLowestCommonAncestor(root, n5, n4);
+		TreeNode node = new LowestCommonAncestorBinaryTree().find(root, n5, n4);
 
 		System.out.println(node.data);
 	}
 
-	private static TreeNode findLowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+	public TreeNode find(TreeNode root, TreeNode p, TreeNode q) {
 		if (root == null) {
 			return null;
 		}
@@ -37,8 +35,8 @@ public class LowestCommonAncestorBinaryTree {
 			return root;
 		}
 
-		TreeNode left = findLowestCommonAncestor(root.left, p, q);
-		TreeNode right = findLowestCommonAncestor(root.right, p, q);
+		TreeNode left = find(root.left, p, q);
+		TreeNode right = find(root.right, p, q);
 
 		return left != null && right != null ? root : left != null ? left : right;
 	}

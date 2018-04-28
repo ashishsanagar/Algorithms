@@ -15,9 +15,12 @@ public class MaxSubstringNoRepeatngChars {
 	 * abcaca -> abc -> 3
 	 */
 	public static void main(String[] args) {
-
 		String s = "abcca";
 
+		new MaxSubstringNoRepeatngChars().print(s);
+	}
+
+	public void print(String s) {
 		int length = s.length();
 
 		int i = 0;
@@ -27,7 +30,6 @@ public class MaxSubstringNoRepeatngChars {
 		Set<Character> set = new HashSet<>();
 
 		while (i < length && j < length) {
-
 			if (set.contains(s.charAt(j)) == false) {
 				set.add(s.charAt(j));
 				j++;

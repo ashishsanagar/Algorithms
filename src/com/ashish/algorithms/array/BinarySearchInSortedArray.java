@@ -11,11 +11,11 @@ public class BinarySearchInSortedArray {
 	public static void main(String[] args) {
 		int[] array = {1, 2, 3, 4, 5, 6};
 
-		boolean exists = findElement(array, 5);
+		boolean exists = new BinarySearchInSortedArray().findElement(array, 5);
 		System.out.println(exists);
 	}
 
-	private static boolean findElement(int[] array, int ele) {
+	public boolean findElement(int[] array, int ele) {
 		if (array == null || array.length == 0) {
 			return false;
 		}

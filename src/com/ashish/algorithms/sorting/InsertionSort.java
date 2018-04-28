@@ -23,7 +23,7 @@ public class InsertionSort {
 				4
 		};
 
-		insertionSort(array);
+		new InsertionSort().insertionSort(array);
 
 		for (Integer val : array) {
 			System.out.print(val + " ");
@@ -31,7 +31,7 @@ public class InsertionSort {
 
 	}
 
-	private static void insertionSort(int[] array) {
+	public void insertionSort(int[] array) {
 
 		int length = array.length;
 
@@ -47,6 +47,5 @@ public class InsertionSort {
 
 			array[hole] = value;
 		}
-
 	}
 }

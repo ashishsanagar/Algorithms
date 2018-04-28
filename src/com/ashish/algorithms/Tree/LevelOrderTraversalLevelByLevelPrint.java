@@ -22,10 +22,10 @@ public class LevelOrderTraversalLevelByLevelPrint {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 15);
 
-		levelOrderTraversalLevelByLevelPrint(root);
+		new LevelOrderTraversalLevelByLevelPrint().traverse(root);
 	}
 
-	private static void levelOrderTraversalLevelByLevelPrint(TreeNode root) {
+	public void traverse(TreeNode root) {
 		if (root == null) {
 			return;
 		}
@@ -46,7 +46,6 @@ public class LevelOrderTraversalLevelByLevelPrint {
 
 				queue.add(null);
 			} else {
-
 				System.out.print(node.data + " ");
 
 				if (node.left != null) {
@@ -58,6 +57,5 @@ public class LevelOrderTraversalLevelByLevelPrint {
 				}
 			}
 		}
-
 	}
 }

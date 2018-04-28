@@ -16,7 +16,8 @@ public class IsBalancedBinaryTree {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 5);
 
-		System.out.println("is balanced binary tree: " + ((findMaxHeightOfTree(root) - findMinHeightOfTree(root)) <= 1));
+		IsBalancedBinaryTree obj = new IsBalancedBinaryTree();
+		System.out.println("is balanced binary tree: " + obj.isBalanced(root));
 
 
 		root = new TreeNode(12);
@@ -24,10 +25,14 @@ public class IsBalancedBinaryTree {
 		tree.insertNode(root, 13);
 		tree.insertNode(root, 9);
 		tree.insertNode(root, 15);
-		System.out.println("is balanced binary tree: " + ((findMaxHeightOfTree(root) - findMinHeightOfTree(root)) <= 1));
+		System.out.println("is balanced binary tree: " + obj.isBalanced(root));
 	}
 
-	private static int findMaxHeightOfTree(TreeNode root) {
+	public boolean isBalanced(TreeNode root) {
+		return ((findMaxHeightOfTree(root) - findMinHeightOfTree(root)) <= 1);
+	}
+
+	private int findMaxHeightOfTree(TreeNode root) {
 		if (root == null) {
 			return 0;
 		}
@@ -37,7 +42,7 @@ public class IsBalancedBinaryTree {
 		return 1 + Math.max(leftHeight, rightHeight);
 	}
 
-	private static int findMinHeightOfTree(TreeNode root) {
+	private int findMinHeightOfTree(TreeNode root) {
 		if (root == null) {
 			return 0;
 		}

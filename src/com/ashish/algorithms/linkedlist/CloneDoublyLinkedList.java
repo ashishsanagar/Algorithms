@@ -21,14 +21,16 @@ public class CloneDoublyLinkedList {
 
 		Node head = node1;
 
+		CloneDoublyLinkedList helper = new CloneDoublyLinkedList();
+
 		System.out.print("Original Linkedlist: ");
-		while (head != null) {
-			System.out.print(head.data + " ");
+		helper.print(head);
 
-			head = head.next;
-		}
+		System.out.print("\nCopied LiniedList: ");
+		helper.print(helper.clone(head));
+	}
 
-		head = node1;
+	public Node clone(Node head) {
 		Node newNodeHead = new Node(head.data);
 		newNodeHead.pre = null;
 
@@ -46,12 +48,14 @@ public class CloneDoublyLinkedList {
 			head = head.next;
 		}
 
-		System.out.print("\nCopied LiniedList: ");
-		while (newNodeHead != null) {
+		return newNodeHead;
+	}
 
-			System.out.print(newNodeHead.data + " ");
+	public void print(Node head) {
+		while (head != null) {
+			System.out.print(head.data + " ");
 
-			newNodeHead = newNodeHead.next;
+			head = head.next;
 		}
 	}
 }

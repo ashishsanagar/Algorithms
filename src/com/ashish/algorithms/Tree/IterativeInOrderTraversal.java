@@ -19,36 +19,33 @@ public class IterativeInOrderTraversal {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 5);
 
-		inOrderTraversal(root);
-
+		new IterativeInOrderTraversal().traverse(root);
 	}
 
 	/**
 	 * root - left - right
 	 */
-	private static void inOrderTraversal(TreeNode root) {
+	public void traverse(TreeNode root) {
 		if (root == null) {
 			return;
 		}
 
-		Stack<TreeNode> stack1 = new Stack<>();
+		Stack<TreeNode> stack = new Stack<>();
 
 		while (true) {
 			if (root != null) {
-				stack1.push(root);
+				stack.push(root);
 				root = root.left;
 			} else {
-				if (stack1.isEmpty()) {
+				if (stack.isEmpty()) {
 					break;
 				}
 
-				root = stack1.pop();
+				root = stack.pop();
 
 				System.out.print(root.data + " ");
 				root = root.right;
 			}
-
 		}
 	}
-
 }

@@ -15,15 +15,14 @@ public class MatrixToSpiral {
 				{4, 5, 6},
 				{7, 8, 9}};
 
-		List<Integer> result = matrixToSpiral(matrix);
+		List<Integer> result = new MatrixToSpiral().matrixToSpiral(matrix);
 
 		for (Integer val : result) {
-			System.out.println(val);
+			System.out.print(val + " ");
 		}
-
 	}
 
-	private static List<Integer> matrixToSpiral(int[][] matrix) {
+	public List<Integer> matrixToSpiral(int[][] matrix) {
 		List<Integer> result = new ArrayList<>();
 
 		if (matrix == null || matrix.length == 0) {
@@ -77,5 +76,4 @@ public class MatrixToSpiral {
 		}
 		return result;
 	}
-
 }

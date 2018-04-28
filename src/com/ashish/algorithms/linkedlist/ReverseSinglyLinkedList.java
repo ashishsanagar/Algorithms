@@ -17,7 +17,7 @@ public class ReverseSinglyLinkedList {
 		node1.next = node2;
 		node2.next = node3;
 
-		Node head = reverseLinkedList(node1);
+		Node head = new ReverseSinglyLinkedList().reverseLinkedList(node1);
 
 		while (head != null) {
 			System.out.print(head.data + " ");
@@ -25,7 +25,7 @@ public class ReverseSinglyLinkedList {
 		}
 	}
 
-	private static Node reverseLinkedList(Node head) {
+	public Node reverseLinkedList(Node head) {
 
 		Node pre = null;
 		Node curr = null;

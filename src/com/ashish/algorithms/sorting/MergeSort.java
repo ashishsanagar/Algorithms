@@ -22,36 +22,11 @@ public class MergeSort {
 				4
 		};
 
-		megeSort(array);
+		new MergeSort().sort(array);
 
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + ", ");
 		}
-	}
-
-	private static void megeSort(int[] array) {
-
-		int length = array.length;
-
-		if (length < 2) {
-			return;
-		}
-
-		int mid = length / 2;
-		int[] leftArray = new int[mid];
-		int[] rightArray = new int[length - mid];
-
-		for (int i = 0; i < mid; i++) {
-			leftArray[i] = array[i];
-		}
-
-		for (int i = mid; i < length; i++) {
-			rightArray[i - mid] = array[i];
-		}
-
-		megeSort(leftArray);
-		megeSort(rightArray);
-		merge(array, leftArray, rightArray);
 	}
 
 	private static void merge(int[] array, int[] arrayLeft, int[] arrayRight) {
@@ -85,6 +60,31 @@ public class MergeSort {
 			k++;
 			j++;
 		}
+	}
+
+	public void sort(int[] array) {
+
+		int length = array.length;
+
+		if (length < 2) {
+			return;
+		}
+
+		int mid = length / 2;
+		int[] leftArray = new int[mid];
+		int[] rightArray = new int[length - mid];
+
+		for (int i = 0; i < mid; i++) {
+			leftArray[i] = array[i];
+		}
+
+		for (int i = mid; i < length; i++) {
+			rightArray[i - mid] = array[i];
+		}
+
+		sort(leftArray);
+		sort(rightArray);
+		merge(array, leftArray, rightArray);
 	}
 
 }

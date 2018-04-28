@@ -8,13 +8,14 @@ public class BalancedBinaryTreeFromSortedArray {
 	public static void main(String[] args) {
 		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-		TreeNode node = createBalancedBinaryTree(array, 0, array.length - 1);
+		BalancedBinaryTreeFromSortedArray obj = new BalancedBinaryTreeFromSortedArray();
+		TreeNode node = obj.createBalancedBinaryTree(array, 0, array.length - 1);
 
 		//verify by inorder traversal
-		traverseBinaryTreeInOrder(node);
+		obj.traverseBinaryTreeInOrder(node);
 	}
 
-	private static TreeNode createBalancedBinaryTree(int[] array, int start, int end) {
+	public TreeNode createBalancedBinaryTree(int[] array, int start, int end) {
 		if (end < start) {
 			return null;
 		}
@@ -28,7 +29,7 @@ public class BalancedBinaryTreeFromSortedArray {
 		return root;
 	}
 
-	private static void traverseBinaryTreeInOrder(TreeNode root) {
+	public void traverseBinaryTreeInOrder(TreeNode root) {
 		if (root == null) {
 			return;
 		}

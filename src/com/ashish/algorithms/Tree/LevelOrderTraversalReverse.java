@@ -23,13 +23,13 @@ public class LevelOrderTraversalReverse {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 15);
 
-		levelOrderTraversalReverse(root);
+		new LevelOrderTraversalReverse().traverse(root);
 	}
 
 	/**
 	 * 0 6 15 36 2 13 17 10 14 12
 	 */
-	private static void levelOrderTraversalReverse(TreeNode root) {
+	public void traverse(TreeNode root) {
 		if (root == null) {
 			return;
 		}
@@ -40,12 +40,12 @@ public class LevelOrderTraversalReverse {
 		queue.add(root);
 
 		while (queue.isEmpty() == false) {
-
 			TreeNode node = queue.poll();
 
 			if (node.right != null) {
 				queue.add(node.right);
 			}
+
 			if (node.left != null) {
 				queue.add(node.left);
 			}
@@ -56,6 +56,5 @@ public class LevelOrderTraversalReverse {
 		while (stack.isEmpty() == false) {
 			System.out.print(stack.pop().data + " ");
 		}
-
 	}
 }

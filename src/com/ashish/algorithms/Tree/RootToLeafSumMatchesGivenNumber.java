@@ -21,12 +21,11 @@ public class RootToLeafSumMatchesGivenNumber {
 		tree.insertNode(root, 5);
 
 		List<Integer> result = new ArrayList<>();
-		System.out.println("Root To Leaf Sum: " + isRootToLeafSum(root, 48, result));
+		System.out.println("Root To Leaf Sum: " + new RootToLeafSumMatchesGivenNumber().isRootToLeafSum(root, 48, result));
 		result.forEach(value -> System.out.print(" " + value));
-
 	}
 
-	private static boolean isRootToLeafSum(TreeNode root, int sum, List<Integer> result) {
+	public boolean isRootToLeafSum(TreeNode root, int sum, List<Integer> result) {
 
 		if (root == null) {
 			return false;
@@ -53,6 +52,4 @@ public class RootToLeafSumMatchesGivenNumber {
 
 		return false;
 	}
-
-
 }

@@ -6,9 +6,14 @@ import java.util.*;
  * @author Ashish Sanagar
  */
 public class NthMostFrequentStringFromArray {
+
 	public static void main(String[] args) {
 		String[] array = {"ab", "bc", "bc", "ab", "bc", "as", "abc", "cd"};
 
+		new NthMostFrequentStringFromArray().find(array);
+	}
+
+	public void find(String[] array) {
 		Map<String, Integer> map = new HashMap<>();
 
 		for (int i = 0; i < array.length; i++) {

@@ -9,10 +9,10 @@ public class SquareRoot {
 
 		int x = 4;
 
-		System.out.println(sqrt(4));
+		System.out.println(new SquareRoot().sqrt(4));
 	}
 
-	private static double sqrt(int x) {
+	public double sqrt(int x) {
 		// Base Cases
 		if (x == 0 || x == 1)
 			return x;
@@ -36,7 +36,7 @@ public class SquareRoot {
 			} else   // If mid*mid is greater than x
 				end = mid - 1;
 		}
-		return ans;
 
+		return ans;
 	}
 }

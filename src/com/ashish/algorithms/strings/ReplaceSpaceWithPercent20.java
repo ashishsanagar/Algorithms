@@ -8,10 +8,10 @@ public class ReplaceSpaceWithPercent20 {
 
 		String str = "a a"; // a%20a
 
-		encodeString(str);
+		new ReplaceSpaceWithPercent20().encode(str);
 	}
 
-	private static void encodeString(String str) {
+	public void encode(String str) {
 		StringBuilder builder = new StringBuilder();
 
 		for (char c : str.toCharArray()) {

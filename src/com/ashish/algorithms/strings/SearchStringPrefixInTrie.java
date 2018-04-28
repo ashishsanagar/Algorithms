@@ -9,29 +9,21 @@ import java.util.Map;
  * @author Ashish Sanagar
  */
 public class SearchStringPrefixInTrie {
-	private static class Node {
-		String prefix;
-		boolean isWord;
-		Map<Character, Node> children = new HashMap<>();
 
-		private Node(String prefix) {
-			this.prefix = prefix;
-		}
-	}
-	
 	public static void main(String[] args) {
 		String[] words = {"abc", "ab", "bcd"};
 		String prefix = "ab";
 
 		Node trie = new Node("");
+		SearchStringPrefixInTrie obj = new SearchStringPrefixInTrie();
 
 		for (String word : words) {
-			insertWordInTrie(word, trie);
+			obj.insertWordInTrie(word, trie);
 		}
 
 		System.out.println(trie);
 
-		List<String> results = findWordsForPrefix(prefix, trie);
+		List<String> results = obj.findWordsForPrefix(prefix, trie);
 
 		System.out.print("Matching words for prefix-" + prefix + " : ");
 
@@ -40,7 +32,7 @@ public class SearchStringPrefixInTrie {
 		}
 	}
 
-	private static void insertWordInTrie(String word, Node trie) {
+	public void insertWordInTrie(String word, Node trie) {
 
 		Node curr = trie;
 
@@ -56,7 +48,7 @@ public class SearchStringPrefixInTrie {
 		}
 	}
 
-	private static void findAllWords(Node curr, List<String> results) {
+	public void findAllWords(Node curr, List<String> results) {
 		if (curr.isWord) {
 			results.add(curr.prefix);
 		}
@@ -66,7 +58,7 @@ public class SearchStringPrefixInTrie {
 		}
 	}
 
-	private static List<String> findWordsForPrefix(String prefix, Node trie) {
+	public List<String> findWordsForPrefix(String prefix, Node trie) {
 		List<String> results = new ArrayList<>();
 
 		Node curr = trie;
@@ -79,6 +71,16 @@ public class SearchStringPrefixInTrie {
 
 		findAllWords(curr, results);
 		return results;
+	}
+
+	private static class Node {
+		String prefix;
+		boolean isWord;
+		Map<Character, Node> children = new HashMap<>();
+
+		private Node(String prefix) {
+			this.prefix = prefix;
+		}
 	}
 
 

@@ -11,21 +11,21 @@ public class BreadthFirstSearch {
 	public static void main(String[] args) {
 		DirectedGraph graph = new DirectedGraph(5);
 
-		graph.addEdge(0,4);
-		graph.addEdge(1,0);
-		graph.addEdge(1,4);
-		graph.addEdge(1,3);
-		graph.addEdge(1,2);
-		graph.addEdge(3,4);
-		graph.addEdge(3,1);
-		graph.addEdge(3,2);
-		graph.addEdge(2,1);
-		graph.addEdge(4,1);
+		graph.addEdge(0, 4);
+		graph.addEdge(1, 0);
+		graph.addEdge(1, 4);
+		graph.addEdge(1, 3);
+		graph.addEdge(1, 2);
+		graph.addEdge(3, 4);
+		graph.addEdge(3, 1);
+		graph.addEdge(3, 2);
+		graph.addEdge(2, 1);
+		graph.addEdge(4, 1);
 
-		bfs(graph,1);
+		new BreadthFirstSearch().bfs(graph, 1);
 	}
 
-	private static void bfs(DirectedGraph graph, int startVertex) {
+	public void bfs(DirectedGraph graph, int startVertex) {
 
 		int numberOfVertices = graph.numberOfVertices;
 
@@ -36,13 +36,13 @@ public class BreadthFirstSearch {
 		Queue<Integer> queue = new LinkedList<>();
 		queue.add(startVertex);
 
-		while(queue.isEmpty() == false){
+		while (queue.isEmpty() == false) {
 			int vertex = queue.poll();
 
 			System.out.print(" " + vertex);
 
-			for(Integer adjacentVertex: graph.adjacencyListArray[vertex]){
-				if(visited[adjacentVertex] == false){
+			for (Integer adjacentVertex : graph.adjacencyListArray[vertex]) {
+				if (visited[adjacentVertex] == false) {
 					queue.add(adjacentVertex);
 					visited[adjacentVertex] = true;
 				}

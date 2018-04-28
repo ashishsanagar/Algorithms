@@ -13,10 +13,10 @@ public class SortStack {
 		s1.push(2);
 		s1.push(9);
 
-		sortStack(s1);
+		new SortStack().sort(s1);
 	}
 
-	private static void sortStack(Stack<Integer> s1) {
+	private static void sort(Stack<Integer> s1) {
 
 		Stack<Integer> s2 = new Stack<>();
 

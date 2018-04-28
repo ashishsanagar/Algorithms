@@ -14,10 +14,10 @@ public class LeadersInArray {
 	public static void main(String[] args) {
 		int[] array = {88, 32, 44, 23, 57, 22, 33, 44, 55};
 
-		printLeaders(array);
+		new LeadersInArray().printLeaders(array);
 	}
 
-	private static void printLeaders(int[] array) {
+	public void printLeaders(int[] array) {
 		if (array == null || array.length == 0) {
 			return;
 		}

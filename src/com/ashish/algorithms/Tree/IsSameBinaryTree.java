@@ -5,7 +5,6 @@ package com.ashish.algorithms.Tree;
  */
 public class IsSameBinaryTree {
 
-
 	public static void main(String[] a) {
 		BinaryTree tree = new BinaryTree();
 		TreeNode root = new TreeNode(12);
@@ -29,14 +28,10 @@ public class IsSameBinaryTree {
 		tree.insertNode(root2, 5);
 		//tree.insertNode(root2, 5);
 
-		System.out.println("is Same Tree: " + isSameTree(root, root2));
-
-
+		System.out.println("is Same Tree: " + new IsSameBinaryTree().isSameTree(root, root2));
 	}
 
-
-	private static boolean isSameTree(TreeNode root1, TreeNode root2) {
-
+	public boolean isSameTree(TreeNode root1, TreeNode root2) {
 		if (root1 == null && root2 == null) {
 			return true;
 		}
@@ -47,12 +42,5 @@ public class IsSameBinaryTree {
 
 		return root1.data == root2.data && isSameTree(root1.left, root2.left) && isSameTree(root1.right
 				, root2.right);
-
 	}
-
-
 }
-
-
-
-

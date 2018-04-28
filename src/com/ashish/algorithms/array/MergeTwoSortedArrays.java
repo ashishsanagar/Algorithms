@@ -13,7 +13,7 @@ public class MergeTwoSortedArrays {
 		int[] a = {1, 2, 4, 6, 8};
 		int[] b = {1, 2, 3, 4};
 
-		//mergeTwoSortedArrays(a, b);
+		mergeTwoSortedArrays(a, b);
 
 		//variation print only non duplicates
 		mergeAndPrintOnlyNonDuplicates(a, b);
@@ -33,29 +33,25 @@ public class MergeTwoSortedArrays {
 				j++;
 			} else if (a[i] < b[j]) {
 				set.add(a[i]);
-				System.out.println("adding: " + a[i]);
 				i++;
 			} else {
 				set.add(b[j]);
-				System.out.println("adding: " + b[j]);
 				j++;
 			}
 		}
 
 		if (i < a.length) {
 			for (int k = i; k < a.length; k++) {
-				System.out.println("adding: " + a[k]);
 				set.add(a[k]);
 			}
 		}
 
 		if (j < b.length) {
 			for (int k = i; k < b.length; k++) {
-				System.out.println("adding: " + b[k]);
 				set.add(b[k]);
 			}
 		}
-		System.out.println("non dups: ");
+		System.out.println("\nnon dups: ");
 		for (Integer ele : set) {
 			System.out.print(ele + " ");
 		}

@@ -15,20 +15,20 @@ public class MedianFromTwoSortedArrays {
 		int[] y = {2};
 		//1,3,4,6,7,8,9,23, 67, 78, 450, 500 = (8+9) /2 = 16
 
-		System.out.println("Median Is: " + findMedian(x, y));
+		System.out.println("Median Is: " + new MedianFromTwoSortedArrays().findMedian(x, y));
 	}
 
-	private static double findMedian(int[] firstArray, int[] secondArray) {
+	public double findMedian(int[] firstArray, int[] secondArray) {
 
 		if (firstArray.length > secondArray.length) {
 			findMedian(secondArray, firstArray);
 		}
 
-		int low = 0;
-		int high = firstArray.length - 1;
-
 		int firstArrayLength = firstArray.length;
 		int secondArrayLength = secondArray.length;
+
+		int low = 0;
+		int high = firstArrayLength - 1;
 
 		while (low <= high) {
 			int partitionIndexX = low + high / 2;

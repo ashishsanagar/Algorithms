@@ -19,35 +19,33 @@ public class IterativePreOrderTraversal {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 5);
 
-		preOrderTraversal(root);
-
+		new IterativePreOrderTraversal().traverse(root);
 	}
 
 	/**
 	 * root - left - right
 	 */
-	private static void preOrderTraversal(TreeNode root) {
+	public void traverse(TreeNode root) {
 		if (root == null) {
 			return;
 		}
 
-		Stack<TreeNode> stack1 = new Stack<>();
+		Stack<TreeNode> stack = new Stack<>();
 
-		stack1.push(root);
+		stack.push(root);
 
-		while (stack1.isEmpty() == false) {
-			TreeNode node = stack1.pop();
+		while (stack.isEmpty() == false) {
+			TreeNode node = stack.pop();
 
 			System.out.print(node.data + " ");
 
 			if (node.right != null) {
-				stack1.push(node.right);
+				stack.push(node.right);
 			}
 
 			if (node.left != null) {
-				stack1.push(node.left);
+				stack.push(node.left);
 			}
 		}
 	}
-
 }

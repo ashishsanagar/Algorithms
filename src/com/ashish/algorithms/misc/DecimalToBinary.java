@@ -13,6 +13,11 @@ public class DecimalToBinary {
 
 		String n = "3.72343444";
 
+		new DecimalToBinary().convert(n);
+	}
+
+	public void convert(String n) {
+
 		int intPart = Integer.parseInt(n.substring(0, n.indexOf(".")));
 		int decPart = Integer.parseInt(n.substring(n.indexOf(".") + 1));
 
@@ -52,6 +57,5 @@ public class DecimalToBinary {
 		}
 
 		System.out.println(intString + " : " + decString);
-
 	}
 }

@@ -6,11 +6,16 @@ import java.util.Map;
 /**
  * @author Ashish Sanagar
  */
-public class FindAllElementsWithSumMatchingTarget {
+public class ElementsWithSumMatchingTarget {
 
 	public static void main(String[] args) {
 		int[] array = {1, 3, 4, 6, 7, 3, 7};
 		int target = 7;
+
+		new ElementsWithSumMatchingTarget().findelements(array, target);
+	}
+
+	public void findelements(int[] array, int target) {
 
 		Map<Integer, Integer> map = new HashMap<>();
 

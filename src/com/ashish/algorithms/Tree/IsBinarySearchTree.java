@@ -20,10 +20,10 @@ public class IsBinarySearchTree {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 5);
 
-		System.out.println("is BST?: " + isBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
+		System.out.println("is BST?: " + new IsBinarySearchTree().isBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
 	}
 
-	private static boolean isBinarySearchTree(TreeNode root, int min, int max) {
+	public boolean isBinarySearchTree(TreeNode root, int min, int max) {
 		if (root == null) {
 			return true;
 		}
@@ -33,6 +33,5 @@ public class IsBinarySearchTree {
 		}
 
 		return isBinarySearchTree(root.left, min, root.data) && isBinarySearchTree(root.right, root.data, max);
-
 	}
 }

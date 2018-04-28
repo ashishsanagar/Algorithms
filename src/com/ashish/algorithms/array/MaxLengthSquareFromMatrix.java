@@ -12,19 +12,16 @@ public class MaxLengthSquareFromMatrix {
 				{0, 1, 1, 1, 0},
 				{1, 1, 1, 1, 1}};
 
-		int number = findMaxSquareWithOnes(matrix);
+		int number = new MaxLengthSquareFromMatrix().findMaxSquareWithOnes(matrix);
 
 		System.out.println("Max length square with only ones: " + number);
 	}
 
-	private static int findMaxSquareWithOnes(int[][] matrix) {
+	public int findMaxSquareWithOnes(int[][] matrix) {
 		int max = 0;
 
-		for (int i = 0; i < matrix.length; i++) {
-			for (int j = 0; j < matrix[0].length; j++) {
-				if (i == 0 || j == 0) {
-					continue;
-				}
+		for (int i = 1; i < matrix.length; i++) {
+			for (int j = 1; j < matrix[0].length; j++) {
 
 				if (matrix[i][j] == 1) {
 					int lowFromNeighbors = Integer.min(Integer.min(matrix[i][j - 1], matrix[i - 1][j]), matrix[i - 1][j - 1]);

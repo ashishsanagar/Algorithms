@@ -19,24 +19,30 @@ public class QuickSort {
 				4
 		};
 
-		quickSort(array, 0, array.length - 1);
+		new QuickSort().sort(array, 0, array.length - 1);
 
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + ", ");
 		}
 	}
 
-	private static void quickSort(int[] array, int start, int end) {
+	private static void swap(int[] array, int i, int j) {
+		int temp = array[i];
+		array[i] = array[j];
+		array[j] = temp;
+	}
+
+	public void sort(int[] array, int start, int end) {
 		if (start < end) {
 			int partitionIndex = partition(array, start, end);
-			quickSort(array, start, partitionIndex - 1);
-			quickSort(array, partitionIndex + 1, end);
+			sort(array, start, partitionIndex - 1);
+			sort(array, partitionIndex + 1, end);
 		}
 	}
 
 	//consider last element as PIVOT. rearrange list so that, all left elements of pivot are less than pivot and all right are greater.
 	//increment partition index every time we swap.
-	private static int partition(int[] array, int start, int end) {
+	private int partition(int[] array, int start, int end) {
 
 		int pivotValue = array[end];
 		int partitionIndex = start;
@@ -52,12 +58,6 @@ public class QuickSort {
 		swap(array, partitionIndex, end);
 
 		return partitionIndex;
-	}
-
-	private static void swap(int[] array, int i, int j){
-		int temp = array[i];
-		array[i] = array[j];
-		array[j] = temp;
 	}
 
 }

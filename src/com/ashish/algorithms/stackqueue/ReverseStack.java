@@ -18,22 +18,9 @@ public class ReverseStack {
 		stack.push(2);
 		stack.push(3);
 
-		stack = reverseStack(stack);
+		stack = new ReverseStack().reverseStack(stack);
 
 		Assert.check(stack.pop() == 1);
-	}
-
-	private static Stack<Integer> reverseStack(Stack<Integer> stack) {
-		if (stack.isEmpty()) return stack;
-
-		int temp = stack.pop();
-		System.out.println("in reverseStack: temp=" + temp);
-
-		reverseStack(stack);
-		System.out.println("calling insertAtBottom: temp=" + temp);
-		insertAtBottom(stack, temp);
-
-		return stack;
 	}
 
 	private static void insertAtBottom(Stack<Integer> stack, int x) {
@@ -45,5 +32,18 @@ public class ReverseStack {
 		int temp = stack.pop();
 		insertAtBottom(stack, temp);
 		stack.push(temp);
+	}
+
+	public Stack<Integer> reverseStack(Stack<Integer> stack) {
+		if (stack.isEmpty()) return stack;
+
+		int temp = stack.pop();
+		System.out.println("in reverseStack: temp=" + temp);
+
+		reverseStack(stack);
+		System.out.println("calling insertAtBottom: temp=" + temp);
+		insertAtBottom(stack, temp);
+
+		return stack;
 	}
 }

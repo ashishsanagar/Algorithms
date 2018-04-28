@@ -29,13 +29,13 @@ public class ListIsSubList {
 		list2.add(2);
 		list2.add(3);
 
-		int index = checkIfSubList(list1, list2);
+		int index = new ListIsSubList().checkIfSubList(list1, list2);
 
-		System.out.println(index);
+		System.out.println("Result: " + index);
 		System.out.println("Expected: " + Collections.indexOfSubList(list1, list2));
 	}
 
-	private static int checkIfSubList(List<Integer> list1, List<Integer> list2) {
+	public int checkIfSubList(List<Integer> list1, List<Integer> list2) {
 		int index = -1;
 
 		if (list2 == null || list2.size() == 0) {

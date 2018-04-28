@@ -7,11 +7,12 @@ public class StringReverseLine {
 	public static void main(String[] args) {
 		String line = "reverse string java program.";
 
-		reverseString1(line);
-		reverseString2(line);
+		StringReverseLine obj = new StringReverseLine();
+		obj.reverseString1(line);
+		obj.reverseString2(line);
 	}
 
-	private static String reverseString1(String line) {
+	public String reverseString1(String line) {
 		String[] words = line.split(" \\,");
 		String reverse = "";
 		for (String word : words) {
@@ -23,7 +24,7 @@ public class StringReverseLine {
 		return reverse;
 	}
 
-	private static String reverseString2(String line) {
+	public String reverseString2(String line) {
 		String reverse = "";
 		int len = line.length();
 

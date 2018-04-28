@@ -12,10 +12,10 @@ public class MaxAverageSubarrayOfSizeK {
 		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 		int k = 3;
 
-		findMaxAverageSubarrayOfSizeK(array, k);
+		new MaxAverageSubarrayOfSizeK().findMaxAverageSubarrayOfSizeK(array, k);
 	}
 
-	private static void findMaxAverageSubarrayOfSizeK(int[] array, int k) {
+	public void findMaxAverageSubarrayOfSizeK(int[] array, int k) {
 		int n = array.length;
 
 		if (k > n) {

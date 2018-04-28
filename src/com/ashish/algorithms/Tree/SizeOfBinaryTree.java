@@ -17,17 +17,16 @@ public class SizeOfBinaryTree {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 5);
 
-		System.out.println("Size of tree 1: " + findSizeOfTree(root));
-
+		System.out.println("Size of tree 1: " + new SizeOfBinaryTree().find(root));
 	}
 
-	private static int findSizeOfTree(TreeNode root) {
+	public int find(TreeNode root) {
 		if (root == null) {
 			return 0;
 		}
 
-		int left = findSizeOfTree(root.left);
-		int right = findSizeOfTree(root.right);
+		int left = find(root.left);
+		int right = find(root.right);
 
 		return left + right + 1;
 	}

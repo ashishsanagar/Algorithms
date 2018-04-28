@@ -1,21 +1,17 @@
 package com.ashish.algorithms.misc;
 
-/*
- * To execute Java, please define "static void main" on a class
- * named Solution.
- *
- * If you need more classes, simply define them inline.
- 1,2,3
- 2,3,1
- 3,1,2
-
- http://www.futoshiki.org/
- */
 
 class LatinSquarePuzzle {
 
+	/**
+	 * 1,2,3
+	 * 2,3,1
+	 * 3,1,2
+	 * <p>
+	 * http://www.futoshiki.org/
+	 */
 	public static void main(String[] args) {
-		int[][] solution = buildPuzzle(4);
+		int[][] solution = new LatinSquarePuzzle().buildPuzzle(4);
 
 		for (int i = 0; i < solution.length - 1; i++) {
 			for (int j = 0; j < solution[i].length - 1; j++) {
@@ -26,7 +22,7 @@ class LatinSquarePuzzle {
 		}
 	}
 
-	private static int[][] buildPuzzle(int n) {
+	public int[][] buildPuzzle(int n) {
 		int[][] array = new int[n + 1][n + 1];
 
 		for (int i = 0; i < n; i++) {

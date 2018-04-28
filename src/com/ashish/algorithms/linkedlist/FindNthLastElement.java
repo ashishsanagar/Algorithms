@@ -5,7 +5,6 @@ package com.ashish.algorithms.linkedlist;
  */
 public class FindNthLastElement {
 
-
 	/**
 	 * 1- -> 2 -> 3 -> 4 -> 5
 	 * 2nd last element = 3
@@ -24,11 +23,11 @@ public class FindNthLastElement {
 
 		int n = 2;
 
-		int value = findNthLastElement(n1, n);
+		int value = new FindNthLastElement().findNthLastElement(n1, n);
 		System.out.println("Nth last node is: " + value);
 	}
 
-	private static int findNthLastElement(Node n1, int n) {
+	public int findNthLastElement(Node n1, int n) {
 
 		Node follower = n1;
 		Node curr = n1;
@@ -46,7 +45,6 @@ public class FindNthLastElement {
 
 		return follower.value;
 	}
-
 
 	private static class Node {
 		private int value;

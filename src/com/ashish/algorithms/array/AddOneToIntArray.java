@@ -12,13 +12,14 @@ public class AddOneToIntArray {
 	 */
 	public static void main(String[] args) {
 
-		int[] a = {
-				9,
-				9,
-				9,
-				9
-		};
+		AddOneToIntArray helper = new AddOneToIntArray();
 
+		helper.addOne(new int[]{9, 9, 9, 9});
+
+		helper.addOne(new int[]{9, 9, 9, 8});
+	}
+
+	public void addOne(int[] a) {
 		int carry = 0;
 
 		for (int i = a.length - 1; i >= 0; i--) {
@@ -46,15 +47,17 @@ public class AddOneToIntArray {
 				newArray[i + 1] = a[i];
 			}
 
-			for (int i = 0; i < newArray.length; i++) {
-				System.out.print(newArray[i]);
-			}
+			print(newArray);
 		} else {
-			for (int i = 0; i < a.length; i++) {
-				System.out.print(a[i]);
-			}
+			print(a);
 		}
 	}
+
+	private void print(int[] a) {
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i]);
+		}
+
+		System.out.println();
+	}
 }
-
-

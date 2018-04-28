@@ -7,6 +7,10 @@ public class NumberToString {
 	public static void main(String[] args) {
 		int num = 20;
 
+		new NumberToString().convert(num);
+	}
+
+	public void convert(int num) {
 		String[] str1 = {"Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 		String[] str2 = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
 
@@ -36,6 +40,5 @@ public class NumberToString {
 			System.out.println((hundredStr + " " + tenStr + " " + oneStr));
 
 		}
-
 	}
 }

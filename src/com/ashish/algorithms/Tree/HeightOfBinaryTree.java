@@ -17,11 +17,10 @@ public class HeightOfBinaryTree {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 5);
 
-		System.out.println("Height of tree: " + findHeightOfTree(root));
-
+		System.out.println("Height of tree: " + new HeightOfBinaryTree().findHeightOfTree(root));
 	}
 
-	private static int findHeightOfTree(TreeNode root) {
+	public int findHeightOfTree(TreeNode root) {
 		if (root == null) {
 			return 0;
 		}

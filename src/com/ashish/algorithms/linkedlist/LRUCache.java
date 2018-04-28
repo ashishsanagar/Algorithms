@@ -38,8 +38,6 @@ public class LRUCache {
 
 		//fetch and mark recently accessed
 		cache.get(1);
-
-		System.out.println("capacity:" + cache.capacity);
 	}
 
 	//on put items is added at top and if map is at capacity remove least recently used
@@ -51,7 +49,7 @@ public class LRUCache {
 			remove(n);
 			moveNodeToHead(n);
 		} else {
-			System.out.println("mapSize:" + map.size() + " | capacity:" + capacity);
+
 			if (map.size() >= capacity) {
 				//evictItem
 				map.remove(tail.pre.key);

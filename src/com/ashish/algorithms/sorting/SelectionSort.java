@@ -8,14 +8,14 @@ public class SelectionSort {
 	public static void main(String[] args) {
 		int[] array = {5, 2, 8, 5, 9, 1};
 
-		selectionSort(array);
+		new SelectionSort().sort(array);
 
 		for (Integer val : array) {
 			System.out.print(val + " ");
 		}
 	}
 
-	private static void selectionSort(int[] array) {
+	public void sort(int[] array) {
 
 		for (int i = 0; i < array.length; i++) {
 

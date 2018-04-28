@@ -1,7 +1,7 @@
 package com.ashish.algorithms.Tree;
 
 /**
- * This object will be used by other algorithms
+ * This object will be used by other tree related algorithms to store data
  *
  * @author Ashish Sanagar
  */

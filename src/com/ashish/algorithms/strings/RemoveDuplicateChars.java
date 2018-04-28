@@ -6,18 +6,20 @@ package com.ashish.algorithms.strings;
 public class RemoveDuplicateChars {
 
 	public static void main(String[] args) {
-		removeDuplicateChars("aaaa");
+		RemoveDuplicateChars obj = new RemoveDuplicateChars();
 
-		removeDuplicateChars("ashish");
+		obj.remove("aaaa");
 
-		removeDuplicateChars("abababa");
+		obj.remove("ashish");
 
-		removeDuplicateChars("a");
+		obj.remove("abababa");
 
-		removeDuplicateChars(null);
+		obj.remove("a");
+
+		obj.remove(null);
 	}
 
-	private static void removeDuplicateChars(String str) {
+	public void remove(String str) {
 
 		if (str == null) return;
 

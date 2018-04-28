@@ -14,23 +14,23 @@ public class PriorityQueue {
 	 * formulas:
 	 * leftChildIndex = 2 * parentIndex + 1
 	 * leftChildIndex = 2 * parentIndex + 2
-	 * oarentIndex = (childIndex -1)/2
+	 * parentIndex = (childIndex -1)/2
 	 */
 	public static void main(String[] a) throws IllegalAccessException {
-
-		push(5);
-		push(14);
-		push(8);
-		push(6);
-		push(3);
-		push(6);
-		push(23);
+		PriorityQueue q = new PriorityQueue();
+		q.push(5);
+		q.push(14);
+		q.push(8);
+		q.push(6);
+		q.push(3);
+		q.push(6);
+		q.push(23);
 
 		for (int ele : heap) {
 			System.out.print(ele + " ");
 		}
 
-		pop();
+		q.pop();
 		System.out.println();
 
 		for (int ele : heap) {
@@ -38,8 +38,34 @@ public class PriorityQueue {
 		}
 	}
 
+	private void swapElements(int i, int j) {
+		int temp = heap[i];
+		heap[i] = heap[j];
+		heap[j] = temp;
+	}
+
+	public void push(int node) throws IllegalAccessException {
+		if (size == heap.length) throw new IllegalAccessException();
+
+		int pos = size;
+		heap[pos] = node;
+
+		//node is inserted at end of heap. Check with parent if its less then swap
+		while (pos > 0) {
+			int parent = (pos + 1) / 2 - 1;
+
+			if (heap[parent] >= heap[pos]) {
+				break;
+			}
+			swapElements(parent, pos);
+			pos = parent;
+		}
+
+		size++;
+	}
+
 	//always pop top item from queue as its priority queue
-	private static void pop() {
+	public void pop() {
 		int pos = 0;
 		heap[pos] = heap[size - 1];
 		heap[size - 1] = 0;
@@ -66,31 +92,5 @@ public class PriorityQueue {
 		}
 
 		size--;
-	}
-
-	private static void push(int node) throws IllegalAccessException {
-		if (size == heap.length) throw new IllegalAccessException();
-
-		int pos = size;
-		heap[pos] = node;
-
-		//node is inserted at end of heap. Check with parent if its less then swap
-		while (pos > 0) {
-			int parent = (pos + 1) / 2 - 1;
-
-			if (heap[parent] >= heap[pos]) {
-				break;
-			}
-			swapElements(parent, pos);
-			pos = parent;
-		}
-
-		size++;
-	}
-
-	private static void swapElements(int i, int j) {
-		int temp = heap[i];
-		heap[i] = heap[j];
-		heap[j] = temp;
 	}
 }

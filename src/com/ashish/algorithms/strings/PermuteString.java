@@ -11,20 +11,18 @@ public class PermuteString {
 	static Set<String> permutationSet = new HashSet<>();
 
 	public static void main(String[] args) {
-		String input = "abcd";
 
-
-		permuteStringValues(input, "");
+		new PermuteString().process("abcd", "");
 	}
 
-	private static void permuteStringValues(String input, String chosen) {
-		//System.out.println("input=" + input + " | chose=" + chosen);
+	public void process(String input, String chosen) {
+
 		if (input.isEmpty()) {
 			System.out.println(chosen);
 			permutationSet.add(chosen);
 		} else {
 			for (int i = 0; i < input.length(); i++)
-				permuteStringValues(input.substring(0, i) + input.substring(i + 1, input.length()), chosen + input.charAt(i));
+				process(input.substring(0, i) + input.substring(i + 1, input.length()), chosen + input.charAt(i));
 		}
 	}
 }

@@ -19,14 +19,13 @@ public class IterativePostOrderTraversal {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 5);
 
-		postOrderTraversal(root);
-
+		new IterativePostOrderTraversal().traverse(root);
 	}
 
 	/**
 	 * left - right - root
 	 */
-	private static void postOrderTraversal(TreeNode root) {
+	public void traverse(TreeNode root) {
 		if (root == null) {
 			return;
 		}
@@ -44,10 +43,10 @@ public class IterativePostOrderTraversal {
 			if (node.left != null) {
 				stack1.push(node.left);
 			}
+
 			if (node.right != null) {
 				stack1.push(node.right);
 			}
-
 		}
 
 		while (stack2.isEmpty() == false) {

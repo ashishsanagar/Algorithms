@@ -15,14 +15,14 @@ public class TwoSumArrayReturnIndices {
 		int[] array = {3, 2, 5, 8, 4, 9, 1};
 		int targetSum = 17;
 
-		int[] result = twoSum(array, targetSum);
+		int[] result = new TwoSumArrayReturnIndices().twoSum(array, targetSum);
 
 		if (result != null && result.length > 1) {
 			System.out.println("indices: " + result[0] + " " + result[1]);
 		}
 	}
 
-	public static int[] twoSum(int[] nums, int target) {
+	public int[] twoSum(int[] nums, int target) {
 
 		HashMap map = new HashMap();
 

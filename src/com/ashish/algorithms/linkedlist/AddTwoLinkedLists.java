@@ -4,6 +4,7 @@ package com.ashish.algorithms.linkedlist;
  * @author Ashish Sanagar
  */
 public class AddTwoLinkedLists {
+
 	/**
 	 * [1 -> 2 -> 3] + [3 -> 2 -> 1] = [4 -> 4 -> 4]
 	 */
@@ -23,16 +24,15 @@ public class AddTwoLinkedLists {
 		list2.next = n2;
 		n2.next = n3;
 
-		Node result = addTwoLinkedLists(list1, list2);
+		Node result = new AddTwoLinkedLists().addTwoLinkedLists(list1, list2);
 
 		while (result != null) {
 			System.out.print(result.data + " -> ");
 			result = result.next;
 		}
-
 	}
 
-	private static Node addTwoLinkedLists(Node list1, Node list2) {
+	public Node addTwoLinkedLists(Node list1, Node list2) {
 		Node dummy = new Node(0);
 
 		Node p = list1;

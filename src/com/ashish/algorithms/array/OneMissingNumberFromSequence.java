@@ -11,11 +11,11 @@ public class OneMissingNumberFromSequence {
 	public static void main(String[] args) {
 		int[] array = {1, 3, 4, 5};
 
-		int missing = findOneMissing(array);
+		int missing = new OneMissingNumberFromSequence().findOneMissing(array);
 		System.out.println("missing#:" + missing);
 	}
 
-	private static int findOneMissing(int[] array) {
+	public int findOneMissing(int[] array) {
 		int sumSequence = 0;
 		int sumArrayElements = 0;
 

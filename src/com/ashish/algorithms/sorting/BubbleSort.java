@@ -16,6 +16,10 @@ public class BubbleSort {
 				7
 		};
 
+		new BubbleSort().sort(x);
+	}
+
+	public void sort(int[] x) {
 		int n = x.length;
 
 		for (int i = 0; i < n; i++) {
@@ -32,6 +36,5 @@ public class BubbleSort {
 		for (int i = 0; i < x.length; i++) {
 			System.out.print(x[i] + " ");
 		}
-
 	}
 }

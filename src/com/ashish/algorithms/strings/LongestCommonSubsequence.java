@@ -10,10 +10,10 @@ public class LongestCommonSubsequence {
 		String str1 = "abcdaf";
 		String str2 = "acbcf";
 
-		System.out.println("Longest seq: " + getLongestCommonSequenceFromTwoStrings(str1.toCharArray(), str2.toCharArray()));
+		System.out.println("Longest seq: " + new LongestCommonSubsequence().getLongestCommonSequenceFromTwoStrings(str1.toCharArray(), str2.toCharArray()));
 	}
 
-	private static int getLongestCommonSequenceFromTwoStrings(char[] str1, char[] str2) {
+	public int getLongestCommonSequenceFromTwoStrings(char[] str1, char[] str2) {
 		int max = 0;
 		int[][] temp = new int[str1.length + 1][str2.length + 1];
 

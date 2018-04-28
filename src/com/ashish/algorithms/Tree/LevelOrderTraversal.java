@@ -20,10 +20,10 @@ public class LevelOrderTraversal {
 		tree.insertNode(root, 36);
 		tree.insertNode(root, 5);
 
-		levelOrderTraversal(root);
+		new LevelOrderTraversal().traverse(root);
 	}
 
-	private static void levelOrderTraversal(TreeNode root) {
+	public void traverse(TreeNode root) {
 		if (root == null) {
 			return;
 		}
@@ -43,6 +43,5 @@ public class LevelOrderTraversal {
 				queue.add(node.right);
 			}
 		}
-
 	}
 }

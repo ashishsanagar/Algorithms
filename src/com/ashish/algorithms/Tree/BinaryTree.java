@@ -19,15 +19,12 @@ public class BinaryTree {
 		tree.insertNode(root, 6);
 		tree.insertNode(root, 7);
 
-
 		tree.traverseBinaryTree(root);
 
 		tree.deleteNode(root, 3);
 
 		System.out.println("\nAfter deletion: ");
 		tree.traverseBinaryTree(root);
-
-
 	}
 
 	private void traverseBinaryTree(TreeNode root) {
@@ -107,10 +104,4 @@ public class BinaryTree {
 		}
 		return root.data;
 	}
-
-
 }
-
-
-
-

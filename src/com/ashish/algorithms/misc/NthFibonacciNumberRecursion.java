@@ -11,10 +11,10 @@ public class NthFibonacciNumberRecursion {
 	 */
 	public static void main(String[] args) {
 		int n = 8;
-		System.out.println("nth number: " + fibonacci(n));
+		System.out.println("nth number: " + new NthFibonacciNumberRecursion().fibonacci(n));
 	}
 
-	private static int fibonacci(int n) {
+	public int fibonacci(int n) {
 		if (n == 1 || n == 2) {
 			return 1;
 		}
