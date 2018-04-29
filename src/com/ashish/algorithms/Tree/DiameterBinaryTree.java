@@ -37,7 +37,7 @@ public class DiameterBinaryTree {
 		if (root == null) return 0;
 
 		int leftHeight = height(root.left);
-		int rightHeight = height(root.left);
+		int rightHeight = height(root.right);
 
 		int leftDiameter = diameter(root.left);
 		int rightDiameter = diameter(root.right);
