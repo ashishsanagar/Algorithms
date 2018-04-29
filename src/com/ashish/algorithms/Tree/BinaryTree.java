@@ -7,6 +7,7 @@ public class BinaryTree {
 
 	/**
 	 * Insert nodes in Binary tree
+	 Delete node from binary tree
 	 * Traverse binary tree
 	 */
 	public static void main(String[] a) {
