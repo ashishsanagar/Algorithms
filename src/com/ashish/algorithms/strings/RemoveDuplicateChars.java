@@ -5,37 +5,37 @@ package com.ashish.algorithms.strings;
  */
 public class RemoveDuplicateChars {
 
-	public static void main(String[] args) {
-		RemoveDuplicateChars obj = new RemoveDuplicateChars();
+    public static void main(String[] args) {
+        RemoveDuplicateChars obj = new RemoveDuplicateChars();
 
-		obj.remove("aaaa");
+        obj.remove("aaaa");
 
-		obj.remove("ashish");
+        obj.remove("ashish");
 
-		obj.remove("abababa");
+        obj.remove("abababa");
 
-		obj.remove("a");
+        obj.remove("a");
 
-		obj.remove(null);
-	}
+        obj.remove(null);
+    }
 
-	public void remove(String str) {
+    public void remove(String str) {
 
-		if (str == null) return;
+        if (str == null || str.length() < 1) return;
 
-		boolean[] visited = new boolean[256];
+        boolean[] visited = new boolean[256];
 
-		for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length(); i++) {
 
-			if (visited[str.charAt(i)] == false) {
-				visited[str.charAt(i)] = true;
-			} else {
-				str = str.substring(0, i) + str.substring(i + 1);
-				i--;
-			}
-		}
+            if (visited[str.charAt(i)] == false) {
+                visited[str.charAt(i)] = true;
+            } else {
+                str = str.substring(0, i) + str.substring(i + 1);
+                i--;
+            }
+        }
 
-		System.out.println("result = " + str);
-	}
+        System.out.println("result = " + str);
+    }
 
 }

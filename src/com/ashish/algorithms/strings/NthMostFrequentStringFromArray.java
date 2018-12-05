@@ -1,41 +1,36 @@
 package com.ashish.algorithms.strings;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author Ashish Sanagar
  */
 public class NthMostFrequentStringFromArray {
 
-	public static void main(String[] args) {
-		String[] array = {"ab", "bc", "bc", "ab", "bc", "as", "abc", "cd"};
+    public static void main(String[] args) {
+        String[] array = {"ab", "bc", "bc", "ab", "bc", "as", "abc", "cd"};
 
-		new NthMostFrequentStringFromArray().find(array);
-	}
+        new NthMostFrequentStringFromArray().find(array, 2);
+    }
 
-	public void find(String[] array) {
-		Map<String, Integer> map = new HashMap<>();
+    public void find(String[] array, int n) {
+        Map<String, Integer> map = new HashMap<>();
 
-		for (int i = 0; i < array.length; i++) {
-			Integer frequency = map.get(array[i]);
+        for (int i = 0; i < array.length; i++) {
+            Integer frequency = map.get(array[i]);
 
-			if (frequency == null) frequency = 0;
+            if (frequency == null) frequency = 0;
 
-			map.put(array[i], ++frequency);
-		}
+            map.put(array[i], ++frequency);
+        }
 
-		List<Map.Entry> list = new ArrayList<>(map.entrySet());
+        List<Map.Entry> list = new ArrayList<>(map.entrySet());
 
-		Collections.sort(list, new Comparator<Map.Entry>() {
-			@Override
-			public int compare(Map.Entry o1, Map.Entry o2) {
-				Integer value1 = (Integer) o1.getValue();
-				Integer value2 = (Integer) o2.getValue();
+        list.sort((x, y) -> (Integer) y.getValue() - (Integer) x.getValue());
 
-				return value1.compareTo(value2);
-			}
-		});
-
-		System.out.println("2nd: " + list.get(4));
-	}
+        System.out.println("Nth: " + list.get(n - 1));
+    }
 }

@@ -2,195 +2,172 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e1cbf3-01ec-415d-8a5f-e36424028d9b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/DiameterBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/PrintConnectedComponents.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/StartOfTheLoop.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SentenseMadeUpOfDictWords.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/TODO_ExpressionMatchingResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/SortStack.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/FindAllElementsWithSumMatchingTarget.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/ElementsWithSumMatchingTarget.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/FindOneNumberRepatedOddTimes.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/OneNumberRepeatedOddTimes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/KClosestElementsFromTarget.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/KClosestElementsFromTarget.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/MultiplyTwoNumbersWithoutOperators.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/MultiplyTwoNumbers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BalancedBinaryTreeFromSortedArray.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BalancedBinaryTreeFromSortedArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BinaryTree.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/HeightOfBinaryTree.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/HeightOfBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBalancedBinaryTree.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBalancedBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBinarySearchTree.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBinarySearchTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsSameBinaryTree.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsSameBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativeInOrderTraversal.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativeInOrderTraversal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativePostOrderTraversal.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativePostOrderTraversal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativePreOrderTraversal.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativePreOrderTraversal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversal.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalLevelByLevelPrint.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalLevelByLevelPrint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalReverse.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalReverse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBST.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBST.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBinaryTree.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/PriorityQueue.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/PriorityQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/RootToLeafSumMatchesGivenNumber.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/RootToLeafSumMatchesGivenNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/SizeOfBinaryTree.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/SizeOfBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/TreeNode.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/TreeNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/AddOneToIntArray.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/AddOneToIntArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/BinarySearchInSortedArray.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/BinarySearchInSortedArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/LeadersInArray.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/LeadersInArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MartixRowsColumnsZeroIfElementIsZero.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MartixRowsColumnsZeroIfElementIsZero.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MatrixToSpiral.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MatrixToSpiral.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxAverageSubarrayOfSizeK.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxAverageSubarrayOfSizeK.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxHistogramArea.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxHistogramArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxLengthSquareFromMatrix.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxLengthSquareFromMatrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxSubArray.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxSubArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MedianFromTwoSortedArrays.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MedianFromTwoSortedArrays.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MergeTwoSortedArrays.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MergeTwoSortedArrays.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MoveZerosToEnd.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MoveZerosToEnd.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/NonDuplicateElementFromArray.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/NonDuplicateElementFromArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/OneMissingNumberFromSequence.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/OneMissingNumberFromSequence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/RotateMatrix.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/RotateMatrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/TwoSumArrayReturnIndices.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/TwoSumArrayReturnIndices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/BreadthFirstSearch.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/BreadthFirstSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/DepthFirstSearch.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/DepthFirstSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/DirectedGraph.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/DirectedGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/UndirectedGraph.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/UndirectedGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/AddTwoLinkedLists.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/AddTwoLinkedLists.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/CloneDoublyLinkedList.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/CloneDoublyLinkedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/FindNthLastElement.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/FindNthLastElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/LRUCache.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/LRUCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/ReverseSinglyLinkedList.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/ReverseSinglyLinkedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BalancedParenthesisCheck.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BalancedParenthesisCheck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BinaryNumberOfOnes.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BinaryNumberOfOnes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ClockAngleBetweenHourAndMinuteHands.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ClockAngleBetweenHourAndMinuteHands.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ConvertToBase7.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ConvertToBase7.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/DecimalToBinary.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/DecimalToBinary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/LatinSquarePuzzle.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/LatinSquarePuzzle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ListIsSubList.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ListIsSubList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/NthFibonacciNumberRecursion.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/NthFibonacciNumberRecursion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/SquareRoot.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/SquareRoot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/kLargestElementsFromStream.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/kLargestElementsFromStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/BubbleSort.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/BubbleSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/InsertionSort.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/InsertionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/MergeSort.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/MergeSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/QuickSort.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/QuickSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/SelectionSort.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/SelectionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/stackqueue/ReverseStack.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/stackqueue/ReverseStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/stackqueue/SortStack.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/stackqueue/SortStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/HasAllUniqueChars.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/HasAllUniqueChars.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/IsAnagram.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/IsAnagram.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/LongestCommonSubsequence.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/LongestCommonSubsequence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MakeStringBalanced.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MakeStringBalanced.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MaxSubstringNoRepeatngChars.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MaxSubstringNoRepeatngChars.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NthMostFrequentStringFromArray.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NthMostFrequentStringFromArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NumberToString.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NumberToString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/PermuteString.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/PermuteString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/RemoveDuplicateChars.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/RemoveDuplicateChars.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/ReplaceSpaceWithPercent20.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/ReplaceSpaceWithPercent20.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SearchStringPrefixInTrie.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SearchStringPrefixInTrie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/StringReverseLine.java" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/StringReverseLine.java" />
+      <change afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/graph/GraphAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/PriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/AddOneToIntArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/AddOneToIntArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/KClosestElementsFromTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/KClosestElementsFromTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/NonDuplicateElementFromArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/NonDuplicateElementFromArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/array/RotateMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/array/RotateMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/StartOfTheLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/StartOfTheLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BinaryNumberOfOnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BinaryNumberOfOnes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ConvertToBase7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ConvertToBase7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/DecimalToBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/DecimalToBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/NthFibonacciNumberRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/NthFibonacciNumberRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/kLargestElementsFromStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/misc/kLargestElementsFromStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MakeStringBalanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MakeStringBalanced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MaxSubstringNoRepeatngChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MaxSubstringNoRepeatngChars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NthMostFrequentStringFromArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NthMostFrequentStringFromArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/RemoveDuplicateChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/RemoveDuplicateChars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SearchStringPrefixInTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SearchStringPrefixInTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SentenseMadeUpOfDictWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SentenseMadeUpOfDictWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/StringReverseLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/algorithms/strings/StringReverseLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ashish/java8/java8Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ashish/java8/java8Features.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1768126956">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="143" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="143" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="3500" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.php.composer.actions" />
+      <usages-collector id="statistics.php.new.class" />
+      <usages-collector id="statistics.php.composer.command.options" />
+      <usages-collector id="statistics.php.new.test" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="3500" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.php.rename.constructor" />
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LevelOrderTraversalReverse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalReverse.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MergeTwoSortedArrays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="15">
+              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootToLeafSumMatchesGivenNumber.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/RootToLeafSumMatchesGivenNumber.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MoveZerosToEnd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="-28">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SizeOfBinaryTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/SizeOfBinaryTree.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/NonDuplicateElementFromArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/TreeNode.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/OneMissingNumberFromSequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LowestCommonAncestorBinaryTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBinaryTree.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/OneNumberRepeatedOddTimes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="198">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LowestCommonAncestorBST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBST.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/PeakElementinArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PriorityQueue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/PriorityQueue.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/TwoSumArrayReturnIndices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="144">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IterativePreOrderTraversal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativePreOrderTraversal.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/RotateMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="361">
+              <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LevelOrderTraversal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversal.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxAverageSubarrayOfSizeK.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="302">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LevelOrderTraversalLevelByLevelPrint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalLevelByLevelPrint.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxSubArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -217,52 +194,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/FindNthLastElement.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/ReverseSinglyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BalancedParenthesisCheck.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BinaryNumberOfOnes.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ClockAngleBetweenHourAndMinuteHands.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ConvertToBase7.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/DecimalToBinary.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/kLargestElementsFromStream.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/LatinSquarePuzzle.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ListIsSubList.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/MultiplyTwoNumbersWithoutOperators.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/MultiplyTwoNumbers.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/NthFibonacciNumberRecursion.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/SquareRoot.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/BubbleSort.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/InsertionSort.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/sorting/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/stackqueue/ReverseStack.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/stackqueue/SortStack.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/HasAllUniqueChars.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/IsAnagram.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/LongestCommonSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MakeStringBalanced.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MaxSubstringNoRepeatngChars.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NthMostFrequentStringFromArray.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NumberToString.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/PermuteString.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/RemoveDuplicateChars.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/ReplaceSpaceWithPercent20.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SearchStringPrefixInTrie.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SentenseMadeUpOfDictWords.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/StringReverseLine.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BalancedBinaryTreeFromSortedArray.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/HeightOfBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBalancedBinaryTree.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsSameBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativeInOrderTraversal.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativePostOrderTraversal.java" />
@@ -272,138 +219,200 @@
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalReverse.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBST.java" />
-        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/PriorityQueue.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/RootToLeafSumMatchesGivenNumber.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/SizeOfBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/array/KClosestElementsFromTarget.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxAverageSubarrayOfSizeK.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/StartOfTheLoop.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/NthFibonacciNumberRecursion.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ReadFile.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/graph/GraphAnalysis.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/Tree/PriorityQueue.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/BinaryNumberOfOnes.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/ConvertToBase7.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/DecimalToBinary.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/misc/kLargestElementsFromStream.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/HasAllUniqueChars.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MakeStringBalanced.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/MaxSubstringNoRepeatngChars.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/NthMostFrequentStringFromArray.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/RemoveDuplicateChars.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SearchStringPrefixInTrie.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/SentenseMadeUpOfDictWords.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/strings/StringReverseLine.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/java8/java8Features.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/array/AddOneToIntArray.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxSubArray.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/array/NonDuplicateElementFromArray.java" />
+        <option value="$PROJECT_DIR$/src/com/ashish/algorithms/array/RotateMatrix.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="964" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="array" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="graph" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="graph" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="GraphAnalysis.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="sorting" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="linkedlist" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="stackqueue" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="misc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="strings" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stackqueue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="AshishAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AshishAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ashish" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="Tree" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="strings" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Tree" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Algorithms" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Algorithms" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ashish" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java8" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542341816514" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -425,136 +434,91 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LowestCommonAncestorBST">
-    <configuration name="DecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ashish.algorithms.misc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.misc.DecimalToBinary" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AshishAlgorithms" />
-      <envs />
-    </configuration>
-    <configuration name="IsBalancedBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ashish.algorithms.Tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.Tree.IsBalancedBinaryTree" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AshishAlgorithms" />
-      <envs />
-    </configuration>
-    <configuration name="ListIsSubList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ashish.algorithms.misc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.misc.ListIsSubList" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AshishAlgorithms" />
-      <envs />
-    </configuration>
-    <configuration name="LowestCommonAncestorBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ashish.algorithms.Tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.Tree.LowestCommonAncestorBST" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AshishAlgorithms" />
-      <envs />
-    </configuration>
-    <configuration name="TwoSumArrayReturnIndices" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+  <component name="RunManager" selected="Application.RotateMatrix">
+    <configuration name="AddOneToIntArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.array.AddOneToIntArray" />
+      <module name="Algorithms" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ashish.algorithms.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.array.TwoSumArrayReturnIndices" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AshishAlgorithms" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
+    <configuration name="MaxSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.array.MaxSubArray" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ashish.algorithms.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.TwoSumArrayReturnIndices" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DecimalToBinary" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ListIsSubList" />
-      <item index="3" class="java.lang.String" itemvalue="Application.IsBalancedBinaryTree" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LowestCommonAncestorBST" />
+    <configuration name="MergeTwoSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.array.MergeTwoSortedArrays" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ashish.algorithms.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintConnectedComponents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.graph.PrintConnectedComponents" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ashish.algorithms.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RotateMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ashish.algorithms.array.RotateMatrix" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ashish.algorithms.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.PrintConnectedComponents" />
+      <item itemvalue="Application.AddOneToIntArray" />
+      <item itemvalue="Application.MaxSubArray" />
+      <item itemvalue="Application.MergeTwoSortedArrays" />
+      <item itemvalue="Application.RotateMatrix" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LowestCommonAncestorBST" />
-        <item index="1" class="java.lang.String" itemvalue="Application.IsBalancedBinaryTree" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ListIsSubList" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DecimalToBinary" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TwoSumArrayReturnIndices" />
+      <list>
+        <item itemvalue="Application.RotateMatrix" />
+        <item itemvalue="Application.MergeTwoSortedArrays" />
+        <item itemvalue="Application.MaxSubArray" />
+        <item itemvalue="Application.AddOneToIntArray" />
+        <item itemvalue="Application.PrintConnectedComponents" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -563,465 +527,427 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515469079196</updated>
+      <workItem from="1540502638467" duration="745000" />
+      <workItem from="1540661200951" duration="16086000" />
+      <workItem from="1540859514175" duration="1980000" />
+      <workItem from="1540875017047" duration="2494000" />
+      <workItem from="1541088657693" duration="1810000" />
+      <workItem from="1541817583478" duration="6941000" />
+      <workItem from="1542217420297" duration="22187000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="52243000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="961" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="947" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3221709" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16397229" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23748474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21131639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16056167" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290993" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.491453" weight="0.30528846" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21131639" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" weight="0.32932693" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.508547" side_tool="true" weight="0.25360578" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.485623" weight="0.31971154" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Data View" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="SciView" order="10" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="13" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/linkedlist/StartOfTheLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/BalancedParenthesisCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/BinaryNumberOfOnes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/ClockAngleBetweenHourAndMinuteHands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/ConvertToBase7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/DecimalToBinary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/kLargestElementsFromStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/LatinSquarePuzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/ListIsSubList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="268">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/MultiplyTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/NthFibonacciNumberBottomUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/NthFibonacciNumberRecursion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="108">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/ReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/misc/SquareRoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/sorting/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/sorting/InsertionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/sorting/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/sorting/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/sorting/SelectionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/stackqueue/ReverseStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/stackqueue/SortStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="431">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/HasAllUniqueChars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-31">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/IsAnagram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="1" lean-forward="false" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="208">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/LongestCommonSubsequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="419">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/MakeStringBalanced.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-          <folding>
-            <element signature="e#751#752#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/MaxSubstringNoRepeatngChars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="588">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/NthMostFrequentStringFromArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="504">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/NumberToString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="234">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/PermuteString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/RemoveDuplicateChars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="453">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/ReplaceSpaceWithPercent20.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/SearchStringPrefixInTrie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="494">
+          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+          <folding>
+            <element signature="e#2132#2133#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/SentenseMadeUpOfDictWords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="278">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/strings/StringReverseLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="576">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/java8/java8Features.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <folding>
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BalancedBinaryTreeFromSortedArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-850">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="617">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/DiameterBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="670">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/HeightOfBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBalancedBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-35">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsBinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="551">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IsSameBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativeInOrderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="537">
+          <caret line="36" selection-start-line="36" selection-end-line="40" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativePostOrderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/IterativePreOrderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="-205">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalLevelByLevelPrint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LevelOrderTraversalReverse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="498">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/LowestCommonAncestorBST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/RootToLeafSumMatchesGivenNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="480">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/SizeOfBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="504">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/Tree/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/graph/DepthFirstSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/graph/PrintConnectedComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/graph/GraphAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/AddOneToIntArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/BinarySearchInSortedArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/ElementsWithSumMatchingTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MartixRowsColumnsZeroIfElementIsZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxAverageSubarrayOfSizeK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MaxSubArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MergeTwoSortedArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/MoveZerosToEnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/NonDuplicateElementFromArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/OneMissingNumberFromSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/OneNumberRepeatedOddTimes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/PeakElementinArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/RotateMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ashish/algorithms/array/TwoSumArrayReturnIndices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

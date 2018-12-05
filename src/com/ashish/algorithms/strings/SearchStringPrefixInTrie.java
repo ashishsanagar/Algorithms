@@ -10,78 +10,70 @@ import java.util.Map;
  */
 public class SearchStringPrefixInTrie {
 
-	public static void main(String[] args) {
-		String[] words = {"abc", "ab", "bcd"};
-		String prefix = "ab";
+    public static void main(String[] args) {
+        String[] words = {"abc", "ab", "bcd"};
+        String prefix = "ab";
 
-		Node trie = new Node("");
-		SearchStringPrefixInTrie obj = new SearchStringPrefixInTrie();
+        Node trie = new Node("");
+        SearchStringPrefixInTrie trieHelper = new SearchStringPrefixInTrie();
 
-		for (String word : words) {
-			obj.insertWordInTrie(word, trie);
-		}
+        for (String word : words) {
+            trieHelper.insertWordInTrie(word, trie);
+        }
 
-		System.out.println(trie);
+        List<String> results = trieHelper.findWordsForPrefix(prefix, trie);
 
-		List<String> results = obj.findWordsForPrefix(prefix, trie);
+        results.stream().forEach(System.out::println);
+    }
 
-		System.out.print("Matching words for prefix-" + prefix + " : ");
+    public void insertWordInTrie(String word, Node trie) {
 
-		for (String word : results) {
-			System.out.print(word + ", ");
-		}
-	}
+        Node curr = trie;
 
-	public void insertWordInTrie(String word, Node trie) {
+        for (int i = 0; i < word.length(); i++) {
+            if (curr.children.containsKey(word.charAt(i)) == false) {
+                curr.children.put(word.charAt(i), new Node(word.substring(0, i + 1)));
+            }
 
-		Node curr = trie;
+            curr = curr.children.get(word.charAt(i));
+            if (i == word.length() - 1) {
+                curr.isWord = true;
+            }
+        }
+    }
 
-		for (int i = 0; i < word.length(); i++) {
-			if (curr.children.containsKey(word.charAt(i)) == false) {
-				curr.children.put(word.charAt(i), new Node(word.substring(0, i + 1)));
-			}
+    public void findAllWords(Node curr, List<String> results) {
+        if (curr.isWord) {
+            results.add(curr.prefix);
+        }
 
-			curr = curr.children.get(word.charAt(i));
-			if (i == word.length() - 1) {
-				curr.isWord = true;
-			}
-		}
-	}
+        for (Character c : curr.children.keySet()) {
+            findAllWords(curr.children.get(c), results);
+        }
+    }
 
-	public void findAllWords(Node curr, List<String> results) {
-		if (curr.isWord) {
-			results.add(curr.prefix);
-		}
+    public List<String> findWordsForPrefix(String prefix, Node trie) {
+        List<String> results = new ArrayList<>();
 
-		for (Character c : curr.children.keySet()) {
-			findAllWords(curr.children.get(c), results);
-		}
-	}
+        Node curr = trie;
 
-	public List<String> findWordsForPrefix(String prefix, Node trie) {
-		List<String> results = new ArrayList<>();
+        for (char c : prefix.toCharArray()) {
+            if (curr.children.containsKey(c)) {
+                curr = curr.children.get(c);
+            } else return results;
+        }
 
-		Node curr = trie;
+        findAllWords(curr, results);
+        return results;
+    }
 
-		for (char c : prefix.toCharArray()) {
-			if (curr.children.containsKey(c)) {
-				curr = curr.children.get(c);
-			} else return results;
-		}
+    private static class Node {
+        String prefix;
+        boolean isWord;
+        Map<Character, Node> children = new HashMap<>();
 
-		findAllWords(curr, results);
-		return results;
-	}
-
-	private static class Node {
-		String prefix;
-		boolean isWord;
-		Map<Character, Node> children = new HashMap<>();
-
-		private Node(String prefix) {
-			this.prefix = prefix;
-		}
-	}
-
-
+        private Node(String prefix) {
+            this.prefix = prefix;
+        }
+    }
 }

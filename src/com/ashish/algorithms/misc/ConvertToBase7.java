@@ -1,33 +1,27 @@
 package com.ashish.algorithms.misc;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author Ashish Sanagar
  */
 public class ConvertToBase7 {
 
-	/**
-	 * 10 -> 13
-	 */
-	public static void main(String[] args) {
-		int number = 10;
+    /**
+     * 10 -> 13
+     */
+    public static void main(String[] args) {
+        int number = 10;
 
-		new ConvertToBase7().convert(number);
-	}
+        System.out.print(new ConvertToBase7().convert(number));
+    }
 
-	public void convert(int number) {
-		List<Integer> result = new ArrayList<>();
+    public String convert(int number) {
+        String result = "";
 
-		while (number > 0) {
-			result.add(number % 7);
-			number = number / 7;
-		}
+        while (number > 0) {
+            result = (number % 7) + result;
+            number = number / 7;
+        }
 
-		for (int i = result.size() - 1; i >= 0; i--) {
-			System.out.print(result.get(i));
-			//System.out.print(Character.toString((char)result.get(i).intValue()));
-		}
-	}
+        return result;
+    }
 }

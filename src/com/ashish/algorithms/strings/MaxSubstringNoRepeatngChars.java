@@ -8,38 +8,38 @@ import java.util.Set;
  */
 public class MaxSubstringNoRepeatngChars {
 
-	/**
-	 * Longest Substring Without Repeating Characters
-	 * <p>
-	 * acbadad -> cbad = 4
-	 * abcaca -> abc -> 3
-	 */
-	public static void main(String[] args) {
-		String s = "abcca";
+    /**
+     * Longest Substring Without Repeating Characters
+     * <p>
+     * acbadad -> cbad = 4
+     * abcaca -> abc -> 3
+     */
+    public static void main(String[] args) {
+        String s = "abcca";
 
-		new MaxSubstringNoRepeatngChars().print(s);
-	}
+        new MaxSubstringNoRepeatngChars().print(s);
+    }
 
-	public void print(String s) {
-		int length = s.length();
+    public void print(String s) {
+        int length = s.length();
 
-		int i = 0;
-		int j = 0;
-		int maxSubStrLength = 0;
+        int i = 0;
+        int j = 0;
+        int maxSubStrLength = 0;
 
-		Set<Character> set = new HashSet<>();
+        Set<Character> set = new HashSet<>();
 
-		while (i < length && j < length) {
-			if (set.contains(s.charAt(j)) == false) {
-				set.add(s.charAt(j));
-				j++;
-				maxSubStrLength = Math.max(maxSubStrLength, j - i);
-			} else {
-				set.remove(s.charAt(i));
-				i++;
-			}
-		}
+        while (i < length && j < length) {
+            if (set.contains(s.charAt(j)) == false) {
+                set.add(s.charAt(j));
+                j++;
+                maxSubStrLength = Math.max(maxSubStrLength, j - i);
+            } else {
+                set.remove(s.charAt(i));
+                i++;
+            }
+        }
 
-		System.out.println(maxSubStrLength);
-	}
+        System.out.println(maxSubStrLength);
+    }
 }

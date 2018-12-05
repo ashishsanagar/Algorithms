@@ -5,66 +5,65 @@ package com.ashish.algorithms.linkedlist;
  */
 public class StartOfTheLoop {
 
-	public static void main(String[] args) {
-		StartOfTheLoop obj = new StartOfTheLoop();
+    public static void main(String[] args) {
+        StartOfTheLoop obj = new StartOfTheLoop();
 
-		Node n1 = new Node(1);
-		Node n2 = new Node(2);
-		Node n3 = new Node(3);
-		Node n4 = new Node(4);
+        Node n1 = new Node(1);
+        Node n2 = new Node(2);
+        Node n3 = new Node(3);
+        Node n4 = new Node(4);
 
-		n1.next = n2;
-		n2.next = n3;
-		n3.next = n4;
-		n4.next = n3;
+        n1.next = n2;
+        n2.next = n3;
+        n3.next = n4;
+        n4.next = n3;
 
-		//LOOP exists use case
-		Node loopStartNode = obj.findStartOfTheLoop(n1);
+        //LOOP exists use case
+        Node loopStartNode = obj.findStartOfTheLoop(n1);
 
-		if (loopStartNode == null)
-			System.out.println("No loop");
-		else
-			System.out.println("Loop starts at: " + loopStartNode.data);
-		
-		//NO LOOP use case
-		n4.next = null;
-		loopStartNode = obj.findStartOfTheLoop(n1);
+        if (loopStartNode == null)
+            System.out.println("No loop");
+        else
+            System.out.println("Loop starts at: " + loopStartNode.data);
 
-		if (loopStartNode == null)
-			System.out.println("No loop");
-		else
-			System.out.println("Loop starts at: " + loopStartNode.data);
+        //NO LOOP use case
+        n4.next = null;
+        loopStartNode = obj.findStartOfTheLoop(n1);
 
-	}
+        if (loopStartNode == null)
+            System.out.println("No loop");
+        else
+            System.out.println("Loop starts at: " + loopStartNode.data);
 
-	public Node findStartOfTheLoop(Node head) {
-		if (head == null) return null;
+    }
 
-		Node loopStartNode = null;
-		Node slow = head;
-		Node fast = head;
+    public Node findStartOfTheLoop(Node head) {
+        if (head == null) return null;
 
-		while (fast != null && fast.next != null) {
-			slow = slow.next;
-			fast = fast.next.next;
+        Node slow = head;
+        Node fast = head;
 
-			if (slow == fast) {
-				break;
-			}
-		}
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
 
-		if (fast != null && fast.next != null) {
-			slow = head;
+            if (slow == fast) {
+                break;
+            }
+        }
 
-			while (slow != fast) {
-				slow = slow.next;
-				fast = fast.next;
-			}
-		} else {
-			return null;
-		}
+        if (fast != null && fast.next != null) {
+            slow = head;
 
-		return fast;
-	}
+            while (slow != fast) {
+                slow = slow.next;
+                fast = fast.next;
+            }
+        } else {
+            return null;
+        }
+
+        return fast;
+    }
 
 }

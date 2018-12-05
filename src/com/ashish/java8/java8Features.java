@@ -11,71 +11,66 @@ import java.util.stream.Collectors;
  */
 public class java8Features {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        //forEach();
+        streams();
+    }
 
+    private static void streams() {
+        List<Integer> list = new ArrayList();
+        list.add(1);
+        list.add(3);
+        list.add(2);
+        list.add(10);
+        list.add(11);
 
-		//forEach();
-		streams();
+        List<Integer> newList = list.stream().filter(element -> element > 10).collect(Collectors.toList());
 
-	}
+        newList.forEach(a -> System.out.println(a));
 
-	private static void streams() {
-		List<Integer> list = new ArrayList();
-		list.add(1);
-		list.add(3);
-		list.add(2);
-		list.add(10);
-		list.add(11);
+        List<Person> persons = Arrays.asList(
+                new Person("mkyong", 30),
+                new Person("jack", 20),
+                new Person("jacka", 40)
+        );
 
-		List<Integer> newList = list.stream().filter(element -> element > 10).collect(Collectors.toList());
+        String name = persons.stream().filter(person -> person.name.contains("jack")).map(Person::getName).findAny().orElse("").replace("a", "new");
+        System.out.println("Name: " + name);
 
-		newList.forEach(a -> System.out.println(a));
+    }
 
+    /**
+     * foreach - Java 8 has introduced forEach method in java.lang.Iterable interface
+     */
+    private static void forEach() {
+        List<Integer> sampleIntList = new ArrayList<Integer>();
+        for (int i = 0; i < 15; i++) sampleIntList.add(i);
 
-		List<Person> persons = Arrays.asList(
-				new Person("mkyong", 30),
-				new Person("jack", 20),
-				new Person("jacka", 40)
-		);
+        sampleIntList.forEach(new Consumer<Integer>() {
+            public void accept(Integer value) {
+                System.out.println("value: " + value);
+            }
+        });
 
-		String name = persons.stream().filter(person -> person.name.contains("jack")).map(Person::getName).findAny().orElse("").replace("a", "new");
-		System.out.println("Name: " + name);
+        sampleIntList.forEach(System.out::println);
+    }
 
-	}
+    public static class Person {
+        private String name;
+        private int id;
 
-	/**
-	 * foreach - Java 8 has introduced forEach method in java.lang.Iterable interface
-	 */
-	private static void forEach() {
-		List<Integer> sampleIntList = new ArrayList<Integer>();
-		for (int i = 0; i < 15; i++) sampleIntList.add(i);
+        public Person(String name, int id) {
+            this.name = name;
+            this.id = id;
+        }
 
-		sampleIntList.forEach(new Consumer<Integer>() {
-			public void accept(Integer value) {
-				System.out.println("value: " + value);
-			}
+        public String getName() {
+            return name;
+        }
 
-		});
-
-
-	}
-
-	public static class Person {
-		private String name;
-		private int id;
-
-		public Person(String name, int id) {
-			this.name = name;
-			this.id = id;
-		}
-
-		public String getName() {
-			return name;
-		}
-
-		public void setName(String name) {
-			this.name = name;
-		}
-	}
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
 
 }

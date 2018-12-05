@@ -9,29 +9,35 @@ import java.util.List;
  */
 public class SentenseMadeUpOfDictWords {
 
-	/**
-	 * You have dictionary of words, for given sentense without spaces check if sentence is madeup of dictionary words
-	 */
-	public static void main(String[] args) {
-		String[] dict = {"do", "dot", "dog", "dogmatic"};
+    String[] dict = {"do", "dot", "dog", "dogmatic"};
 
-		System.out.println(new SentenseMadeUpOfDictWords().isMadeUpOf(dict, "dodogmatic"));
-	}
+    /**
+     * You have dictionary of words, for given phrase without spaces check if sentence is madeup of dictionary words
+     */
+    public static void main(String[] args) {
 
-	public boolean isMadeUpOf(String[] dict, String phrase) {
-		List<String> dictList = Arrays.asList(dict);
+        System.out.println(new SentenseMadeUpOfDictWords().isMadeUpOf("dodogmatic"));
+    }
 
-		Collections.sort(dictList);
+    public boolean isMadeUpOf(String phrase) {
 
-		for (int i = dictList.size() - 1; i >= 0; i--) {
+        if (phrase == null || phrase.length() == 0) return true;
 
-			phrase = phrase.replaceAll(dictList.get(i), "");
+        List<String> dictList = Arrays.asList(dict);
 
-			if (phrase.length() == 0) {
-				return true;
-			}
-		}
+        //sort descending order by word length
+        Collections.sort(dictList, (x, y) -> y.length() - x.length());
 
-		return false;
-	}
+        //dictList.stream().forEach(System.out::println);
+
+        for (String word : dictList) {
+            phrase = phrase.replaceAll(word, "");
+
+            if (phrase.trim().length() == 0) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
