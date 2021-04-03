@@ -5,7 +5,7 @@ package com.ashish.algorithms.strings;
  */
 public class StringReverseLine {
     public static void main(String[] args) {
-        String line = "reverse string java program.";
+        String line = "This is a reverse string java program.";
 
         StringReverseLine obj = new StringReverseLine();
         System.out.println(obj.reverseString1(line));

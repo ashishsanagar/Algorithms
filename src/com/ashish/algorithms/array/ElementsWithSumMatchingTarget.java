@@ -8,25 +8,28 @@ import java.util.Map;
  */
 public class ElementsWithSumMatchingTarget {
 
-	public static void main(String[] args) {
-		int[] array = {1, 3, 4, 6, 7, 3, 7};
-		int target = 7;
+    public static void main(String[] args) {
+        int[] array = {1, 3, 4, 6, 7, 3, 7};
+        int target = 10;
 
-		new ElementsWithSumMatchingTarget().findelements(array, target);
-	}
+        new ElementsWithSumMatchingTarget().findelements(array, target);
+    }
 
-	public void findelements(int[] array, int target) {
+    /**
+     * use hashtable to keep track of values read
+     *
+     * @param array
+     * @param target
+     */
+    public void findelements(int[] array, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
 
-		Map<Integer, Integer> map = new HashMap<>();
-
-		for (int i = 0; i < array.length; i++) {
-			if (map.containsKey(array[i])) {
-				System.out.println(array[map.get(array[i])] + " + " + array[i] + " = " + target);
-			} else {
-				map.put(target - array[i], i);
-			}
-		}
-	}
-
-
+        for (int i = 0; i < array.length; i++) {
+            if (map.containsKey(array[i])) {
+                System.out.println(array[map.get(array[i])] + " + " + array[i] + " = " + target);
+            } else {
+                map.put(target - array[i], i);
+            }
+        }
+    }
 }

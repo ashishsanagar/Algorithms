@@ -13,10 +13,15 @@ public class NthMostFrequentStringFromArray {
     public static void main(String[] args) {
         String[] array = {"ab", "bc", "bc", "ab", "bc", "as", "abc", "cd"};
 
-        new NthMostFrequentStringFromArray().find(array, 2);
+        System.out.println(new NthMostFrequentStringFromArray().find(array, 2));
     }
 
-    public void find(String[] array, int n) {
+    public String find(String[] array, int n) {
+        if (array == null || n > array.length)
+            throw new IllegalArgumentException();
+
+        if (array.length == 0) return "";
+
         Map<String, Integer> map = new HashMap<>();
 
         for (int i = 0; i < array.length; i++) {
@@ -31,6 +36,6 @@ public class NthMostFrequentStringFromArray {
 
         list.sort((x, y) -> (Integer) y.getValue() - (Integer) x.getValue());
 
-        System.out.println("Nth: " + list.get(n - 1));
+        return (String) list.get(n - 1).getKey();
     }
 }

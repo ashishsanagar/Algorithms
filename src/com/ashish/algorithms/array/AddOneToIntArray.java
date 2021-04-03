@@ -7,11 +7,11 @@ public class AddOneToIntArray {
 
     /**
      * Given a integer array add one to its concatenated value.
+     * <p>
      * [1,2,3,4] -> [1,2,3,5]
      * [9,9,9,9] -> [1,0,0,0,0]
      */
     public static void main(String[] args) {
-
         AddOneToIntArray helper = new AddOneToIntArray();
 
         helper.print(helper.addOne(new int[]{9, 9, 9, 9}));

@@ -15,31 +15,35 @@ public class MaxSubstringNoRepeatngChars {
      * abcaca -> abc -> 3
      */
     public static void main(String[] args) {
-        String s = "abcca";
+        String s = "acbadad";
 
-        new MaxSubstringNoRepeatngChars().print(s);
+        System.out.println("Max subStr length for input " + s + ": " + new MaxSubstringNoRepeatngChars().maxLength(s));
     }
 
-    public void print(String s) {
-        int length = s.length();
-
+    /**
+     * sliding window pattern
+     *
+     * @param input
+     * @return
+     */
+    public int maxLength(String input) {
         int i = 0;
         int j = 0;
-        int maxSubStrLength = 0;
+        int max = 0;
 
-        Set<Character> set = new HashSet<>();
+        Set<Character> chars = new HashSet<>();
 
-        while (i < length && j < length) {
-            if (set.contains(s.charAt(j)) == false) {
-                set.add(s.charAt(j));
+        while (i < input.length() && j < input.length()) {
+            if (chars.contains(input.charAt(j)) == false) {
+                chars.add(input.charAt(j));
                 j++;
-                maxSubStrLength = Math.max(maxSubStrLength, j - i);
+                max = Math.max(max, j - i);
             } else {
-                set.remove(s.charAt(i));
+                chars.remove(input.charAt(i));
                 i++;
             }
         }
 
-        System.out.println(maxSubStrLength);
+        return max;
     }
 }

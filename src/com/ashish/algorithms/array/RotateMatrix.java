@@ -31,9 +31,6 @@ public class RotateMatrix {
 
     public void rotate(int[][] matrix) {
         transposeMatrix(matrix);
-
-        //printMatrix(matrix);
-
         reverseColumns(matrix);
     }
 

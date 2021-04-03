@@ -8,32 +8,33 @@ import java.util.List;
  */
 public class LeadersInArray {
 
-	/**
-	 * element is leader if there are no elements larger on right side. last element is always a leader
-	 */
-	public static void main(String[] args) {
-		int[] array = {88, 32, 44, 23, 57, 22, 33, 44, 55};
+    /**
+     * element is leader if there are no elements larger on right side. last element is always a leader
+     */
+    public static void main(String[] args) {
+        int[] array = {88, 32, 44, 23, 57, 22, 33, 44, 55};
 
-		new LeadersInArray().printLeaders(array);
-	}
+        new LeadersInArray().printLeaders(array);
+    }
 
-	public void printLeaders(int[] array) {
-		if (array == null || array.length == 0) {
-			return;
-		}
+    public List<Integer> printLeaders(int[] array) {
+        if (array == null || array.length == 0) {
+            return null;
+        }
 
-		int currentLeader = array[array.length - 1];
-		List<Integer> leaders = new ArrayList<>();
-		leaders.add(currentLeader);
+        int currentLeader = array[array.length - 1];
+        List<Integer> leaders = new ArrayList<>();
+        leaders.add(currentLeader);
 
-		for (int i = array.length - 2; i >= 0; i--) {
+        for (int i = array.length - 2; i >= 0; i--) {
+            if (array[i] > currentLeader) {
+                currentLeader = array[i];
+                leaders.add(currentLeader);
+            }
+        }
 
-			if (array[i] > currentLeader) {
-				currentLeader = array[i];
-				leaders.add(currentLeader);
-			}
-		}
+        leaders.forEach(leader -> System.out.println(leader));
 
-		leaders.forEach(leader -> System.out.println(leader));
-	}
+        return leaders;
+    }
 }

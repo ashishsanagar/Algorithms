@@ -9,11 +9,11 @@ public class MaxSubArray {
 
         int[] array = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
 
-        int max = new MaxSubArray().findMax(array);
+        int max = new MaxSubArray().find(array);
         System.out.println(max);
     }
 
-    public int findMax(int[] array) {
+    public int find(int[] array) {
         int sum = 0;
         int max = 0;
 

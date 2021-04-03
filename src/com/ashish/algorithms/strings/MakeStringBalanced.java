@@ -36,6 +36,7 @@ public class MakeStringBalanced {
         Stack<Integer> stack1 = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
 
+
         for (int i = 0; i < str.length(); i++) {
             char nextChar = str.charAt(i);
 

@@ -8,21 +8,25 @@ import java.util.Set;
  */
 public class PermuteString {
 
-	static Set<String> permutationSet = new HashSet<>();
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
+        Set<String> result = new HashSet<>();
+        new PermuteString().permutation("abc", "", result);
+        result.stream().forEach(ele -> System.out.println(ele));
+    }
 
-		new PermuteString().process("abcd", "");
-	}
-
-	public void process(String input, String chosen) {
-
-		if (input.isEmpty()) {
-			System.out.println(chosen);
-			permutationSet.add(chosen);
-		} else {
-			for (int i = 0; i < input.length(); i++)
-				process(input.substring(0, i) + input.substring(i + 1, input.length()), chosen + input.charAt(i));
-		}
-	}
+    /**
+     * recursion
+     *
+     * @param input
+     * @param chosen
+     */
+    public void permutation(String input, String chosen, Set<String> result) {
+        if (input.isEmpty()) {
+            result.add(chosen);
+        } else {
+            for (int i = 0; i < input.length(); i++)
+                permutation(input.substring(0, i) + input.substring(i + 1), chosen + input.charAt(i), result);
+        }
+    }
 }

@@ -17,7 +17,7 @@ public class KClosestElementsFromTarget {
     public static void main(String[] args) {
         int[] a = {2, 3, 66, 66, 67, 90};
         int target = 70;
-        int k = 3;
+        int k = 7;
 
         KClosestElementsFromTarget helper = new KClosestElementsFromTarget();
 
@@ -28,10 +28,16 @@ public class KClosestElementsFromTarget {
         }
     }
 
+    /**
+     * Find closest index in O(n)
+     *
+     * @param a
+     * @param target
+     * @return
+     */
     private static int findClosestIndex(int[] a, int target) {
-
-        if (a == null || a.length < 1) {
-            System.out.println("invalid");
+        if (a == null || a.length == 0) {
+            throw new IllegalArgumentException("Invalid input");
         }
 
         int min = Math.abs(target - a[0]);
@@ -46,60 +52,41 @@ public class KClosestElementsFromTarget {
             }
         }
 
-        System.out.println("Closest Index = " + closestIndex + " | closestVal=" + a[closestIndex]);
+        // System.out.println("Closest Index = " + closestIndex + " | closestVal=" + a[closestIndex]);
 
         return closestIndex;
     }
 
-    private List<Integer> findClosestKElements(int[] a, int target, int k) {
+    public List<Integer> findClosestKElements(int[] a, int target, int k) {
+        if (k > a.length)
+            throw new IllegalArgumentException("Invalid Input");
+
         List<Integer> result = new ArrayList<>();
 
         int index = findClosestIndex(a, target);
-        int i = index;
-
-        if (index > 0) {
-            i--;
-        }
-
-        int j = index;
-
-        if (index < a.length - 1) {
-            j++;
-        }
-
-        boolean foundAll = false;
+        int i = index > 0 ? index - 1 : index;
+        int j = index < a.length - 1 ? index + 1 : index;
 
         result.add(a[index]);
 
-        if (k == 1) {
-            return result;
-        }
+        while (result.size() < k) {
+            int iSide = Integer.MAX_VALUE;
+            int jSide = Integer.MAX_VALUE;
 
-        while (foundAll == false) {
-            int iSide = 0;
-            int jSide = 0;
-
-            if (i > 0) {
+            if (i >= 0) {
                 iSide = Math.abs(target - a[i]);
             }
-            if (j < a.length) {
+            if (j <= a.length) {
                 jSide = Math.abs(target - a[j]);
             }
 
             if (iSide < jSide) {
                 result.add(a[i]);
-                if (i > 0) {
-                    i--;
-                }
+                i--;
+
             } else {
                 result.add(a[j]);
-                if (j < a.length - 1) {
-                    j++;
-                }
-            }
-
-            if (result.size() == k) {
-                foundAll = true;
+                j++;
             }
         }
 

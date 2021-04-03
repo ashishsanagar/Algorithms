@@ -5,36 +5,36 @@ package com.ashish.algorithms.array;
  */
 public class BinarySearchInSortedArray {
 
-	/**
-	 * binary search O(log(n))
-	 */
-	public static void main(String[] args) {
-		int[] array = {1, 2, 3, 4, 5, 6};
+    /**
+     * binary search O(log(n))
+     */
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5, 6};
 
-		boolean exists = new BinarySearchInSortedArray().findElement(array, 5);
-		System.out.println(exists);
-	}
+        boolean exists = new BinarySearchInSortedArray().findElement(array, 4);
+        System.out.println(exists);
+    }
 
-	public boolean findElement(int[] array, int ele) {
-		if (array == null || array.length == 0) {
-			return false;
-		}
+    public boolean findElement(int[] array, int ele) {
+        if (array == null || array.length == 0) {
+            return false;
+        }
 
-		int low = 0;
-		int high = array.length - 1;
+        int low = 0;
+        int high = array.length - 1;
 
-		while (low <= high) {
-			int mid = (low + high) / 2;
+        while (low <= high) {
+            int mid = (low + high) / 2;
 
-			if (ele == array[mid]) {
-				return true;
-			} else if (ele < array[mid]) {
-				high = mid - 1;
-			} else {
-				low = mid + 1;
-			}
-		}
+            if (ele == array[mid]) {
+                return true;
+            } else if (ele < array[mid]) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
 
-		return false;
-	}
+        return false;
+    }
 }
