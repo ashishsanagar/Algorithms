@@ -10,14 +10,12 @@ public class DecimalToBinary {
      * resentation. If the number can not be represented accurately in binary, maxLength “ERROR”
      */
     public static void main(String[] args) {
-
         String n = "3.72343444";
 
         System.out.println(new DecimalToBinary().convert(n));
     }
 
     public String convert(String n) {
-
         int intPart = Integer.parseInt(n.substring(0, n.indexOf(".")));
         int decPart = Integer.parseInt(n.substring(n.indexOf(".") + 1));
 
@@ -31,7 +29,6 @@ public class DecimalToBinary {
         StringBuilder decString = new StringBuilder();
 
         while (decPart > 0) {
-
             if (decString.length() > 32) {
                 decString = new StringBuilder("error");
                 break;

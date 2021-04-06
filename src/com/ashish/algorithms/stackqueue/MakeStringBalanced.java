@@ -1,4 +1,4 @@
-package com.ashish.algorithms.strings;
+package com.ashish.algorithms.stackqueue;
 
 import java.util.Stack;
 

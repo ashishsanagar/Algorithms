@@ -15,11 +15,9 @@ public class HasAllUniqueChars {
     }
 
     public boolean hasAllUniqueCharsImproved(String str) {
-
         int checker = 0;
 
         for (char c : str.toCharArray()) {
-
             int value = c - 'a';
 
             if ((checker & (1 << value)) > 0) {
@@ -27,7 +25,6 @@ public class HasAllUniqueChars {
             }
 
             checker = checker | (1 << value);
-
             System.out.println("checker (" + c + ")=" + checker);
         }
 

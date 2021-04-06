@@ -1,4 +1,4 @@
-package com.ashish.algorithms.misc;
+package com.ashish.algorithms.stackqueue;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,23 +21,35 @@ public class kLargestElementsFromStream {
         list.add(40);
         list.add(50);
 
-        int k = 3;
+        int k = 7;
 
         new kLargestElementsFromStream().find(list, k);
     }
 
+    /**
+     * Priority Queue
+     *
+     * @param list
+     * @param k
+     */
     public void find(List<Integer> list, int k) {
-        PriorityQueue<Integer> q = new PriorityQueue<>(k);
+        if (list == null) return;
+        if (list.size() < k) {
+            list.stream().forEach(System.out::println);
+            return;
+        }
+
+        PriorityQueue<Integer> queue = new PriorityQueue<>(k);
 
         list.stream().forEach(curr -> {
-            if (q.size() >= k && q.peek() < curr) {
-                q.remove();
+            if (queue.size() >= k && curr > queue.peek()) {
+                queue.remove();
             }
 
-            q.add(curr);
+            queue.add(curr);
         });
 
-        q.stream().forEach(System.out::println);
+        queue.stream().forEach(System.out::println);
     }
 }
 

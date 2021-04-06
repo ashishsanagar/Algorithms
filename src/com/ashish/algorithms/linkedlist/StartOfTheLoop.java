@@ -37,6 +37,14 @@ public class StartOfTheLoop {
 
     }
 
+    /**
+     * 2 pointers, slow pointers move one node at a time, fast pointer moves 2 nodes at a time.
+     * If they reach same node, loop exists. Move both pointers one at a time.
+     * Next time they meet is the start of the loop
+     *
+     * @param head
+     * @return
+     */
     public Node findStartOfTheLoop(Node head) {
         if (head == null) return null;
 
@@ -65,5 +73,4 @@ public class StartOfTheLoop {
 
         return fast;
     }
-
 }

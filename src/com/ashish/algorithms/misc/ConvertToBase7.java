@@ -9,8 +9,7 @@ public class ConvertToBase7 {
      * 10 -> 13
      */
     public static void main(String[] args) {
-        int number = 10;
-
+        int number = 0;
         System.out.print(new ConvertToBase7().convert(number));
     }
 

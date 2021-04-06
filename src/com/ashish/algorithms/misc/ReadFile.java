@@ -9,7 +9,6 @@ public class ReadFile {
     }
 
     public void readFile() {
-
         File file = new File("test.txt");
 
         try {
@@ -41,14 +40,8 @@ public class ReadFile {
 
                 line = reader.readLine();
             }
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
-
-
 }

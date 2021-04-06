@@ -11,13 +11,13 @@ public class BinaryNumberOfOnes {
      * 6 = 0b110 -> 2
      */
     public static void main(String[] args) {
-        int x = 6;
+        int x = 7;
 
         System.out.println(new BinaryNumberOfOnes().convert(x));
     }
 
-    public int convert(int x) {
-        int sum = 0;
+    public long convert(int x) {
+        long sum = 0;
 
         while (x > 0) {
             sum = sum + (x % 2);

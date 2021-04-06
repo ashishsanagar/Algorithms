@@ -6,34 +6,32 @@ import java.util.Stack;
  * @author Ashish Sanagar
  */
 public class SortStack {
+    public static void main(String[] args) {
+        Stack<Integer> s1 = new Stack<>();
+        s1.push(3);
+        s1.push(2);
+        s1.push(9);
 
-	public static void main(String[] args) {
-		Stack<Integer> s1 = new Stack<>();
-		s1.push(3);
-		s1.push(2);
-		s1.push(9);
+        Stack<Integer> sorted = new SortStack().sort(s1);
 
-		new SortStack().sort(s1);
-	}
+        while (!sorted.isEmpty()) {
+            System.out.print(sorted.pop() + " ");
+        }
+    }
 
-	private static void sort(Stack<Integer> s1) {
+    private static Stack<Integer> sort(Stack<Integer> unsorted) {
+        Stack<Integer> sorted = new Stack<>();
 
-		Stack<Integer> s2 = new Stack<>();
+        while (!unsorted.isEmpty()) {
+            int temp = unsorted.pop();
 
-		while (s1.isEmpty() == false) {
-			int temp = s1.pop();
+            while (!sorted.isEmpty() && temp > sorted.peek()) {
+                unsorted.push(sorted.pop());
+            }
 
-			while (s2.isEmpty() == false && s2.peek() < temp) {
-				s1.push(s2.pop());
-			}
+            sorted.push(temp);
+        }
 
-			s2.push(temp);
-		}
-
-
-		while (s2.isEmpty() == false) {
-			System.out.print(s2.pop() + " ");
-		}
-
-	}
+        return sorted;
+    }
 }
