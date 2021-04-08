@@ -6,12 +6,11 @@ package com.ashish.algorithms.Tree;
  * @author Ashish Sanagar
  */
 public class TreeNode {
+    TreeNode left;
+    TreeNode right;
+    int data;
 
-	TreeNode left;
-	TreeNode right;
-	int data;
-
-	public TreeNode(int data) {
-		this.data = data;
-	}
+    public TreeNode(int data) {
+        this.data = data;
+    }
 }

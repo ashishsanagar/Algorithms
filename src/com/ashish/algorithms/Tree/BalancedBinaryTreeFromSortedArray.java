@@ -5,38 +5,33 @@ package com.ashish.algorithms.Tree;
  */
 public class BalancedBinaryTreeFromSortedArray {
 
-	public static void main(String[] args) {
-		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-		BalancedBinaryTreeFromSortedArray obj = new BalancedBinaryTreeFromSortedArray();
-		TreeNode node = obj.createBalancedBinaryTree(array, 0, array.length - 1);
+        BalancedBinaryTreeFromSortedArray obj = new BalancedBinaryTreeFromSortedArray();
+        TreeNode node = obj.create(array, 0, array.length - 1);
 
-		//verify by inorder traversal
-		obj.traverseBinaryTreeInOrder(node);
-	}
+        //verify by inorder traversal
+        obj.traverseInOrder(node);
+    }
 
-	public TreeNode createBalancedBinaryTree(int[] array, int start, int end) {
-		if (end < start) {
-			return null;
-		}
+    public TreeNode create(int[] array, int start, int end) {
+        if (end < start) return null;
 
-		int mid = (start + end) / 2;
-		TreeNode root = new TreeNode(array[mid]);
+        int mid = (start + end) / 2;
+        TreeNode root = new TreeNode(array[mid]);
 
-		root.left = createBalancedBinaryTree(array, start, mid - 1);
-		root.right = createBalancedBinaryTree(array, mid + 1, end);
+        root.left = create(array, start, mid - 1);
+        root.right = create(array, mid + 1, end);
 
-		return root;
-	}
+        return root;
+    }
 
-	public void traverseBinaryTreeInOrder(TreeNode root) {
-		if (root == null) {
-			return;
-		}
+    public void traverseInOrder(TreeNode root) {
+        if (root == null) return;
 
-		traverseBinaryTreeInOrder(root.left);
-		System.out.println(root.data + " ");
-		traverseBinaryTreeInOrder(root.right);
-
-	}
+        traverseInOrder(root.left);
+        System.out.println(root.data + " ");
+        traverseInOrder(root.right);
+    }
 }

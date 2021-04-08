@@ -22,18 +22,14 @@ public class IsBinarySearchTree {
         tree.insertNode(root, 36);
         tree.insertNode(root, 5);
 
-        System.out.println("is BST?: " + new IsBinarySearchTree().isBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
+        System.out.println("is BST?: " + new IsBinarySearchTree().verify(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
     }
 
-    public boolean isBinarySearchTree(TreeNode root, int min, int max) {
-        if (root == null) {
-            return true;
-        }
+    public boolean verify(TreeNode root, int min, int max) {
+        if (root == null) return true;
 
-        if (root.data <= min || root.data > max) {
-            return false;
-        }
+        if (root.data <= min || root.data > max) return false;
 
-        return isBinarySearchTree(root.left, min, root.data) && isBinarySearchTree(root.right, root.data, max);
+        return verify(root.left, min, root.data) && verify(root.right, root.data, max);
     }
 }

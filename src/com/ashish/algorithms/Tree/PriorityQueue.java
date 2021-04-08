@@ -48,7 +48,7 @@ public class PriorityQueue {
         }
     }
 
-    private void swapElements(int i, int j) {
+    private void swap(int i, int j) {
         int temp = heap[i];
         heap[i] = heap[j];
         heap[j] = temp;
@@ -60,8 +60,8 @@ public class PriorityQueue {
      * @param ele
      * @throws IllegalAccessException
      */
-    public void push(int ele) throws IllegalAccessException {
-        if (currSize == heap.length) throw new IllegalAccessException();
+    public void push(int ele) throws IllegalArgumentException {
+        if (currSize == heap.length) throw new IllegalArgumentException();
 
         int pos = currSize;
 
@@ -76,7 +76,7 @@ public class PriorityQueue {
                 break;
             }
 
-            swapElements(parent, pos);
+            swap(parent, pos);
             pos = parent;
         }
 
@@ -101,14 +101,14 @@ public class PriorityQueue {
 
             if (rightChild < currSize && heap[rightChild] > heap[leftChild]) {
                 if (heap[rightChild] > heap[pos]) {
-                    swapElements(rightChild, pos);
+                    swap(rightChild, pos);
                     pos = rightChild;
                 } else {
                     break;
                 }
             } else {
                 if (heap[leftChild] > heap[pos]) {
-                    swapElements(leftChild, pos);
+                    swap(leftChild, pos);
                     pos = leftChild;
                 } else {
                     break;

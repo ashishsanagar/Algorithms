@@ -7,45 +7,42 @@ import java.util.Stack;
  */
 public class IterativePreOrderTraversal {
 
-	public static void main(String[] a) {
-		BinaryTree tree = new BinaryTree();
-		TreeNode root = new TreeNode(12);
+    public static void main(String[] a) {
+        BinaryTree tree = new BinaryTree();
+        TreeNode root = new TreeNode(12);
+        tree.insertNode(root, 10);
+        tree.insertNode(root, 2);
+        tree.insertNode(root, 0);
+        tree.insertNode(root, -5);
+        tree.insertNode(root, 6);
+        tree.insertNode(root, 36);
+        tree.insertNode(root, 5);
 
-		tree.insertNode(root, 10);
-		tree.insertNode(root, 2);
-		tree.insertNode(root, 0);
-		tree.insertNode(root, -5);
-		tree.insertNode(root, 6);
-		tree.insertNode(root, 36);
-		tree.insertNode(root, 5);
+        new IterativePreOrderTraversal().traverse(root);
+    }
 
-		new IterativePreOrderTraversal().traverse(root);
-	}
+    /**
+     * root - left - right
+     */
+    public void traverse(TreeNode root) {
+        if (root == null) return;
 
-	/**
-	 * root - left - right
-	 */
-	public void traverse(TreeNode root) {
-		if (root == null) {
-			return;
-		}
+        Stack<TreeNode> stack = new Stack<>();
 
-		Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
 
-		stack.push(root);
+        while (stack.isEmpty() == false) {
+            TreeNode node = stack.pop();
 
-		while (stack.isEmpty() == false) {
-			TreeNode node = stack.pop();
+            System.out.print(node.data + " ");
 
-			System.out.print(node.data + " ");
+            if (node.right != null) {
+                stack.push(node.right);
+            }
 
-			if (node.right != null) {
-				stack.push(node.right);
-			}
-
-			if (node.left != null) {
-				stack.push(node.left);
-			}
-		}
-	}
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+        }
+    }
 }

@@ -28,6 +28,11 @@ public class BinaryTree {
         tree.traverseBinaryTree(root);
     }
 
+    /**
+     * left -> root -> right
+     *
+     * @param root
+     */
     private void traverseBinaryTree(TreeNode root) {
         if (root == null) {
             return;
@@ -39,7 +44,6 @@ public class BinaryTree {
     }
 
     public TreeNode insertNode(TreeNode root, int data) {
-
         TreeNode newNode = new TreeNode(data);
 
         if (root == null) {
@@ -69,7 +73,7 @@ public class BinaryTree {
 
     /**
      * when you found the node to delete,
-     * replace the value of the node with the available minimum value (min),
+     * replace value of the node with the available minimum value (min),
      * then recursively delete that min value.
      */
     public TreeNode deleteNode(TreeNode root, int key) {
@@ -90,7 +94,7 @@ public class BinaryTree {
             }
             // node with two children, replace with the inOrder successor(minVal) in the right subtree
             root.data = getMinSuccessorInOrder(root.right);
-            System.out.println("Min: " + root.data);
+            //    System.out.println("Min: " + root.data);
             root.right = deleteNode(root.right, root.data);
         }
         return root;
