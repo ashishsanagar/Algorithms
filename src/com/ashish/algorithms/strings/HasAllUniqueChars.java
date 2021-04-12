@@ -14,6 +14,12 @@ public class HasAllUniqueChars {
         System.out.println(obj.hasAllUniqueCharsImproved("abcc"));
     }
 
+    /**
+     * no additional data structure. Assumes string is lowercase
+     *
+     * @param str
+     * @return
+     */
     public boolean hasAllUniqueCharsImproved(String str) {
         int checker = 0;
 
@@ -25,6 +31,7 @@ public class HasAllUniqueChars {
             }
 
             checker = checker | (1 << value);
+            
             System.out.println("checker (" + c + ")=" + checker);
         }
 
