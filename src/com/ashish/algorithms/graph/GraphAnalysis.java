@@ -3,12 +3,9 @@ package com.ashish.algorithms.graph;
 import java.util.LinkedList;
 
 public class GraphAnalysis {
-
     int[] data;
 
     public static void main(String[] args) {
-        System.out.println();
-
         /**
          * 0 -> 1
          * 0 -> 2
@@ -17,7 +14,7 @@ public class GraphAnalysis {
          * 4 -> 5
          * 0 -> 6
          */
-        Graph g = new Graph(7);
+        UndirectedGraph g = new UndirectedGraph(7);
         g.addEdge(0, 1);
         g.addEdge(0, 2);
         g.addEdge(2, 1);
@@ -44,17 +41,16 @@ public class GraphAnalysis {
      *
      * @param g
      */
-    public void analyze(Graph g) {
-
-        data = new int[g.vertices];
+    public void analyze(UndirectedGraph g) {
+        data = new int[g.numberOfVertices];
         int group = 0;
 
-        for (int i = 0; i < g.vertices; i++) {
-            LinkedList<Integer> list = g.adjucencyListArray[i];
+        for (int i = 0; i < g.numberOfVertices; i++) {
+            LinkedList<Integer> vertices = g.vertices[i];
 
             int currGroup = 0;
 
-            for (Integer vertex : list) {
+            for (Integer vertex : vertices) {
                 if (data[vertex] != 0) {
                     currGroup = data[vertex];
                     break;
@@ -72,41 +68,9 @@ public class GraphAnalysis {
                 data[i] = currGroup;
             }
 
-            for (Integer vertex : list) {
+            for (Integer vertex : vertices) {
                 data[vertex] = currGroup;
             }
         }
     }
-}
-
-class Graph {
-
-    int vertices;
-    LinkedList<Integer>[] adjucencyListArray;
-    int edges;
-
-    public Graph(int vertices) {
-        this.vertices = vertices;
-
-        adjucencyListArray = new LinkedList[vertices];
-
-        for (int i = 0; i < vertices; i++)
-            adjucencyListArray[i] = new LinkedList<>();
-    }
-
-    public void addEdge(int src, int dest) {
-        if (src < 0 || src >= vertices || dest < 0 || dest >= vertices) {
-            throw new IllegalArgumentException("invalid");
-        }
-
-        adjucencyListArray[src].addFirst(dest);
-        adjucencyListArray[dest].addFirst(src);
-
-        edges++;
-    }
-
-    public int getEdges() {
-        return edges;
-    }
-
 }
