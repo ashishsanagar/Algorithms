@@ -11,3 +11,4 @@ build/
 .build.gradle.swp
 .idea/
 *.iml
+src/learn/ashish/temp/*
