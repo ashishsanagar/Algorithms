@@ -6,8 +6,8 @@ import java.util.LinkedList;
  * @author Ashish Sanagar
  */
 public class DirectedGraph {
-    int numberOfVertices;
-    LinkedList<Integer>[] vertices;
+    public int numberOfVertices;
+    public LinkedList<Integer>[] vertices;
 
     public DirectedGraph(int numberOfVertices) {
         this.numberOfVertices = numberOfVertices;

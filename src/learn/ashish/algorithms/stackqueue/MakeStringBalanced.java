@@ -17,7 +17,7 @@ public class MakeStringBalanced {
      * balance("(((((")->""
      */
     public static void main(String[] args) {
-        String str = "()()()a(b(c((";
+        String str = "(()()()a(b(c((";
 
         String result = new MakeStringBalanced().balance(str);
 
@@ -36,14 +36,13 @@ public class MakeStringBalanced {
         Stack<Integer> stack1 = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
 
-
         for (int i = 0; i < str.length(); i++) {
             char nextChar = str.charAt(i);
 
             if (nextChar == '(') {
                 stack1.push(i);
             } else if (nextChar == ')') {
-                if (stack1.size() > 0) {
+                if (!stack1.isEmpty()) {
                     int fromStack = stack1.pop();
 
                     if (str.charAt(fromStack) != '(') {
@@ -54,7 +53,6 @@ public class MakeStringBalanced {
                     stack2.push(i);
                 }
             }
-
         }
 
         while (!stack1.isEmpty()) {
