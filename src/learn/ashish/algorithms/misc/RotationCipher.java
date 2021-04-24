@@ -3,7 +3,7 @@ package learn.ashish.algorithms.misc;
 public class RotationCipher {
 
     /**
-     * Rotate every alphanumeric character by a certain rotation factoe between 0 to N.
+     * Rotate every alphanumeric character by a certain rotation factor between 0 to N.
      * Rotating a character means replacing it with another character that is a certain number of
      * steps away in normal alphabetic or numerical order.
      *
