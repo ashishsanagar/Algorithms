@@ -1,4 +1,4 @@
-package learn.ashish.algorithms.Tree;
+package learn.ashish.algorithms.tree;
 
 /**
  * @author Ashish Sanagar

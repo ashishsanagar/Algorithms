@@ -1,4 +1,4 @@
-package learn.ashish.algorithms.Tree;
+package learn.ashish.algorithms.tree;
 
 /**
  * This object will be used by other tree related algorithms to store data

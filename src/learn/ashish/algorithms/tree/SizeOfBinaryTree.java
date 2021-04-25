@@ -1,9 +1,9 @@
-package learn.ashish.algorithms.Tree;
+package learn.ashish.algorithms.tree;
 
 /**
  * @author Ashish Sanagar
  */
-public class HeightOfBinaryTree {
+public class SizeOfBinaryTree {
 
     public static void main(String[] a) {
         BinaryTree tree = new BinaryTree();
@@ -16,15 +16,19 @@ public class HeightOfBinaryTree {
         tree.insertNode(root, 36);
         tree.insertNode(root, 5);
 
-        System.out.println("Height of tree: " + new HeightOfBinaryTree().height(root));
+        System.out.println("Size of tree 1: " + new SizeOfBinaryTree().size(root));
     }
 
-    public int height(TreeNode root) {
-        if (root == null) return 0;
+    public int size(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
 
-        int leftHeight = height(root.left);
-        int rightHeight = height(root.right);
+        int left = size(root.left);
+        int right = size(root.right);
 
-        return 1 + Math.max(leftHeight, rightHeight);
+        return 1 + left + right;
     }
+
+
 }

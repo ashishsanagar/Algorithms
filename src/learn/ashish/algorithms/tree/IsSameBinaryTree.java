@@ -1,4 +1,4 @@
-package learn.ashish.algorithms.Tree;
+package learn.ashish.algorithms.tree;
 
 /**
  * @author Ashish Sanagar
@@ -26,7 +26,7 @@ public class IsSameBinaryTree {
         tree.insertNode(root2, 5);
         //tree.insertNode(root2, 5);
 
-        System.out.println("is Same Tree: " + new IsSameBinaryTree().find(root, root2));
+        System.out.println("is Same tree: " + new IsSameBinaryTree().find(root, root2));
     }
 
     public boolean find(TreeNode root1, TreeNode root2) {
