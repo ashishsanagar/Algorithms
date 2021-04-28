@@ -17,29 +17,21 @@ public class BalancedParenthesisCheck {
         System.out.println(badCode + ": " + obj.isbalanced(badCode));
     }
 
-    public boolean isbalanced(String code) {
+    public boolean isbalanced(String s) {
+        if (s == null || s.isEmpty()) return true;
+
         Stack<Character> stack = new Stack<>();
 
-        for (int i = 0; i < code.length(); i++) {
-            char charValue = code.charAt(i);
+        for (Character c : s.toCharArray()) {
+            if (c == '[' || c == '{' || c == '(') stack.push(c);
 
-            if (charValue == '[' || charValue == '(' || charValue == '{') {
-                stack.push(new Character(charValue));
-            } else if (charValue == ']') {
-                if (stack.isEmpty() || stack.pop() != '[') {
-                    return false;
-                }
-            } else if (charValue == ')') {
-                if (stack.isEmpty() || stack.pop() != '(') {
-                    return false;
-                }
-            } else if (charValue == '}') {
-                if (stack.isEmpty() || stack.pop() != '{') {
-                    return false;
-                }
-            }
+            if ((c == ']' && (stack.isEmpty() || stack.pop() != '['))
+                    || (c == '}' && (stack.isEmpty() || stack.pop() != '{'))
+                    || (c == ')' && (stack.isEmpty() || stack.pop() != '(')))
+                return false;
 
         }
+
         return stack.isEmpty();
     }
 }
