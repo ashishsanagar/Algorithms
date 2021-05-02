@@ -18,11 +18,15 @@ public class IsBalancedBinaryTree {
         IsBalancedBinaryTree helper = new IsBalancedBinaryTree();
         System.out.println("is balanced binary tree: " + helper.verify(root));
 
-        root = new TreeNode(12);
-        tree.insertNode(root, 10);
-        tree.insertNode(root, 13);
-        tree.insertNode(root, 9);
-        tree.insertNode(root, 15);
+        //[1,2,3,4,5,6,null,8]
+        root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        root.left.left.left = new TreeNode(8);
+        
         System.out.println("is balanced binary tree: " + helper.verify(root));
     }
 
