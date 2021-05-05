@@ -16,11 +16,15 @@ public class CalendarEventConflicts {
         Event[] events = {new Event(1, 5), new Event(2, 4), new Event(6, 7), new Event(7, 8), new Event(4, 7)};
 
         System.out.println(new CalendarEventConflicts().hasConflicts(events, 2));
-
     }
 
+    /**
+     * get separate arrays for start and end times. sort both arrays asc
+     * if start of next meeting is is less than end time of previous meeting, there is conflict
+     */
     public boolean hasConflicts(Event[] events, int k) {
-        if (events == null || events.length <= k) return false;
+        if (events == null || events.length <= k)
+            return false;
 
         int[] starts = new int[events.length];
         int[] ends = new int[events.length];
@@ -35,9 +39,8 @@ public class CalendarEventConflicts {
 
         int conflicts = 0;
 
-        for (int i = 0; i < starts.length - 1; i++) {
+        for (int i = 0; i < starts.length - 1; i++)
             if (starts[i + 1] < ends[i]) conflicts++;
-        }
 
         return conflicts > k;
     }

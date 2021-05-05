@@ -10,7 +10,7 @@ public class MedianFromTwoSortedArrays {
      */
     public static void main(String[] args) {
         int[] x = {1, 3, 8};
-        int[] y = {2, 3, 7};
+        int[] y = {2, 3, 60};
         //1,3,4,6,7,8,9,23, 67, 78, 450, 500 = (8+9) /2 = 16
 
         System.out.println("Median Is: " + new MedianFromTwoSortedArrays().findMedian(x, y));

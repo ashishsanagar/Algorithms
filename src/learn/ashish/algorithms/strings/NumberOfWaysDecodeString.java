@@ -13,7 +13,31 @@ public class NumberOfWaysDecodeString {
      */
     public static void main(String[] args) {
         String encoded = "12";
-        System.out.println(new NumberOfWaysDecodeString().find(encoded));
+        System.out.println("recursive: " + new NumberOfWaysDecodeString().find(encoded));
+        System.out.println("DP: " + new NumberOfWaysDecodeString().dp(encoded));
+
+    }
+
+    public int dp(String encoded) {
+        if (encoded == null || encoded.length() == 0 || encoded.charAt(0) == '0')
+            return 0;
+
+        int dp[] = new int[encoded.length() + 1];
+        dp[0] = 1;
+        dp[1] = 1;
+
+        for (int i = 2; i < dp.length; i++) {
+            int oneDigit = Integer.valueOf(encoded.substring(i - 1, i));
+            int twoDigit = Integer.valueOf(encoded.substring(i - 2, i));
+
+            if (oneDigit > 0)
+                dp[i] += dp[i - 1];
+            if (twoDigit >= 10 && twoDigit <= 26)
+                dp[i] += dp[i - 2];
+        }
+
+
+        return dp[encoded.length()];
     }
 
     public int find(String encoded) {
@@ -28,12 +52,12 @@ public class NumberOfWaysDecodeString {
 
         if (memo[k] != null) return memo[k];
 
-        int s = encoded.length - k;
-        if (encoded[s] == '0') return 0;
+        int index = encoded.length - k;
+        if (encoded[index] == '0') return 0;
 
         int count = recursion(encoded, k - 1, memo);
 
-        if ((k >= 2) && Integer.valueOf(encoded[s] + "" + encoded[s + 1]) <= 26) {
+        if (k >= 2 && Integer.valueOf(encoded[index] + "" + encoded[index + 1]) <= 26) {
             count += recursion(encoded, k - 2, memo);
         }
 

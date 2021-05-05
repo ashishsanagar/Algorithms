@@ -23,37 +23,30 @@ public class LevelOrderTraversalLevelByLevelPrint {
         tree.insertNode(root, 15);
 
         new LevelOrderTraversalLevelByLevelPrint().traverse(root);
+
     }
 
     public void traverse(TreeNode root) {
         if (root == null) return;
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
 
-        // this placeholder helps in finding the level change
-        queue.add(null);
+        while (!q.isEmpty()) {
+            int size = q.size(); // size is equal to nodes at a level
 
-        while (true) {
-            TreeNode node = queue.poll();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = q.poll();
 
-            if (node == null) {
-                System.out.println(); // go to new line
-
-                if (queue.isEmpty()) break;
-
-                queue.add(null);
-            } else {
                 System.out.print(node.data + " ");
 
-                if (node.left != null) {
-                    queue.add(node.left);
-                }
-
-                if (node.right != null) {
-                    queue.add(node.right);
-                }
+                if (node.left != null)
+                    q.add(node.left);
+                if (node.right != null)
+                    q.add(node.right);
             }
+
+            System.out.println();
         }
     }
 }

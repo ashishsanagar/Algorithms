@@ -3,7 +3,7 @@ package learn.ashish.algorithms.array;
 /**
  * @author Ashish Sanagar
  */
-public class FindMaximumProfitInBuySellTxn {
+public class MaximumProfitInBuySellTxn {
 
     /**
      * find max profit if input array contains stock prices.
@@ -15,9 +15,26 @@ public class FindMaximumProfitInBuySellTxn {
     public static void main(String[] args) {
         int[] prices = {2, 1, 5, 2, 6, 5};
 
-        System.out.println("maxProfitSingleTxnV2=" + maxProfitSingleTxnV2(prices));
+        System.out.println("singlr txn profit:" + maxProfitSingleTxnV2(prices));
+        System.out.println("all txn profit: =" + maxProfitAllTxns(prices));
+        System.out.println("k transaction profit: " + maxProfitKTransactions(2, prices));
 
-        System.out.println("maxProfitMultipleTxns=" + maxProfitAllTxns(prices));
+    }
+
+    public static int maxProfitKTransactions(int k, int[] prices) {
+        if (k == 0 || prices.length < 2) return 0;
+
+        int[][] dp = new int[k + 1][prices.length];
+
+        for (int i = 1; i < dp.length; i++) {
+            int maxDiff = -prices[0];
+            for (int j = 1; j < dp[i].length; j++) {
+                dp[i][j] = Math.max(dp[i][j - 1], prices[j] + maxDiff);
+                maxDiff = Math.max(maxDiff, dp[i - 1][j] - prices[j]);
+            }
+        }
+
+        return dp[k][prices.length - 1];
     }
 
     /**

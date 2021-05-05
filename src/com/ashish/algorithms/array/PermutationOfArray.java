@@ -7,7 +7,7 @@ import java.util.List;
 public class PermutationOfArray {
 
     public static void main(String[] args) {
-        int[] a = {1, 3, 2};
+        int[] a = {3, 2, 1};
         List<int[]> result = new ArrayList<>();
 
         new PermutationOfArray().permutations(a, 0, result);

@@ -12,6 +12,10 @@ public class ArraysEqual {
         System.out.println(new ArraysEqual().check(a, b));
     }
 
+    /**
+     * Keep counts in HashTable of first array and decrement count for second array.
+     * If count is not 0 for all keys, arrays not equal
+     */
     boolean check(int[] a, int[] b) {
         if (a == null && b == null) return true;
         if (a == null || b == null) return false;
@@ -25,11 +29,9 @@ public class ArraysEqual {
         for (int ele : b)
             map.put(ele, map.getOrDefault(ele, 0) - 1);
 
-        for (int ele : map.keySet()) {
-            if (map.get(ele) != 0) {
+        for (int ele : map.values())
+            if (ele != 0)
                 return false;
-            }
-        }
 
         return true;
     }
