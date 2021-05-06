@@ -1,4 +1,4 @@
-package com.ashish.algorithms.array;
+package learn.ashish.algorithms.array;
 
 import java.util.HashMap;
 import java.util.Map;
