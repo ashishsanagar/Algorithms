@@ -31,8 +31,6 @@ public class NumberOfWaysDecodeString {
                 dp[i] += dp[i - 1];
             if (twoDigit >= 10 && twoDigit <= 26)
                 dp[i] += dp[i - 2];
-            else
-                dp[i] += 1;
         }
 
         return dp[encoded.length()];
