@@ -11,21 +11,15 @@ public class Knapsack {
 
     /**
      * choose weights <= capacity with maximum total value
-     *
-     * @param weights
-     * @param values
-     * @param capacity
-     * @return
      */
     private int solve(int[] weights, int[] values, int capacity) {
-        if (weights.length != values.length) throw new IllegalArgumentException("wrong input");
+        if (weights.length != values.length || capacity < 1)
+            return 0;
 
-        // 2d matrix to hold results
         int[][] dp = new int[values.length + 1][capacity + 1];
 
         for (int i = 1; i <= values.length; i++) {
             for (int j = 1; j <= capacity; j++) {
-
                 // capacity is in range 0 to "capacity" input. we start from 1, which means
                 // current available intermediate capacity minus weight, if its >0
                 // chose max of value without addition of this weight and value if we add this current weight

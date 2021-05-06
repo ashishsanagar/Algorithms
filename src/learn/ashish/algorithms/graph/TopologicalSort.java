@@ -12,7 +12,6 @@ public class TopologicalSort {
      * @param args
      */
     public static void main(String[] args) {
-
         DirectedGraph graph = new DirectedGraph(8);
         graph.addEdge(2, 0);
         graph.addEdge(2, 1);
@@ -33,14 +32,14 @@ public class TopologicalSort {
         Stack<Integer> stack = new Stack<>();
 
         for (int i = 0; i < graph.numberOfVertices; i++) {
-            if (visited[i]) continue;
+            if (visited[i])
+                continue;
 
             topSort(graph, i, visited, stack);
         }
 
-        while (!stack.isEmpty()) {
+        while (!stack.isEmpty())
             sorted.add(stack.pop());
-        }
 
         return sorted;
     }
@@ -49,7 +48,8 @@ public class TopologicalSort {
         visited[vertex] = true;
 
         for (int childVertex : graph.vertices[vertex]) {
-            if (visited[childVertex]) continue;
+            if (visited[childVertex])
+                continue;
 
             topSort(graph, childVertex, visited, stack);
         }

@@ -23,19 +23,15 @@ public class IsAnagram {
     public boolean isAnagram(String s1, String s2) {
         int[] letters = new int[256];
 
-        for (char c : s1.toCharArray()) {
+        for (char c : s1.toCharArray())
             letters[c]++;
-        }
 
-        for (char c : s2.toCharArray()) {
+        for (char c : s2.toCharArray())
             letters[c]--;
-        }
 
-        for (int count : letters) {
-            if (count != 0) {
+        for (int count : letters)
+            if (count != 0)
                 return false;
-            }
-        }
 
         return true;
     }
@@ -44,7 +40,6 @@ public class IsAnagram {
      * O(n2)
      */
     public boolean isAnagramInN2(String s1, String s2) {
-
         char[] firstArray = s1.toCharArray();
         char[] secondArray = s2.toCharArray();
 
@@ -58,17 +53,13 @@ public class IsAnagram {
             }
         }
 
-        for (int i : firstArray) {
-            if (i != 0) {
+        for (int i : firstArray)
+            if (i != 0)
                 return false;
-            }
-        }
 
-        for (int i : secondArray) {
-            if (i != 0) {
+        for (int i : secondArray)
+            if (i != 0)
                 return false;
-            }
-        }
 
         return true;
     }

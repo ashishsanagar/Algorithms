@@ -14,9 +14,8 @@ public class UndirectedGraph {
 
         vertices = new LinkedList[numberOfVertices];
 
-        for (int i = 0; i < numberOfVertices; i++) {
+        for (int i = 0; i < numberOfVertices; i++)
             vertices[i] = new LinkedList<>();
-        }
     }
 
     public static void main(String[] args) {
@@ -41,12 +40,12 @@ public class UndirectedGraph {
     public void printGraph() {
         for (int i = 0; i < numberOfVertices; i++) {
             System.out.print("Vertex: " + i);
-            for (Integer vertex : vertices[i]) {
+
+            for (Integer vertex : vertices[i])
                 System.out.print(" -> " + vertex);
-            }
+
 
             System.out.println();
         }
-
     }
 }

@@ -2,9 +2,6 @@ package learn.ashish.algorithms.array;
 
 public class WordSearchInGrid {
 
-    String word = "SEE";
-    ;
-
     /**
      * board = {
      * {'A', 'B', 'C', 'E'},
@@ -17,8 +14,6 @@ public class WordSearchInGrid {
      * <p>
      * The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally
      * or vertically neighboring. The same letter cell may not be used more than once.
-     *
-     * @param args
      */
     public static void main(String[] args) {
         char[][] board = {
@@ -31,6 +26,8 @@ public class WordSearchInGrid {
     }
 
     public boolean exist(char[][] board, String word) {
+        if (word == null || word.length() == 0)
+            return true;
 
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
@@ -45,14 +42,15 @@ public class WordSearchInGrid {
 
 
     public boolean dfs(char[][] board, String word, int i, int j, int count) {
-        if (count == word.length()) return true;
+        if (count == word.length())
+            return true;
 
-        if (i < 0 || i >= board.length || j < 0 || j >= board[i].length || board[i][j] != word.charAt(count)) {
+        if (i < 0 || i >= board.length || j < 0 || j >= board[i].length || board[i][j] != word.charAt(count))
             return false;
-        }
 
         char temp = board[i][j];
-        board[i][j] = ' ';
+        board[i][j] = ' '; // remove char for backtracking
+
         boolean found =
                 dfs(board, word, i, j - 1, count + 1)
                         || dfs(board, word, i, j + 1, count + 1)

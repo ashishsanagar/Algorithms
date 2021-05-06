@@ -12,15 +12,13 @@ public class LongestPalindromicSubStr {
 
         if (s == null || s.isEmpty() || s.length() == 1) return s;
 
-        for (int i = 1; i <= s.length(); i++) {
+        for (int i = 0; i <= s.length(); i++) {
             for (int j = 0; j < i; j++) {
                 String subStr = s.substring(j, i);
 
-                if (subStr.equals(new StringBuilder(subStr).reverse().toString())) {
-                    if (longestPalindrome.length() < subStr.length()) {
+                if (subStr.equals(new StringBuilder(subStr).reverse().toString()))
+                    if (longestPalindrome.length() < subStr.length())
                         longestPalindrome = subStr;
-                    }
-                }
             }
         }
 

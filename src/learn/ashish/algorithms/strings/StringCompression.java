@@ -35,9 +35,8 @@ public class StringCompression {
 
             if (j - i > 1) {
                 String num = (j - i) + "";
-                for (char c : num.toCharArray()) {
+                for (char c : num.toCharArray())
                     chars[index++] = c;
-                }
             }
 
             i = j;

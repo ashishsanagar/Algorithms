@@ -17,21 +17,16 @@ public class OneMissingNumberFromSequence {
 
     /**
      * using XOR
-     *
-     * @param array
-     * @return
      */
     public int findOneMissing(int[] array) {
         int sumSequence = 0;
         int sumArrayElements = 0;
 
-        for (int i = 1; i <= array.length + 1; i++) {
-            sumSequence ^= +i;
-        }
+        for (int i = 1; i <= array.length + 1; i++)
+            sumSequence ^= i;
 
-        for (int i = 0; i < array.length; i++) {
-            sumArrayElements ^= +array[i];
-        }
+        for (int i = 0; i < array.length; i++)
+            sumArrayElements ^= array[i];
 
         return sumSequence ^ sumArrayElements;
     }

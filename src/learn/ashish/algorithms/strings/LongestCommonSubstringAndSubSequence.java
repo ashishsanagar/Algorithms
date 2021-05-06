@@ -8,22 +8,19 @@ public class LongestCommonSubstringAndSubSequence {
      * x: ashish
      * y: thisstringhas
      * answer: 4 (hish)
-     *
-     * @param args
      */
     public static void main(String[] args) {
         String x = "ashish";
         String y = "thisstringhas";
 
         System.out.println(new LongestCommonSubstringAndSubSequence().find(x, y));
-
     }
 
     public int find(String x, String y) {
         int max = 0;
 
-        if (x == null || x.length() == 0) return 0;
-        if (y == null || y.length() == 0) return 0;
+        if (x == null || x.length() == 0 || y == null || y.length() == 0)
+            return 0;
 
         int[][] dp = new int[x.length() + 1][y.length() + 1];
 

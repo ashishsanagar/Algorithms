@@ -46,7 +46,10 @@ public class SwapNodesInPairs {
             }
 
             pos++;
-            if (pos == 2) pos = 0;
+
+            if (pos == 2)
+                pos = 0;
+
             head = head.next;
         }
 

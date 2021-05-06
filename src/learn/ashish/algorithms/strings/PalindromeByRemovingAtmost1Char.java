@@ -7,8 +7,6 @@ public class PalindromeByRemovingAtmost1Char {
      * "abc" -> true
      * "abca" -> true
      * "abcda" -> false
-     *
-     * @param args
      */
     public static void main(String[] args) {
         String input = "tcaac";
@@ -23,9 +21,9 @@ public class PalindromeByRemovingAtmost1Char {
         int j = str.length() - 1;
 
         while (i < j) {
-            if (str.charAt(i) != str.charAt(j)) {
+            if (str.charAt(i) != str.charAt(j))
                 return isPalindrome(str, i, j - 1) || isPalindrome(str, i + 1, j);
-            }
+            
             i++;
             j--;
         }
@@ -35,10 +33,12 @@ public class PalindromeByRemovingAtmost1Char {
     }
 
     private boolean isPalindrome(String str, int i, int j) {
-        if (str == null || str.isEmpty() || str.length() == 1) return true;
+        if (str == null || str.isEmpty() || str.length() == 1)
+            return true;
 
         while (i < j) {
-            if (str.charAt(i++) != str.charAt(j--)) return false;
+            if (str.charAt(i++) != str.charAt(j--))
+                return false;
         }
 
         return true;

@@ -1,8 +1,6 @@
 package learn.ashish.algorithms.misc;
 
 public class BillionUsersGrowth {
-
-
     int billion = 1000000000;
 
     /**
@@ -19,32 +17,30 @@ public class BillionUsersGrowth {
     private int calculateUsers(float[] rates, int days) {
         int users = 0;
 
-        for (float rate : rates) {
+        for (float rate : rates)
             users += Math.pow(rate, days);
-        }
 
-        return (int) users;
+        return users;
     }
 
     private int binarySearch(int low, int high, float[] rates) {
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
 
             int users = calculateUsers(rates, mid);
 
-            if (users < billion) {
+            if (users < billion)
                 low = mid + 1;
-            } else if (users > billion) {
+            else if (users > billion)
                 high = mid - 1;
-            } else {
+            else
                 break;
-            }
         }
 
         return low;
     }
 
-    int getBillionUsersDay(float[] growthRates) {
+    public int getBillionUsersDay(float[] growthRates) {
         return binarySearch(1, Integer.MAX_VALUE, growthRates);
     }
 

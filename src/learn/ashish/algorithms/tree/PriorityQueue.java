@@ -36,16 +36,14 @@ public class PriorityQueue {
         q.push(6);
         q.push(23);
 
-        for (int ele : heap) {
+        for (int ele : heap)
             System.out.print(ele + " ");
-        }
 
         q.pop();
         System.out.println();
 
-        for (int ele : heap) {
+        for (int ele : heap)
             System.out.print(ele + " ");
-        }
     }
 
     private void swap(int i, int j) {
@@ -56,12 +54,10 @@ public class PriorityQueue {
 
     /**
      * Element is added at the end of heap. Check with parent if its smaller than child then swap.
-     *
-     * @param ele
-     * @throws IllegalAccessException
      */
     public void push(int ele) throws IllegalArgumentException {
-        if (currSize == heap.length) throw new IllegalArgumentException();
+        if (currSize == heap.length)
+            throw new IllegalArgumentException();
 
         int pos = currSize;
 
@@ -72,9 +68,8 @@ public class PriorityQueue {
         while (pos > 0) {
             int parent = (pos + 1) / 2 - 1;
 
-            if (heap[parent] >= heap[pos]) {
+            if (heap[parent] >= heap[pos])
                 break;
-            }
 
             swap(parent, pos);
             pos = parent;
@@ -103,16 +98,14 @@ public class PriorityQueue {
                 if (heap[rightChild] > heap[pos]) {
                     swap(rightChild, pos);
                     pos = rightChild;
-                } else {
+                } else
                     break;
-                }
             } else {
                 if (heap[leftChild] > heap[pos]) {
                     swap(leftChild, pos);
                     pos = leftChild;
-                } else {
+                } else
                     break;
-                }
             }
         }
 

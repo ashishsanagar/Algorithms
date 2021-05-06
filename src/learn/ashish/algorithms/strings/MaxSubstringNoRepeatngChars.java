@@ -22,9 +22,6 @@ public class MaxSubstringNoRepeatngChars {
 
     /**
      * sliding window pattern
-     *
-     * @param input
-     * @return
      */
     public int maxLength(String input) {
         int i = 0;

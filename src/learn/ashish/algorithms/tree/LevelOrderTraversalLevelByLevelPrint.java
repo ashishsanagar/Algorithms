@@ -23,7 +23,6 @@ public class LevelOrderTraversalLevelByLevelPrint {
         tree.insertNode(root, 15);
 
         new LevelOrderTraversalLevelByLevelPrint().traverse(root);
-
     }
 
     public void traverse(TreeNode root) {

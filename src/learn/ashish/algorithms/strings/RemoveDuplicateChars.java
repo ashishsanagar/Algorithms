@@ -16,20 +16,21 @@ public class RemoveDuplicateChars {
     }
 
     public String remove(String str) {
-        if (str == null || str.length() < 2) return str;
+        if (str == null || str.length() < 2)
+            return str;
 
         boolean[] visited = new boolean[256];
+        StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < str.length(); i++) {
-            if (visited[str.charAt(i)] == false) {
-                visited[str.charAt(i)] = true;
-            } else {
-                str = str.substring(0, i) + str.substring(i + 1);
-                i--;
+        for (char c : str.toCharArray()) {
+            if (visited[c])
+                continue;
+            else {
+                visited[c] = true;
+                sb.append(c);
             }
         }
 
-        return str;
+        return sb.toString();
     }
-
 }

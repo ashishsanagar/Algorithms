@@ -28,12 +28,11 @@ public class kLargestElementsFromStream {
 
     /**
      * Priority Queue
-     *
-     * @param list
-     * @param k
      */
     public void find(List<Integer> list, int k) {
-        if (list == null) return;
+        if (list == null)
+            return;
+
         if (list.size() < k) {
             list.stream().forEach(System.out::println);
             return;

@@ -18,23 +18,19 @@ public class MoveZerosToEnd {
     public void approachOne(int[] a) {
         for (int i = 0; i < a.length; i++) {
             if (a[i] == 0) {
-                for (int j = i + 1; j < a.length; j++) {
+                for (int j = i + 1; j < a.length; j++)
                     a[j - 1] = a[j];
-                }
 
                 a[a.length - 1] = 0;
             }
         }
 
-        for (int ele : a) {
+        for (int ele : a)
             System.out.print(ele + " ");
-        }
     }
 
     /**
      * O(N)
-     *
-     * @param a
      */
     public void approachTwo(int[] a) {
         int i = -1;
@@ -52,8 +48,7 @@ public class MoveZerosToEnd {
             j++;
         }
 
-        for (int ele : a) {
+        for (int ele : a)
             System.out.print(ele + " ");
-        }
     }
 }

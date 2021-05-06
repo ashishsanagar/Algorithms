@@ -10,7 +10,8 @@ public class RotationCipher {
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println(new RotationCipher().rotationalCipher("Ashish-123", 1));
+        for (int i = 1; i < 27; i++)
+            System.out.println(new RotationCipher().rotationalCipher("Ashish-123", i));
     }
 
     /**
@@ -25,15 +26,14 @@ public class RotationCipher {
         String result = "";
 
         for (Character c : input.toCharArray()) {
-            if (Character.isLowerCase(c)) {
+            if (Character.isLowerCase(c))
                 result += Character.toString((char) (((c - 'a' + rotationFactor) % 26) + 'a'));
-            } else if (Character.isUpperCase(c)) {
+            else if (Character.isUpperCase(c))
                 result += Character.toString((char) (((c - 'A' + rotationFactor) % 26) + 'A'));
-            } else if (Character.isDigit(c)) {
+            else if (Character.isDigit(c))
                 result += Character.toString((char) (((c - '0' + rotationFactor) % 10) + '0'));
-            } else {
+            else
                 result += (char) c;
-            }
         }
 
         return result;

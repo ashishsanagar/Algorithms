@@ -17,10 +17,8 @@ public class MedianFromTwoSortedArrays {
     }
 
     public double findMedian(int[] firstArray, int[] secondArray) {
-
-        if (firstArray.length > secondArray.length) {
+        if (firstArray.length > secondArray.length)
             findMedian(secondArray, firstArray);
-        }
 
         int firstArrayLength = firstArray.length;
         int secondArrayLength = secondArray.length;
@@ -29,7 +27,7 @@ public class MedianFromTwoSortedArrays {
         int high = firstArrayLength - 1;
 
         while (low <= high) {
-            int partitionIndexX = low + high / 2;
+            int partitionIndexX = low + (high - low) / 2;
             int partitionIndexY = (firstArrayLength + secondArrayLength + 1) / 2 - partitionIndexX;
 
             int maxLeftX = (partitionIndexX == 0) ? Integer.MIN_VALUE : firstArray[partitionIndexX - 1];
@@ -42,17 +40,14 @@ public class MedianFromTwoSortedArrays {
             System.out.println("maxLeftX: " + maxLeftX + " , minRightX:" + minRightX + " | maxLeftY:" + maxLeftY + " , minRightY:" + minRightY);
 
             if (maxLeftX <= minRightY && maxLeftY <= minRightX) {
-                if ((firstArrayLength + secondArrayLength) % 2 == 0) {
+                if ((firstArrayLength + secondArrayLength) % 2 == 0)
                     return ((double) (Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY)) / 2);
-                } else {
+                else
                     return (double) (Math.max(maxLeftX, maxLeftY));
-                }
-            } else if (maxLeftX > minRightY) {
+            } else if (maxLeftX > minRightY)
                 high = partitionIndexX + 1;
-
-            } else {
+            else
                 low = partitionIndexX - 1;
-            }
         }
 
         return -1;

@@ -22,19 +22,18 @@ public class ChangePossible {
     }
 
     public boolean recurse(int money, int[] coins, int currentIndex) {
-        if (money == 0) return true;
+        if (money == 0)
+            return true;
 
-        for (int i = currentIndex; i < coins.length; i++) {
-            if (money - coins[i] >= 0 && recurse(money - coins[i], coins, i)) {
+        for (int i = currentIndex; i < coins.length; i++)
+            if (money - coins[i] >= 0 && recurse(money - coins[i], coins, i))
                 return true;
-            }
-        }
 
         return false;
     }
 
-    public boolean find(int[] denominations, int v) {
-        boolean dp[][] = new boolean[denominations.length + 1][v + 1];
+    public boolean find(int[] denominations, int money) {
+        boolean dp[][] = new boolean[denominations.length + 1][money + 1];
 
         dp[0][0] = true;
 
@@ -47,6 +46,6 @@ public class ChangePossible {
             }
         }
 
-        return dp[denominations.length][v];
+        return dp[denominations.length][money];
     }
 }

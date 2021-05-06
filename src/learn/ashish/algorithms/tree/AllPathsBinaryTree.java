@@ -27,7 +27,8 @@ public class AllPathsBinaryTree {
     }
 
     private void recurse(TreeNode root, List<String> result, String curr) {
-        if (root == null) return;
+        if (root == null)
+            return;
 
         if (root.left == null && root.right == null) {
             curr += root.data;

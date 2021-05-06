@@ -23,9 +23,8 @@ public class KClosestElementsFromTarget {
 
         List<Integer> result = helper.findClosestKElements(a, target, k);
 
-        for (Integer val : result) {
+        for (Integer val : result)
             System.out.print(val + " ");
-        }
     }
 
     /**
@@ -36,9 +35,8 @@ public class KClosestElementsFromTarget {
      * @return
      */
     private static int findClosestIndex(int[] a, int target) {
-        if (a == null || a.length == 0) {
+        if (a == null || a.length == 0)
             throw new IllegalArgumentException("Invalid input");
-        }
 
         int min = Math.abs(target - a[0]);
 
@@ -46,48 +44,43 @@ public class KClosestElementsFromTarget {
 
         for (int i = 1; i < a.length; i++) {
             int diff = Math.abs(target - a[i]);
+
             if (diff < min) {
                 min = diff;
                 closestIndex = i;
             }
         }
 
-        // System.out.println("Closest Index = " + closestIndex + " | closestVal=" + a[closestIndex]);
-
         return closestIndex;
     }
 
     public List<Integer> findClosestKElements(int[] a, int target, int k) {
-        if (k > a.length)
-            throw new IllegalArgumentException("Invalid Input");
-
         List<Integer> result = new ArrayList<>();
 
+        if (k > a.length || k == 0)
+            return result;
+
         int index = findClosestIndex(a, target);
-        int i = index > 0 ? index - 1 : index;
-        int j = index < a.length - 1 ? index + 1 : index;
 
         result.add(a[index]);
+
+        int i = index > 0 ? index - 1 : index;
+        int j = index < a.length - 1 ? index + 1 : index;
 
         while (result.size() < k) {
             int iSide = Integer.MAX_VALUE;
             int jSide = Integer.MAX_VALUE;
 
-            if (i >= 0) {
+            if (i >= 0)
                 iSide = Math.abs(target - a[i]);
-            }
-            if (j <= a.length) {
+
+            if (j <= a.length)
                 jSide = Math.abs(target - a[j]);
-            }
 
-            if (iSide < jSide) {
-                result.add(a[i]);
-                i--;
-
-            } else {
-                result.add(a[j]);
-                j++;
-            }
+            if (iSide < jSide)
+                result.add(a[i--]);
+            else
+                result.add(a[j++]);
         }
 
         return result;

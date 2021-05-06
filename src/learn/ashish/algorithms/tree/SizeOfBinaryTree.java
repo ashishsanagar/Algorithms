@@ -20,15 +20,12 @@ public class SizeOfBinaryTree {
     }
 
     public int size(TreeNode root) {
-        if (root == null) {
+        if (root == null)
             return 0;
-        }
 
         int left = size(root.left);
         int right = size(root.right);
 
         return 1 + left + right;
     }
-
-
 }

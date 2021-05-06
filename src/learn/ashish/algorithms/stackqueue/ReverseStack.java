@@ -35,7 +35,8 @@ public class ReverseStack {
     }
 
     public Stack<Integer> reverseStack(Stack<Integer> stack) {
-        if (stack.isEmpty()) return stack;
+        if (stack.isEmpty())
+            return stack;
 
         int temp = stack.pop();
         System.out.println("in reverseStack: temp=" + temp);

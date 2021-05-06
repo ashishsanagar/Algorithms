@@ -40,7 +40,7 @@ public class FindNthLastElement {
         }
 
         // follower starts from head node and current was ahead by n nodes.
-        // once, curr reaches end, folloer is pointing at nth last
+        // once, curr reaches end, follower is pointing at nth last
         while (curr != null) {
             curr = curr.next;
             follower = follower.next;

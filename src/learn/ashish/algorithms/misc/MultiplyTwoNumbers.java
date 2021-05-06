@@ -13,15 +13,13 @@ public class MultiplyTwoNumbers {
     }
 
     public int multiply(int x, int y) {
-        if (x < y) {
+        if (x < y)
             return multiply(y, x);
-        }
 
         int sum = 0;
 
-        for (int i = 0; i < y; i++) {
+        for (int i = 0; i < y; i++)
             sum += x;
-        }
 
         return sum;
     }

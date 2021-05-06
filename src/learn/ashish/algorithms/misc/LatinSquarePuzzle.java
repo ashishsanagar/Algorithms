@@ -14,9 +14,8 @@ class LatinSquarePuzzle {
         int[][] solution = new LatinSquarePuzzle().buildPuzzle(4);
 
         for (int i = 0; i < solution.length - 1; i++) {
-            for (int j = 0; j < solution[i].length - 1; j++) {
+            for (int j = 0; j < solution[i].length - 1; j++)
                 System.out.print(solution[i][j] + " ");
-            }
 
             System.out.println();
         }
@@ -27,17 +26,14 @@ class LatinSquarePuzzle {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-
                 array[i][j] = ((i + 1) + j) % n;
 
-                if (array[i][j] == 0) {
+                if (array[i][j] == 0)
                     array[i][j] = n;
-                }
             }
         }
 
         return array;
     }
-
 }
 

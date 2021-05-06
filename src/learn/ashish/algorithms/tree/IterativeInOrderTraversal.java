@@ -34,9 +34,8 @@ public class IterativeInOrderTraversal {
                 stack.push(root);
                 root = root.left;
             } else {
-                if (stack.isEmpty()) {
+                if (stack.isEmpty())
                     break;
-                }
 
                 root = stack.pop();
 

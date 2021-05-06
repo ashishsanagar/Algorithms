@@ -22,11 +22,11 @@ public class AddOneRow {
         root.left.right = new TreeNode(23);
 
         new AddOneRow().addOneRow(root, 10, 2);
-
     }
 
     public TreeNode addOneRow(TreeNode root, int val, int depth) {
-        if (root == null) return root;
+        if (root == null)
+            return root;
 
         if (depth == 1) {
             TreeNode curr = new TreeNode(val);
@@ -43,7 +43,7 @@ public class AddOneRow {
 
             root.left = left;
             root.right = right;
-            
+
             return root;
         }
 

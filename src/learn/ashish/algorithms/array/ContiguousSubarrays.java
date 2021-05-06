@@ -29,10 +29,10 @@ public class ContiguousSubarrays {
         int[] result = new int[arr.length];
 
         for (int i = 0; i < arr.length; i++) {
-            int count = 1;
-
+            int count = 1; // include ith element to count as thats minimum subarray
             int k = i;
 
+            // search elements on left side of index i
             while (k >= 0) {
                 k = k - 1;
 
@@ -43,8 +43,10 @@ public class ContiguousSubarrays {
             }
 
             k = i;
+            // search elements on right side of index i
             while (k < arr.length) {
                 k = k + 1;
+
                 if (k < arr.length && arr[i] > arr[k])
                     count++;
                 else
@@ -52,7 +54,6 @@ public class ContiguousSubarrays {
             }
 
             result[i] = count;
-
         }
 
         return result;

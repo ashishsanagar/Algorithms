@@ -18,12 +18,14 @@ public class BalancedParenthesisCheck {
     }
 
     public boolean isbalanced(String s) {
-        if (s == null || s.isEmpty()) return true;
+        if (s == null || s.isEmpty())
+            return true;
 
         Stack<Character> stack = new Stack<>();
 
         for (Character c : s.toCharArray()) {
-            if (c == '[' || c == '{' || c == '(') stack.push(c);
+            if (c == '[' || c == '{' || c == '(')
+                stack.push(c);
 
             if ((c == ']' && (stack.isEmpty() || stack.pop() != '['))
                     || (c == '}' && (stack.isEmpty() || stack.pop() != '{'))

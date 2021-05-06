@@ -34,9 +34,8 @@ public class NumberToString {
                 num = num % 10;
             }
 
-            if (num > 0) {
+            if (num > 0)
                 oneStr = ones[(num % 10) - 1];
-            }
         } else
             throw new IllegalArgumentException("Range no suported");
 

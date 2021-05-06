@@ -14,9 +14,8 @@ public class SortStack {
 
         Stack<Integer> sorted = new SortStack().sort(s1);
 
-        while (!sorted.isEmpty()) {
+        while (!sorted.isEmpty())
             System.out.print(sorted.pop() + " ");
-        }
     }
 
     private static Stack<Integer> sort(Stack<Integer> unsorted) {
@@ -25,9 +24,8 @@ public class SortStack {
         while (!unsorted.isEmpty()) {
             int temp = unsorted.pop();
 
-            while (!sorted.isEmpty() && temp > sorted.peek()) {
+            while (!sorted.isEmpty() && temp > sorted.peek())
                 unsorted.push(sorted.pop());
-            }
 
             sorted.push(temp);
         }

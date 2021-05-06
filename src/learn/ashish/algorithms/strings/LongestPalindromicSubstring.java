@@ -8,15 +8,12 @@ public class LongestPalindromicSubstring {
     /**
      * Missing few usecases with even number..
      * .. example "tattarrattat", abba
-     *
-     * @param x
-     * @return
      */
     public String find(String x) {
         int startIndex = 0;
         int endIndex = 0;
 
-        for (int i = 0; i < toString().length(); i++) {
+        for (int i = 0; i < x.length(); i++) {
             int len1 = expandMiddle(x, i, i);
             int len2 = expandMiddle(x, i, i + 1);
 
@@ -32,7 +29,8 @@ public class LongestPalindromicSubstring {
     }
 
     public int expandMiddle(String s, int start, int end) {
-        if (s == null || end < start) return 0;
+        if (s == null || end < start)
+            return 0;
 
         while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
             start--;

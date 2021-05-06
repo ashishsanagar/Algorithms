@@ -31,9 +31,9 @@ public class AddStrings {
             carry = sum / 10;
         }
 
-        if (carry == 1) {
+        if (carry == 1)
             result.insert(0, "1");
-        }
+
         return result.toString();
     }
 }

@@ -13,9 +13,9 @@ public class OneNumberRepeatedOddTimes {
 
     public int find(int[] a) {
         int odd = 0;
-        for (int ele : a) {
+        
+        for (int ele : a)
             odd = odd ^ ele;
-        }
 
         return odd;
     }

@@ -6,11 +6,9 @@ package learn.ashish.algorithms.array;
 public class MaxSubArray {
 
     public static void main(String[] args) {
-
         int[] array = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
 
-        int max = new MaxSubArray().find(array);
-        System.out.println(max);
+        System.out.println(new MaxSubArray().find(array));
     }
 
     public int find(int[] array) {

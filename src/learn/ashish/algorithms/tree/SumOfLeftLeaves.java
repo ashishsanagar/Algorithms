@@ -12,19 +12,22 @@ public class SumOfLeftLeaves {
 
         root.right.left = new TreeNode(5);
 
-        System.out.println(new SumOfLeftLeaves().find(root, false));
+        int[] sum = new int[1];
+        new SumOfLeftLeaves().find(root, false, sum);
+        System.out.println(sum[0]);
     }
 
-    public int find(TreeNode root, boolean left) {
-        if (root == null) return 0;
+    public void find(TreeNode root, boolean left, int[] sum) {
+        if (root == null)
+            return;
 
         if (root.left == null && root.right == null) {
             if (left)
-                return root.data;
-            return 0;
+                sum[0] += root.data;
+            return;
         }
 
-        return find(root.left, true) +
-                find(root.right, false);
+        find(root.left, true, sum);
+        find(root.right, false, sum);
     }
 }

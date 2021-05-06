@@ -38,18 +38,15 @@ public class IterativePostOrderTraversal {
 
             stack2.add(node);
 
-            if (node.left != null) {
+            if (node.left != null)
                 stack1.push(node.left);
-            }
 
-            if (node.right != null) {
+            if (node.right != null)
                 stack1.push(node.right);
-            }
         }
 
-        while (!stack2.isEmpty()) {
+        while (!stack2.isEmpty())
             System.out.print(stack2.pop().data + " ");
-        }
     }
 
 }

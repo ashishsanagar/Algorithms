@@ -8,9 +8,8 @@ public class RotateMatrixClockwise90 {
         long[][] rotated = new RotateMatrixClockwise90().solution(input);
 
         for (int i = 0; i < rotated.length; i++) {
-            for (int j = 0; j < rotated[0].length; j++) {
+            for (int j = 0; j < rotated[0].length; j++)
                 System.out.print(rotated[i][j] + "  ");
-            }
 
             System.out.println();
         }

@@ -16,24 +16,29 @@ public class TwoSumArrayReturnIndices {
 
         int[] result = new TwoSumArrayReturnIndices().twoSum(array, targetSum);
 
-        if (result != null && result.length > 1) {
+        if (result != null && result.length > 1)
             System.out.println("indices: " + result[0] + " " + result[1]);
-        }
     }
 
     public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+
+        if (nums == null || nums.length < 2)
+            return result;
+
         HashMap map = new HashMap();
 
         for (int i = 0; i < nums.length; i++) {
-            if (map.get(nums[i]) != null) {
-                int[] result = new int[2];
+            if (map.containsKey(nums[i])) {
                 result[0] = (Integer) map.get(nums[i]);
                 result[1] = i;
-                return result;
+
+                break;
             }
+
             map.put(target - nums[i], i);
         }
 
-        return null;
+        return result;
     }
 }

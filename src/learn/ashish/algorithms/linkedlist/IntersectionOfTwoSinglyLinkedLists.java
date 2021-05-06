@@ -32,7 +32,9 @@ public class IntersectionOfTwoSinglyLinkedLists {
     }
 
     public Node getIntersectionNode(Node headA, Node headB) {
-        if (headA == null || headB == null) return null;
+        if (headA == null || headB == null)
+            return null;
+
         Set<Node> set = new HashSet<>();
 
         while (headA != null) {
@@ -41,9 +43,9 @@ public class IntersectionOfTwoSinglyLinkedLists {
         }
 
         while (headB != null) {
-            if (set.contains(headB)) {
+            if (set.contains(headB))
                 return headB;
-            } else
+            else
                 headB = headB.next;
         }
 

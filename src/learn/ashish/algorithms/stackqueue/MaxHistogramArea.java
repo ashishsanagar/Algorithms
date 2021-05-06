@@ -1,4 +1,4 @@
-package learn.ashish.algorithms.array;
+package learn.ashish.algorithms.stackqueue;
 
 import java.util.Stack;
 
@@ -23,17 +23,14 @@ public class MaxHistogramArea {
 
     private static int getMaxArea(Stack<Integer> stack, int[] input, int i, int maxArea) {
         int top = stack.pop();
-        int area = 0;
+        int area;
 
-        if (stack.isEmpty()) {
+        if (stack.isEmpty())
             area = input[top] * i;
-        } else {
+        else
             area = input[top] * (i - stack.peek() - 1);
-        }
 
-        if (maxArea < area) {
-            maxArea = area;
-        }
+        maxArea = Math.max(maxArea, area);
 
         return maxArea;
     }
@@ -41,21 +38,19 @@ public class MaxHistogramArea {
     public int findMaxHistogramArea(int[] input) {
         Stack<Integer> stack = new Stack<>();
         int maxArea = -1;
-        int area = 0;
 
         int i = 0;
 
         while (i < input.length) {
-            if (stack.isEmpty() || input[stack.peek()] <= input[i]) {
+            if (stack.isEmpty() || input[stack.peek()] <= input[i])
                 stack.push(i++);
-            } else {
+            else
                 maxArea = getMaxArea(stack, input, i, maxArea);
-            }
         }
 
-        while (stack.isEmpty() == false) {
+        while (stack.isEmpty() == false)
             maxArea = getMaxArea(stack, input, i, maxArea);
-        }
+
         return maxArea;
     }
 }

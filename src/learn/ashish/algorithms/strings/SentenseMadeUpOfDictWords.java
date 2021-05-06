@@ -22,7 +22,6 @@ public class SentenseMadeUpOfDictWords {
     public static void main(String[] args) {
         System.out.println(new SentenseMadeUpOfDictWords().isMadeUpOf("dodogmatic"));
         System.out.println(new SentenseMadeUpOfDictWords().findImproved("dodogmatic"));
-
     }
 
     public boolean findImproved(String phrase) {
@@ -39,9 +38,6 @@ public class SentenseMadeUpOfDictWords {
             }
         }
 
-//        for (boolean b : result) {
-//            System.out.print(b + " ");
-//        }
         return result[phrase.length()];
     }
 

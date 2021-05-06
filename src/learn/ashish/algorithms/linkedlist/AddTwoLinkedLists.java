@@ -53,9 +53,9 @@ public class AddTwoLinkedLists {
             if (q != null) q = q.next;
         }
 
-        if (carry > 0) {
+        if (carry > 0)
             curr.next = new Node(carry);
-        }
+
         return dummy.next;
     }
 }

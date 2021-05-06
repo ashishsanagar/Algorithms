@@ -1,4 +1,4 @@
-package learn.ashish.algorithms.misc;
+package learn.ashish.algorithms.strings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,18 +22,19 @@ public class GenerateParenthesis {
         return output;
     }
 
-    void generate(List<String> output, String str, int open, int close) {
-        if (open > close) return;
+    void generate(List<String> result, String curr, int open, int close) {
+        if (open > close)
+            return;
 
         if (open == 0 && close == 0) {
-            output.add(str);
+            result.add(curr);
             return;
         }
 
         if (open >= 0)
-            generate(output, str + "(", open - 1, close);
+            generate(result, curr + "(", open - 1, close);
 
         if (close >= 0)
-            generate(output, str + ")", open, close - 1);
+            generate(result, curr + ")", open, close - 1);
     }
 }

@@ -7,8 +7,6 @@ public class HammingDistance {
      * <p>
      * x = 1 (bits: 0 0 0 1), y = 4 (0 1 0 0)
      * (1 ^ 0) + (0 ^ 0) + (0 ^ 1) + (0 ^ 0) = 2
-     *
-     * @param args
      */
     public static void main(String[] args) {
         int x = 1;

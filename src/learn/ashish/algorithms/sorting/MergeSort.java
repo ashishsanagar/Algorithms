@@ -14,9 +14,8 @@ public class MergeSort {
 
         new MergeSort().sort(array);
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++)
             System.out.print(array[i] + ", ");
-        }
     }
 
     private static void merge(int[] array, int[] arrayLeft, int[] arrayRight) {
@@ -25,45 +24,32 @@ public class MergeSort {
         int k = 0;
 
         while (i < arrayLeft.length && j < arrayRight.length) {
-            if (arrayLeft[i] < arrayRight[j]) {
-                array[k] = arrayLeft[i];
-                i++;
-            } else {
-                array[k] = arrayRight[j];
-                j++;
-            }
-            k++;
+            if (arrayLeft[i] < arrayRight[j])
+                array[k++] = arrayLeft[i++];
+            else
+                array[k++] = arrayRight[j++];
         }
 
-        while (i < arrayLeft.length) {
-            array[k] = arrayLeft[i];
-            k++;
-            i++;
-        }
+        while (i < arrayLeft.length)
+            array[k++] = arrayLeft[i++];
 
-        while (j < arrayLeft.length) {
-            array[k] = arrayRight[j];
-            k++;
-            j++;
-        }
+        while (j < arrayLeft.length)
+            array[k++] = arrayRight[j++];
     }
 
     public void sort(int[] array) {
-        if (array == null || array.length < 2) {
+        if (array == null || array.length < 2)
             return;
-        }
 
         int mid = array.length / 2;
         int[] leftArray = new int[mid];
         int[] rightArray = new int[array.length - mid];
 
-        for (int i = 0; i < mid; i++) {
+        for (int i = 0; i < mid; i++)
             leftArray[i] = array[i];
-        }
 
-        for (int i = mid; i < array.length; i++) {
+        for (int i = mid; i < array.length; i++)
             rightArray[i - mid] = array[i];
-        }
 
         sort(leftArray);
         sort(rightArray);

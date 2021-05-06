@@ -46,7 +46,8 @@ public class StartOfTheLoop {
      * @return
      */
     public Node findStartOfTheLoop(Node head) {
-        if (head == null) return null;
+        if (head == null)
+            return null;
 
         Node slow = head;
         Node fast = head;
@@ -55,9 +56,8 @@ public class StartOfTheLoop {
             slow = slow.next;
             fast = fast.next.next;
 
-            if (slow == fast) {
+            if (slow == fast)
                 break;
-            }
         }
 
         if (fast != null && fast.next != null) {
@@ -67,9 +67,8 @@ public class StartOfTheLoop {
                 slow = slow.next;
                 fast = fast.next;
             }
-        } else {
+        } else
             return null;
-        }
 
         return fast;
     }

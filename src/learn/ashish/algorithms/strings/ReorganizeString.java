@@ -26,7 +26,11 @@ public class ReorganizeString {
     }
 
     public String reorganizeString(String S) {
+        if (S == null)
+            return S;
+
         Map<Character, Integer> counts = new HashMap<>();
+
         for (char c : S.toCharArray())
             counts.put(c, counts.getOrDefault(c, 0) + 1);
 
@@ -52,9 +56,9 @@ public class ReorganizeString {
 
         if (!q.isEmpty()) {
             char last = q.remove();
-            if (counts.get(last) > 1) {
+            if (counts.get(last) > 1)
                 return "";
-            }
+            
             result.append(last);
         }
 

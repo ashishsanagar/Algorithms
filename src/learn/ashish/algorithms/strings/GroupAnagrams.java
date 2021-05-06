@@ -27,13 +27,15 @@ public class GroupAnagrams {
     private List<List<String>> group(String[] words) {
         List<List<String>> result = new ArrayList<>();
 
-        if (words == null || words.length == 0) return result;
+        if (words == null || words.length == 0)
+            return result;
 
         Map<String, List<String>> grouped = new HashMap<>();
 
         for (String word : words) {
             char[] chars = word.toCharArray();
             Arrays.sort(chars);
+
             String sorted = new String(chars);
 
             if (grouped.get(sorted) == null)

@@ -3,7 +3,7 @@ package learn.ashish.algorithms.stackqueue;
 import java.util.Stack;
 
 
-public class MakeStringBalanced {
+public class MakeStringParenthesisBalanced {
 
     /**
      * Given a string with alpha-numeric characters and parentheses, return a string with balanced parentheses by removing the fewest characters possible. You cannot add anything to the string.
@@ -19,7 +19,7 @@ public class MakeStringBalanced {
     public static void main(String[] args) {
         String str = "(()()()a(b(c((";
 
-        String result = new MakeStringBalanced().balance(str);
+        String result = new MakeStringParenthesisBalanced().balance(str);
 
         System.out.println(result);
     }
@@ -29,9 +29,8 @@ public class MakeStringBalanced {
     }
 
     public String balance(String str) {
-        if (str == null || str.length() < 1) {
+        if (str == null || str.length() < 1)
             return str;
-        }
 
         Stack<Integer> stack1 = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
@@ -39,9 +38,9 @@ public class MakeStringBalanced {
         for (int i = 0; i < str.length(); i++) {
             char nextChar = str.charAt(i);
 
-            if (nextChar == '(') {
+            if (nextChar == '(')
                 stack1.push(i);
-            } else if (nextChar == ')') {
+            else if (nextChar == ')') {
                 if (!stack1.isEmpty()) {
                     int fromStack = stack1.pop();
 
@@ -49,21 +48,17 @@ public class MakeStringBalanced {
                         stack2.push(i);
                         stack2.push(fromStack);
                     }
-                } else {
+                } else
                     stack2.push(i);
-                }
             }
         }
 
-        while (!stack1.isEmpty()) {
+        while (!stack1.isEmpty())
             str = deleteChar(str, stack1.pop());
-        }
 
-        while (!stack2.isEmpty()) {
+        while (!stack2.isEmpty())
             str = deleteChar(str, stack2.pop());
-        }
 
         return str;
     }
-
 }

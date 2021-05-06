@@ -14,16 +14,16 @@ public class LeadersInArray {
     public static void main(String[] args) {
         int[] array = {88, 32, 44, 23, 57, 22, 33, 44, 55};
 
-        new LeadersInArray().printLeaders(array);
+        new LeadersInArray().printLeaders(array).forEach(System.out::println);
     }
 
     public List<Integer> printLeaders(int[] array) {
-        if (array == null || array.length == 0) {
-            return null;
-        }
+        List<Integer> leaders = new ArrayList<>();
+
+        if (array == null || array.length == 0)
+            return leaders;
 
         int currentLeader = array[array.length - 1];
-        List<Integer> leaders = new ArrayList<>();
         leaders.add(currentLeader);
 
         for (int i = array.length - 2; i >= 0; i--) {
@@ -32,8 +32,6 @@ public class LeadersInArray {
                 leaders.add(currentLeader);
             }
         }
-
-        leaders.forEach(leader -> System.out.println(leader));
 
         return leaders;
     }

@@ -22,14 +22,14 @@ public class PrintConnectedComponents {
     }
 
     public void print(UndirectedGraph graph) {
-        if (graph == null) return;
+        if (graph == null)
+            return;
 
         boolean[] visited = new boolean[graph.numberOfVertices];
 
         for (int i = 0; i < graph.numberOfVertices; i++) {
-            if (visited[i] == true) {
+            if (visited[i] == true)
                 continue;
-            }
 
             bfs(graph, i, visited);
             System.out.println();
@@ -42,7 +42,8 @@ public class PrintConnectedComponents {
         System.out.print(vertex + " ");
 
         for (Integer connectedVertx : graph.vertices[vertex]) {
-            if (visited[connectedVertx] == true) continue;
+            if (visited[connectedVertx] == true)
+                continue;
 
             bfs(graph, connectedVertx, visited);
         }

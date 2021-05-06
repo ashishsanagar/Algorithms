@@ -17,16 +17,12 @@ public class PermuteString {
 
     /**
      * recursion
-     *
-     * @param input
-     * @param chosen
      */
     public void permutation(String input, String chosen, Set<String> result) {
-        if (input.isEmpty()) {
+        if (input.isEmpty())
             result.add(chosen);
-        } else {
+        else
             for (int i = 0; i < input.length(); i++)
                 permutation(input.substring(0, i) + input.substring(i + 1), chosen + input.charAt(i), result);
-        }
     }
 }

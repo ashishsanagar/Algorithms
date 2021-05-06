@@ -21,9 +21,9 @@ public class VerifyAlienDictionary {
     }
 
     public boolean isAlienSorted(String[] words, String order) {
-
         // for each character in order assign ith index for faster lookup of order of chars for comparison
         int[] dict = new int[26];
+
         for (int i = 0; i < order.length(); i++)
             dict[order.charAt(i) - 'a'] = i;
 

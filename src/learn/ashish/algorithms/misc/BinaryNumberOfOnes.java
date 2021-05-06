@@ -12,7 +12,6 @@ public class BinaryNumberOfOnes {
      */
     public static void main(String[] args) {
         int x = 7;
-
         System.out.println(new BinaryNumberOfOnes().convert(x));
     }
 

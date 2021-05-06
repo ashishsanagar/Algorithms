@@ -12,15 +12,13 @@ public class ReadFile {
         File file = new File("test.txt");
 
         try {
-            if (file.exists()) {
+            if (file.exists())
                 file.delete();
-            }
 
-            if (file.createNewFile()) {
+            if (file.createNewFile())
                 System.out.println("File created");
-            } else {
+            else
                 System.out.println("File creation failed");
-            }
 
             FileOutputStream out = new FileOutputStream(file);
             out.write("This is a test ".getBytes());

@@ -18,15 +18,14 @@ public class LongestCommonSubsequence {
 
         for (int i = 1; i < dp.length; i++) {
             for (int j = 1; j < dp[i].length; j++) {
-
                 //go thru row at a time,
-                //if char in both arrays is same then get value from i-1 j-1 and add 1. Otherwise get max value from adjucent elements
+                //if char in both arrays is same then get value from i-1 j-1 and add 1.
+                // Otherwise get max value from adjucent elements
 
-                if (str1[i - 1] == str2[j - 1]) {
+                if (str1[i - 1] == str2[j - 1])
                     dp[i][j] = dp[i - 1][j - 1] + 1;
-                } else {
+                else
                     dp[i][j] = Math.max(dp[i][j - 1], dp[i - 1][j]);
-                }
 
                 max = Math.max(max, dp[i][j]);
             }
@@ -36,11 +35,11 @@ public class LongestCommonSubsequence {
         for (int i = dp.length - 1; i >= 1; i--) {
             for (int j = dp[i].length - 1; j >= 1; j--) {
 
-                if (dp[i][j] == dp[i][j - 1]) {
+                if (dp[i][j] == dp[i][j - 1])
                     continue;
-                } else if (dp[i][j] == dp[i - 1][j]) {
+                else if (dp[i][j] == dp[i - 1][j])
                     break;
-                } else {
+                else {
                     sequence.append(str1[i - 1]);
                     break;
                 }

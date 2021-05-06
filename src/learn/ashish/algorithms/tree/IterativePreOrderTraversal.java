@@ -36,13 +36,11 @@ public class IterativePreOrderTraversal {
 
             System.out.print(node.data + " ");
 
-            if (node.right != null) {
+            if (node.right != null)
                 stack.push(node.right);
-            }
 
-            if (node.left != null) {
+            if (node.left != null)
                 stack.push(node.left);
-            }
         }
     }
 }

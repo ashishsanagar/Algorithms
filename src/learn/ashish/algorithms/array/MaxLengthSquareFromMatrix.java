@@ -22,17 +22,11 @@ public class MaxLengthSquareFromMatrix {
 
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 1; j < matrix[0].length; j++) {
-
                 if (matrix[i][j] == 1) {
                     int lowFromNeighbors = Integer.min(Integer.min(matrix[i][j - 1], matrix[i - 1][j]), matrix[i - 1][j - 1]);
-                    int currentMax = lowFromNeighbors + 1;
 
-                    if (currentMax > max) {
-                        max = currentMax;
-                    }
-
-                    matrix[i][j] = currentMax;
-
+                    matrix[i][j] = lowFromNeighbors + 1;
+                    max = Math.max(max, matrix[i][j]);
                 }
             }
         }

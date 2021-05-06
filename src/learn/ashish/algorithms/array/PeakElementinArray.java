@@ -12,7 +12,6 @@ public class PeakElementinArray {
         int[] array = {10, 30, 40, 60, 50};
 
         System.out.println(find(array));
-
     }
 
     private static int find(int[] nums) {

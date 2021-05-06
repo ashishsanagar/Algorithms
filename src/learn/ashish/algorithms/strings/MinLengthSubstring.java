@@ -10,37 +10,34 @@ public class MinLengthSubstring {
      * s = "dcbefebce"
      * t = "fd"'
      * output = 5
-     *
-     * @param args
      */
     public static void main(String[] args) {
-        String s = "dcbefebce";
-        String t = "fd";
+        String s = "dcbefebmce";
+        String t = "fdm";
 
         System.out.println(new MinLengthSubstring().minLengthSubstring(s, t));
     }
 
-    private boolean isAnagramModified(String s1, String s2) {
-        if (s1 == null && s2 == null) return true;
+    private boolean isAnagramModified(String t, String temp) {
+        if (t == null && temp == null)
+            return true;
 
         int[] a = new int[256];
 
-        for (char c : s1.toCharArray()) {
+        for (char c : t.toCharArray())
             a[c]++;
-        }
 
-        for (char c : s2.toCharArray()) {
+        for (char c : temp.toCharArray())
             a[c]--;
-        }
 
-        for (int c : a) {
-            if (c > 0) return false;
-        }
+        for (int c : a)
+            if (c > 0) // this makes a difference. as we are deducting t from temp, extra chars will be in negative.
+                return false;
 
         return true;
     }
 
-    int minLengthSubstring(String s, String t) {
+    public int minLengthSubstring(String s, String t) {
         int min = Integer.MAX_VALUE;
         int i = 0;
         int j = 0;
@@ -55,7 +52,8 @@ public class MinLengthSubstring {
                 j++;
 
                 // this means we have found min length as j moving length+1
-                if (j > s.length()) break;
+                if (j > s.length())
+                    break;
             }
         }
 

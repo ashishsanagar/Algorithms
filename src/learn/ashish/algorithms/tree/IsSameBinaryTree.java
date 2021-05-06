@@ -30,13 +30,11 @@ public class IsSameBinaryTree {
     }
 
     public boolean find(TreeNode root1, TreeNode root2) {
-        if (root1 == null && root2 == null) {
+        if (root1 == null && root2 == null)
             return true;
-        }
 
-        if (root1 == null || root2 == null) {
+        if (root1 == null || root2 == null)
             return false;
-        }
 
         return root1.data == root2.data && find(root1.left, root2.left) && find(root1.right
                 , root2.right);

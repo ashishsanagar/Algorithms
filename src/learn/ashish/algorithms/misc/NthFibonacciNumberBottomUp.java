@@ -18,16 +18,15 @@ public class NthFibonacciNumberBottomUp {
     private static int bottomUp(int n) {
         int[] bottomUpArray = new int[n + 1];
 
-        if (n == 1 || n == 2) {
+        if (n == 1 || n == 2)
             return 1;
-        }
 
         bottomUpArray[1] = 1;
         bottomUpArray[2] = 1;
 
-        for (int i = 3; i <= n; i++) {
+        for (int i = 3; i <= n; i++)
             bottomUpArray[i] = bottomUpArray[i - 1] + bottomUpArray[i - 2];
-        }
+
         return bottomUpArray[n];
     }
 }

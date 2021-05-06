@@ -24,11 +24,12 @@ public class RootToLeafSumMatchesGivenNumber {
         result.forEach(value -> System.out.print(" " + value));
     }
 
-    public boolean verify(TreeNode root, int sum, List<Integer> result) {
-        if (root == null) return false;
+    public boolean verify(TreeNode root, int target, List<Integer> result) {
+        if (root == null)
+            return false;
 
         if (root.left == null && root.right == null) {
-            if (sum == root.data) {
+            if (target == root.data) {
                 result.add(root.data);
 
                 return true;
@@ -36,8 +37,8 @@ public class RootToLeafSumMatchesGivenNumber {
             return false;
         }
 
-        if (verify(root.left, (sum - root.data), result)
-                || verify(root.right, (sum - root.data), result)) {
+        if (verify(root.left, (target - root.data), result)
+                || verify(root.right, (target - root.data), result)) {
             result.add(root.data);
             return true;
         }

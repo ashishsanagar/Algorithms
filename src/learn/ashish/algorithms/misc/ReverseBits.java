@@ -4,8 +4,6 @@ public class ReverseBits {
     /**
      * input: 00000010100101000001111010011100
      * output: 964176192 (00111001011110000010100101000000)
-     *
-     * @param args
      */
     public static void main(String[] args) {
         System.out.println(new ReverseBits().reverseBits(6));

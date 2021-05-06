@@ -30,15 +30,16 @@ public class CloneDoublyLinkedList {
     }
 
     public Node clone(Node head) {
-        Node newNodeHead = new Node(head.data);
-        newNodeHead.pre = null;
+        Node newHead = new Node(head.data);
+        newHead.pre = null;
 
-        Node pre = newNodeHead;
+        Node pre = newHead;
 
         head = head.next;
 
         while (head != null) {
             Node newNode = new Node(head.data);
+
             newNode.pre = pre;
             pre.next = newNode;
 
@@ -47,7 +48,7 @@ public class CloneDoublyLinkedList {
             head = head.next;
         }
 
-        return newNodeHead;
+        return newHead;
     }
 
     public void print(Node head) {

@@ -41,6 +41,7 @@ public class LRUCache {
     // item added at top and if map is at capacity remove least recently used
     public void put(int key, int value) {
         Node n = map.get(key);
+
         if (n != null) {
             n.value = value;
 
@@ -52,6 +53,7 @@ public class LRUCache {
                 map.remove(tail.pre.key);
                 remove(tail.pre);
             }
+
             n = new Node(key, value);
             map.put(key, n);
             moveNodeToHead(n);
@@ -60,15 +62,17 @@ public class LRUCache {
         System.out.println("Item added: " + key);
     }
 
-    //on retrieval item should be moved to top as revcently accessed
+    //on retrieval item should be moved to top as recently accessed
     public Integer get(int key) {
         Integer value = null;
         Node n = map.get(key);
+
         if (n != null) {
             value = n.value;
             moveNodeToHead(n);
             System.out.println("Item retrieved: ");
         }
+
         return value;
     }
 

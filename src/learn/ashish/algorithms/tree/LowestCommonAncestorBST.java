@@ -25,12 +25,11 @@ public class LowestCommonAncestorBST {
      * 0 6 15 36 2 13 17 10 14 12
      */
     public TreeNode find(TreeNode root, TreeNode node1, TreeNode node2) {
-        if (root.data > Math.max(node1.data, node2.data)) {
+        if (root.data > Math.max(node1.data, node2.data))
             return find(root.left, node1, node2);
-        } else if (root.data < Math.min(node1.data, node2.data)) {
+        else if (root.data < Math.min(node1.data, node2.data))
             return find(root.right, node1, node2);
-        } else {
+        else
             return root;
-        }
     }
 }

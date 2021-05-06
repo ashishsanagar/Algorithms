@@ -16,9 +16,6 @@ public class HasAllUniqueChars {
 
     /**
      * no additional data structure. Assumes string is lowercase
-     *
-     * @param str
-     * @return
      */
     public boolean hasAllUniqueCharsImproved(String str) {
         int checker = 0;
@@ -26,9 +23,8 @@ public class HasAllUniqueChars {
         for (char c : str.toCharArray()) {
             int value = c - 'a';
 
-            if ((checker & (1 << value)) > 0) {
+            if ((checker & (1 << value)) > 0)
                 return false;
-            }
 
             checker = checker | (1 << value);
 
@@ -42,11 +38,10 @@ public class HasAllUniqueChars {
         boolean[] visted = new boolean[256];
 
         for (char c : str.toCharArray()) {
-            if (visted[c] == false) {
+            if (visted[c] == false)
                 visted[c] = true;
-            } else {
+            else
                 return false;
-            }
         }
 
         return true;

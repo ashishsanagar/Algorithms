@@ -30,9 +30,8 @@ public class LevelOrderTraversalReverse {
      * 0 6 15 36 2 13 17 10 14 12
      */
     public void traverse(TreeNode root) {
-        if (root == null) {
+        if (root == null)
             return;
-        }
 
         Queue<TreeNode> queue = new LinkedList<>();
         Stack<TreeNode> stack = new Stack<>();
@@ -42,13 +41,11 @@ public class LevelOrderTraversalReverse {
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
 
-            if (node.right != null) {
+            if (node.right != null)
                 queue.add(node.right);
-            }
 
-            if (node.left != null) {
+            if (node.left != null)
                 queue.add(node.left);
-            }
 
             stack.push(node);
         }

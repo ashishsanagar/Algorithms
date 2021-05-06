@@ -34,9 +34,8 @@ public class BinaryTree {
      * @param root
      */
     private void traverseBinaryTree(TreeNode root) {
-        if (root == null) {
+        if (root == null)
             return;
-        }
 
         traverseBinaryTree(root.left);
         System.out.print(root.data + " -> ");
@@ -46,27 +45,24 @@ public class BinaryTree {
     public TreeNode insertNode(TreeNode root, int data) {
         TreeNode newNode = new TreeNode(data);
 
-        if (root == null) {
+        if (root == null)
             return newNode;
-        }
 
         TreeNode head = root;
         TreeNode parent = head;
 
         while (head != null) {
             parent = head;
-            if (data < parent.data) {
+            if (data < parent.data)
                 head = parent.left;
-            } else {
+            else
                 head = parent.right;
-            }
         }
 
-        if (data < parent.data) {
+        if (data < parent.data)
             parent.left = newNode;
-        } else {
+        else
             parent.right = newNode;
-        }
 
         return newNode;
     }
@@ -77,26 +73,26 @@ public class BinaryTree {
      * then recursively delete that min value.
      */
     public TreeNode deleteNode(TreeNode root, int key) {
-        if (root == null) {
+        if (root == null)
             return root;
-        }
 
-        if (root.data > key) {
+        if (root.data > key)
             root.left = deleteNode(root.left, key);
-        } else if (root.data < key) {
+        else if (root.data < key)
             root.right = deleteNode(root.right, key);
-        } else {
+        else {
             // found node to be deleted
-            if (root.left == null) {
+            if (root.left == null)
                 return root.right;
-            } else if (root.right == null) {
+            else if (root.right == null)
                 return root.left;
-            }
+
             // node with two children, replace with the inOrder successor(minVal) in the right subtree
             root.data = getMinSuccessorInOrder(root.right);
-            //    System.out.println("Min: " + root.data);
+
             root.right = deleteNode(root.right, root.data);
         }
+
         return root;
     }
 
@@ -104,9 +100,9 @@ public class BinaryTree {
      * To find successor, go to right and pic left most child.
      */
     private int getMinSuccessorInOrder(TreeNode root) {
-        while (root.left != null) {
+        while (root.left != null)
             root = root.left;
-        }
+
         return root.data;
     }
 }
