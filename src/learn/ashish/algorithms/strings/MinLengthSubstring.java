@@ -40,7 +40,7 @@ public class MinLengthSubstring {
     public int minLengthSubstring(String s, String t) {
         int min = Integer.MAX_VALUE;
         int i = 0;
-        int j = 0;
+        int j = t.length();
 
         while (i < s.length()) {
             String temp = s.substring(i, j);

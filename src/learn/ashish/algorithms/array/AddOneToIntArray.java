@@ -1,5 +1,7 @@
 package learn.ashish.algorithms.array;
 
+import java.util.Arrays;
+
 /**
  * @author Ashish Sanagar
  */
@@ -14,40 +16,32 @@ public class AddOneToIntArray {
     public static void main(String[] args) {
         AddOneToIntArray helper = new AddOneToIntArray();
 
-        helper.print(helper.addOne(new int[]{9, 9, 9, 9}));
+        int[] input = {9, 9, 9, 9};
 
-        helper.print(helper.addOne(new int[]{9, 9, 9, 8}));
+        System.out.println(Arrays.toString(input));
+        System.out.println(Arrays.toString(helper.addOne(new int[]{9, 9, 9, 8})));
     }
 
-    public int[] addOne(int[] inputArray) {
+    public int[] addOne(int[] nums) {
         int carry = 1;
 
-        for (int i = inputArray.length - 1; i >= 0; i--) {
-            int replaceNumber = inputArray[i] + carry;
+        for (int i = nums.length - 1; i >= 0; i--) {
+            int replaceNumber = nums[i] + carry;
 
-            inputArray[i] = replaceNumber % 10;
+            nums[i] = replaceNumber % 10;
             carry = replaceNumber / 10;
         }
 
         if (carry != 0) {
-            int[] newArray = new int[inputArray.length + 1];
+            int[] newArray = new int[nums.length + 1];
             newArray[0] = carry;
 
-            for (int i = 1; i < inputArray.length; i++) {
-                newArray[i] = inputArray[i];
-            }
+            for (int i = 1; i < nums.length; i++)
+                newArray[i] = nums[i];
 
             return newArray;
         }
 
-        return inputArray;
-    }
-
-    public void print(int[] a) {
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]);
-        }
-
-        System.out.println();
+        return nums;
     }
 }

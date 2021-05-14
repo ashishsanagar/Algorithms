@@ -44,7 +44,6 @@ public class UndirectedGraph {
             for (Integer vertex : vertices[i])
                 System.out.print(" -> " + vertex);
 
-
             System.out.println();
         }
     }

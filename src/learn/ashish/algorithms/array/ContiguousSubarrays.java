@@ -1,5 +1,7 @@
 package learn.ashish.algorithms.array;
 
+import java.util.Arrays;
+
 public class ContiguousSubarrays {
 
     public static void main(String[] args) {
@@ -7,8 +9,7 @@ public class ContiguousSubarrays {
 
         int[] result = new ContiguousSubarrays().count(array);
 
-        for (int i : result)
-            System.out.print(i + ", ");
+        System.out.println(Arrays.toString(result));
     }
 
     /**
@@ -19,9 +20,6 @@ public class ContiguousSubarrays {
      * Example:
      * arr = [3, 4, 1, 6, 2]
      * output = [1, 3, 1, 5, 1]
-     *
-     * @param arr
-     * @return
      */
     int[] count(int[] arr) {
         if (arr == null || arr.length < 1) return arr;

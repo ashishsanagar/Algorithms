@@ -6,8 +6,6 @@ public class UniquePathsInGrid {
      * Robot is located at top-left corner or m x n  grid, only move possible is right or down
      * <p>
      * how many unique paths are there to reach both
-     *
-     * @param args
      */
     public static void main(String[] args) {
         int m = 3;

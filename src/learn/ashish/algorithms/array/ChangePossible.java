@@ -32,20 +32,20 @@ public class ChangePossible {
         return false;
     }
 
-    public boolean find(int[] denominations, int money) {
-        boolean dp[][] = new boolean[denominations.length + 1][money + 1];
+    public boolean find(int[] coins, int money) {
+        boolean dp[][] = new boolean[coins.length + 1][money + 1];
 
         dp[0][0] = true;
 
         for (int i = 1; i < dp.length; i++) {
             for (int j = 1; j < dp[0].length; j++) {
-                if (denominations[i - 1] <= j)
-                    dp[i][j] = dp[i - 1][j] || dp[i - 1][j - denominations[i - 1]];
+                if (coins[i - 1] <= j)
+                    dp[i][j] = dp[i - 1][j] || dp[i - 1][j - coins[i - 1]];
                 else
                     dp[i][j] = dp[i - 1][j];
             }
         }
 
-        return dp[denominations.length][money];
+        return dp[coins.length][money];
     }
 }

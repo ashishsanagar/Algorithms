@@ -17,9 +17,6 @@ public class ChangeWithMinimumCoins {
      * why (i - 1) + 1: suppose you are finding change for $10, its as good as finding change for $9 and add $1
      * why (i - 2) + 1: suppose you are finding change for $10, its as good as finding change for $8 and add $2
      * why (i - 5) + 1: suppose you are finding change for $10, its as good as finding change for $5 and add $5
-     *
-     * @param money
-     * @return
      */
     public int find(int money, int[] coins) {
         int[] result = new int[money + 1];

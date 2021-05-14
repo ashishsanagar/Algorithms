@@ -17,7 +17,7 @@ public class KClosestElementsFromTarget {
     public static void main(String[] args) {
         int[] a = {2, 3, 66, 66, 67, 90};
         int target = 70;
-        int k = 7;
+        int k = 3;
 
         KClosestElementsFromTarget helper = new KClosestElementsFromTarget();
 

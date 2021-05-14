@@ -19,15 +19,14 @@ public class OneMissingNumberFromSequence {
      * using XOR
      */
     public int findOneMissing(int[] array) {
-        int sumSequence = 0;
-        int sumArrayElements = 0;
+        int x = 0;
 
         for (int i = 1; i <= array.length + 1; i++)
-            sumSequence ^= i;
+            x ^= i;
 
         for (int i = 0; i < array.length; i++)
-            sumArrayElements ^= array[i];
+            x ^= array[i];
 
-        return sumSequence ^ sumArrayElements;
+        return x;
     }
 }

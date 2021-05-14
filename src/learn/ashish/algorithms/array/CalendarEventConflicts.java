@@ -7,11 +7,8 @@ public class CalendarEventConflicts {
     /**
      * There are n events, and k conflicts are okay.
      * if conflicts are more than k, return false
-     *
-     * @param args
      */
     public static void main(String[] args) {
-
         // there are 3 conflicts in below calendar.
         Event[] events = {new Event(1, 5), new Event(2, 4), new Event(6, 7), new Event(7, 8), new Event(4, 7)};
 
@@ -40,7 +37,8 @@ public class CalendarEventConflicts {
         int conflicts = 0;
 
         for (int i = 0; i < starts.length - 1; i++)
-            if (starts[i + 1] < ends[i]) conflicts++;
+            if (starts[i + 1] < ends[i])
+                conflicts++;
 
         return conflicts > k;
     }

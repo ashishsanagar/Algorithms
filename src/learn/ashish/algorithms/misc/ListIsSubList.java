@@ -38,9 +38,8 @@ public class ListIsSubList {
     public int checkIfSubList(List<Integer> list1, List<Integer> list2) {
         int startIndex = -1;
 
-        if (list2 == null || list2.size() == 0) {
+        if (list2 == null || list2.size() == 0)
             return 0;
-        }
 
         int i = 0;
         int j = 0;
@@ -49,9 +48,9 @@ public class ListIsSubList {
             if (list1.get(i) == list2.get(j)) {
                 j++;
                 startIndex = i;
-                if (j == list2.size() - 1) {
+
+                if (j == list2.size() - 1)
                     break;
-                }
             } else {
                 j = 0;
                 startIndex = -1;

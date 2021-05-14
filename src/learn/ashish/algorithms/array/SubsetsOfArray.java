@@ -26,7 +26,7 @@ public class SubsetsOfArray {
     public List<List<Integer>> find(int[] nums) {
         List<List<Integer>> subsets = new ArrayList<>();
 
-        generate(nums, 0, new ArrayList<Integer>(), subsets);
+        generate(nums, 0, new ArrayList<>(), subsets);
 
         return subsets;
     }

@@ -12,8 +12,6 @@ public class MoveZerosToEnd {
 
     /**
      * O(n^2)
-     *
-     * @param a
      */
     public void approachOne(int[] a) {
         for (int i = 0; i < a.length; i++) {

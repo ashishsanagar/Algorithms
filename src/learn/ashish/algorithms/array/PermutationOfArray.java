@@ -13,9 +13,9 @@ public class PermutationOfArray {
         new PermutationOfArray().permutations(a, 0, result);
 
         for (int[] array : result) {
-            for (int ele : array) {
+            for (int ele : array)
                 System.out.print(ele + ", ");
-            }
+
             System.out.println();
         }
     }
@@ -27,15 +27,15 @@ public class PermutationOfArray {
         }
 
         for (int i = index; i < nums.length; i++) {
-            int temp = nums[i];
-            nums[i] = nums[index];
-            nums[index] = temp;
-
+            swap(nums, i, index);
             permutations(nums, index + 1, result);
-
-            temp = nums[index];
-            nums[index] = nums[i];
-            nums[i] = temp;
+            swap(nums, index, i);
         }
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
 }

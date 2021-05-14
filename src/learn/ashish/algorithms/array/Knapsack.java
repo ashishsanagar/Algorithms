@@ -16,14 +16,14 @@ public class Knapsack {
         if (weights.length != values.length || capacity < 1)
             return 0;
 
-        int[][] dp = new int[values.length + 1][capacity + 1];
+        int[][] dp = new int[weights.length + 1][capacity + 1];
 
-        for (int i = 1; i <= values.length; i++) {
-            for (int j = 1; j <= capacity; j++) {
+        for (int i = 1; i <= dp.length; i++) {
+            for (int j = 1; j <= dp[0].length; j++) {
                 // capacity is in range 0 to "capacity" input. we start from 1, which means
                 // current available intermediate capacity minus weight, if its >0
                 // chose max of value without addition of this weight and value if we add this current weight
-                if (j - weights[i - 1] >= 0)
+                if (weights[i - 1] <= j)
                     dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - weights[i - 1]] + values[i - 1]);
                 else
                     dp[i][j] = dp[i - 1][j];

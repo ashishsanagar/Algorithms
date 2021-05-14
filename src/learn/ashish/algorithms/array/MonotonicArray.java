@@ -5,8 +5,6 @@ public class MonotonicArray {
     /**
      * array is monotonic if for any i < j, a[i] <= a[j] (increasing monotonic array)
      * or for any i > j, a[i] >= a[j] (decreasing monotonic array)
-     *
-     * @param args
      */
     public static void main(String[] args) {
         int[] a1 = {1, 2, 3, 4};

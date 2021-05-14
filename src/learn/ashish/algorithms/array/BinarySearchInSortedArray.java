@@ -16,23 +16,21 @@ public class BinarySearchInSortedArray {
     }
 
     public boolean findElement(int[] array, int ele) {
-        if (array == null || array.length == 0) {
+        if (array == null || array.length == 0)
             return false;
-        }
 
         int low = 0;
         int high = array.length - 1;
 
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
 
-            if (ele == array[mid]) {
+            if (ele == array[mid])
                 return true;
-            } else if (ele < array[mid]) {
+            else if (ele < array[mid])
                 high = mid - 1;
-            } else {
+            else
                 low = mid + 1;
-            }
         }
 
         return false;

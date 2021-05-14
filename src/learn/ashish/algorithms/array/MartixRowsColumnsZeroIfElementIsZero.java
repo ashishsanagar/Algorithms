@@ -1,5 +1,7 @@
 package learn.ashish.algorithms.array;
 
+import java.util.Arrays;
+
 /**
  * @author Ashish Sanagar
  */
@@ -21,9 +23,7 @@ public class MartixRowsColumnsZeroIfElementIsZero {
 
     private static void printMatrix(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++)
-            for (int j = 0; j < matrix[0].length; j++)
-                System.out.print(matrix[i][j] + " ");
-        System.out.println();
+            System.out.println(Arrays.toString(matrix[i]));
     }
 
     public void replaceRowColumns(int[][] matrix) {
