@@ -18,23 +18,23 @@ public class MergeSort {
             System.out.print(array[i] + ", ");
     }
 
-    private static void merge(int[] array, int[] arrayLeft, int[] arrayRight) {
+    private static void merge(int[] array, int[] left, int[] right) {
         int i = 0;
         int j = 0;
         int k = 0;
 
-        while (i < arrayLeft.length && j < arrayRight.length) {
-            if (arrayLeft[i] < arrayRight[j])
-                array[k++] = arrayLeft[i++];
+        while (i < left.length && j < right.length) {
+            if (left[i] < right[j])
+                array[k++] = left[i++];
             else
-                array[k++] = arrayRight[j++];
+                array[k++] = right[j++];
         }
 
-        while (i < arrayLeft.length)
-            array[k++] = arrayLeft[i++];
+        while (i < left.length)
+            array[k++] = left[i++];
 
-        while (j < arrayLeft.length)
-            array[k++] = arrayRight[j++];
+        while (j < left.length)
+            array[k++] = right[j++];
     }
 
     public void sort(int[] array) {

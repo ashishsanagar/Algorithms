@@ -16,7 +16,7 @@ public class IsBalancedBinaryTree {
         tree.insertNode(root, 5);
 
         IsBalancedBinaryTree helper = new IsBalancedBinaryTree();
-        System.out.println("is balanced binary tree: " + helper.verify(root));
+        System.out.println("is balanced binary tree: " + helper.isBalanced(root));
 
         //[1,2,3,4,5,6,null,8]
         root = new TreeNode(1);
@@ -26,23 +26,26 @@ public class IsBalancedBinaryTree {
         root.left.right = new TreeNode(5);
         root.right.left = new TreeNode(6);
         root.left.left.left = new TreeNode(8);
-        
-        System.out.println("is balanced binary tree: " + helper.verify(root));
+
+        System.out.println("is balanced binary tree: " + helper.isBalanced(root));
     }
 
-    public boolean verify(TreeNode root) {
-        return ((maxHeight(root) - minHeight(root)) <= 1);
+    public static int height(TreeNode root) {
+        if (root == null)
+            return 0;
+
+        int leftHeight = height(root.left);
+        int rightHeight = height(root.right);
+
+        return 1 + Math.max(leftHeight, rightHeight);
     }
 
-    private int maxHeight(TreeNode root) {
-        if (root == null) return 0;
+    public boolean isBalanced(TreeNode root) {
+        if (root == null)
+            return true;
 
-        return 1 + Math.max(maxHeight(root.left), maxHeight(root.right));
-    }
-
-    private int minHeight(TreeNode root) {
-        if (root == null) return 0;
-
-        return 1 + Math.min(minHeight(root.left), minHeight(root.right));
+        return isBalanced(root.left)
+                && isBalanced(root.right)
+                && (Math.abs(height(root.left) - height(root.right)) <= 1);
     }
 }

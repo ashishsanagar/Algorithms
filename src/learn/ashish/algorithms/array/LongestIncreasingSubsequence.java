@@ -15,8 +15,6 @@ public class LongestIncreasingSubsequence {
 
         // from index 1, check all previous results and chose max index and add 1
         for (int i = 1; i < a.length; i++) {
-            result[i] = 0;
-
             for (int j = 0; j < i; j++)
                 if (a[j] < a[i])
                     result[i] = Math.max(result[j], result[i]);
