@@ -21,11 +21,11 @@ public class ChangePossible {
         System.out.println(new ChangePossible().recurse(17, denominations, 0));
     }
 
-    public boolean recurse(int money, int[] coins, int currentIndex) {
+    public boolean recurse(int money, int[] coins, int index) {
         if (money == 0)
             return true;
 
-        for (int i = currentIndex; i < coins.length; i++)
+        for (int i = index; i < coins.length; i++)
             if (money - coins[i] >= 0 && recurse(money - coins[i], coins, i))
                 return true;
 

@@ -31,6 +31,8 @@ public class ShoppingOptions {
     }
 
     public int getNumberOfOptions(List<Integer> priceOfJeans, List<Integer> priceOfShoes, List<Integer> priceOfSkirts, List<Integer> priceOfTops, int dollars) {
+        // List<List<Integer>> options = List.of(priceOfJeans);
+
         List<List<Integer>> options = new ArrayList() {{
             add(priceOfJeans);
             add(priceOfShoes);
@@ -43,7 +45,7 @@ public class ShoppingOptions {
 
     private int findWays(List<List<Integer>> options, int budget) {
         // base case 1
-        if (budget < 0 || options.size() == 0)
+        if (budget <= 0 || options.size() == 0)
             return 0;
 
         //base case 2

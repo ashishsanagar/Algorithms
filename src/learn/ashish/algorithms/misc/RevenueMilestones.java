@@ -20,7 +20,7 @@ public class RevenueMilestones {
     int[] getMilestoneDays(int[] revenues, int[] milestones) {
         int i = 0;
         int j = 0;
-        int k = 0;
+
         int current = 0;
 
         int[] result = new int[milestones.length];
@@ -29,11 +29,10 @@ public class RevenueMilestones {
             if (current + revenues[j] < milestones[i])
                 current += revenues[j++];
             else {
-                // if revenue is greater than equal to milestone means, target achieved, add to result
+                // if revenue is greater than equal to milestone, target achieved. Add to result
                 // as we are returning position in array, add 1, as array starts at 0
 
-                result[k++] = j + 1;
-                i++;
+                result[i++] = j + 1;
             }
         }
 

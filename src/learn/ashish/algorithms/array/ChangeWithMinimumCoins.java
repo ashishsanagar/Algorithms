@@ -10,6 +10,8 @@ public class ChangeWithMinimumCoins {
         System.out.println(new ChangeWithMinimumCoins().find(money, coins));
 
         System.out.println(new ChangeWithMinimumCoins().findByDP(money, coins));
+
+        System.out.println(new ChangeWithMinimumCoins().findByDPImproved(money, coins));
     }
 
     /**
@@ -31,6 +33,24 @@ public class ChangeWithMinimumCoins {
         }
 
         return result[money];
+    }
+
+    /**
+     * improved space
+     */
+    public int findByDPImproved(int money, int[] coins) {
+        int[] dp = new int[money + 1];
+        dp[0] = 0;
+
+        for (int i = 1; i < dp.length; i++) {
+            dp[i] = Integer.MAX_VALUE;
+
+            for (int j = 0; j < coins.length; j++)
+                if (i - (coins[j]) >= 0)
+                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
+        }
+
+        return dp[money];
     }
 
     public int findByDP(int money, int[] coins) {

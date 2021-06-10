@@ -13,9 +13,8 @@ public class FactorialDigitSum {
 
         String fact = factorial(n);
 
-        for (char c : fact.toCharArray()) {
+        for (char c : fact.toCharArray())
             sum += c - '0';
-        }
 
         return sum;
     }

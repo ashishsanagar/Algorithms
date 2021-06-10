@@ -23,41 +23,35 @@ public class ThreeSumToTarget {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 
-        if (nums.length < 3)
+        if (nums == null || nums.length == 0)
             return result;
 
-        find(nums, result);
+        Arrays.sort(nums);
+
+        for (int i = 0; i < nums.length && nums[i] <= 0; i++) {
+            if (i == 0 || nums[i - 1] != nums[i])
+                twoSum(nums, i, result);
+        }
 
         return result;
     }
 
-    private void find(int[] nums, List<List<Integer>> result) {
-        Arrays.sort(nums);
+    private void twoSum(int[] nums, int index, List<List<Integer>> result) {
+        int low = index + 1;
+        int high = nums.length - 1;
 
-        for (int i = 0; i < nums.length; i++) {
-            int left = i + 1;
-            int right = nums.length - 1;
+        while (low < high) {
+            int sum = nums[index] + nums[low] + nums[high];
 
-            int target = 0 - nums[i];
+            if (sum < 0)
+                ++low;
+            else if (sum > 0)
+                --high;
+            else {
+                result.add(Arrays.asList(nums[index], nums[low++], nums[high--]));
 
-            while (left < right) {
-                int sum = nums[left] + nums[right];
-
-                if (sum == target) {
-                    List<Integer> ans = new ArrayList<>();
-                    ans.add(nums[i]);
-                    ans.add(nums[left]);
-                    ans.add(nums[right]);
-
-                    if (!result.contains(ans))
-                        result.add(ans);
-
-                    left++;
-                    right--;
-                } else if (sum > target)
-                    right--;
-                else
-                    left++;
+                while (low < high && nums[low] == nums[low - 1])
+                    low++;
             }
         }
     }
