@@ -38,6 +38,6 @@ public class DiameterBinaryTree {
         int leftDiameter = diameter(root.left);
         int rightDiameter = diameter(root.right);
 
-        return Math.max((leftHeight + rightHeight + 1), Math.max(leftDiameter, rightDiameter));
+        return Math.max((leftHeight + rightHeight), Math.max(leftDiameter, rightDiameter));
     }
 }
