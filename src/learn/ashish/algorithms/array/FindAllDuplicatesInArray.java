@@ -17,6 +17,13 @@ public class FindAllDuplicatesInArray {
         System.out.println(new FindAllDuplicatesInArray().findDuplicates(nums).toString());
     }
 
+    /**
+     * Go to the actual index position of the number and change value to negative. If its already negative,
+     * we have visited it before, add to result as duplicate
+     * <p>
+     * Time: O[n]
+     * Space: O[1]
+     */
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> dups = new ArrayList<>();
 

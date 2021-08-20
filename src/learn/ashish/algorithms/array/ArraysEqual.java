@@ -15,21 +15,24 @@ public class ArraysEqual {
     /**
      * Keep counts in HashTable of first array and decrement count for second array.
      * If count is not 0 for all keys, arrays not equal
+     * <p>
+     * Time: O[n]
+     * Space: O[n]
      */
     boolean check(int[] a, int[] b) {
         if (a == null && b == null) return true;
         if (a == null || b == null) return false;
         if (a.length != b.length) return false;
 
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> counts = new HashMap<>();
 
         for (int ele : a)
-            map.put(ele, map.getOrDefault(ele, 0) + 1);
+            counts.put(ele, counts.getOrDefault(ele, 0) + 1);
 
         for (int ele : b)
-            map.put(ele, map.getOrDefault(ele, 0) - 1);
+            counts.put(ele, counts.getOrDefault(ele, 0) - 1);
 
-        for (int ele : map.values())
+        for (int ele : counts.values())
             if (ele != 0)
                 return false;
 

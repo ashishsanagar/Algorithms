@@ -22,9 +22,8 @@ public class ExcelSheetColumnNumber {
         int sum = 0;
         int strlen = columnTitle.length();
 
-        for (int i = strlen - 1; i >= 0; i--) {
+        for (int i = strlen - 1; i >= 0; i--)
             sum += Math.pow(26, strlen - 1 - i) * (((int) columnTitle.charAt(i)) - 'A' + 1); // adding one as 'A' - 'A'= 0
-        }
 
         return sum;
     }

@@ -14,9 +14,7 @@ public class ChangePossible {
      */
     public static void main(String[] args) {
         int[] denominations = {2, 5, 10};
-        System.out.println(new ChangePossible().find(denominations, 8));
-
-        System.out.println(new ChangePossible().find(denominations, 17));
+        System.out.println(new ChangePossible().findDPRepeatCoins(denominations, 17));
 
         System.out.println(new ChangePossible().recurse(17, denominations, 0));
     }
@@ -24,6 +22,8 @@ public class ChangePossible {
     public boolean recurse(int money, int[] coins, int index) {
         if (money == 0)
             return true;
+        if (money < 0)
+            return false;
 
         for (int i = index; i < coins.length; i++)
             if (money - coins[i] >= 0 && recurse(money - coins[i], coins, i))
@@ -32,20 +32,22 @@ public class ChangePossible {
         return false;
     }
 
-    public boolean find(int[] coins, int money) {
-        boolean dp[][] = new boolean[coins.length + 1][money + 1];
+    /**
+     * Time: O[n * m]
+     * Space: O[m]
+     */
+    public boolean findDPRepeatCoins(int[] coins, int money) {
+        boolean dp[] = new boolean[money + 1];
 
-        dp[0][0] = true;
+        dp[0] = true;
 
         for (int i = 1; i < dp.length; i++) {
-            for (int j = 1; j < dp[0].length; j++) {
-                if (coins[i - 1] <= j)
-                    dp[i][j] = dp[i - 1][j] || dp[i - 1][j - coins[i - 1]];
-                else
-                    dp[i][j] = dp[i - 1][j];
+            for (int j = 0; j < coins.length; j++) {
+                if (coins[j] <= i)
+                    dp[i] = dp[i] || dp[i - coins[j]];
             }
         }
 
-        return dp[coins.length][money];
+        return dp[money];
     }
 }

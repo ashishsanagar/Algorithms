@@ -35,9 +35,6 @@ public class KClosestElementsFromTarget {
      * @return
      */
     private static int findClosestIndex(int[] a, int target) {
-        if (a == null || a.length == 0)
-            throw new IllegalArgumentException("Invalid input");
-
         int min = Math.abs(target - a[0]);
 
         int closestIndex = 0;
@@ -57,7 +54,7 @@ public class KClosestElementsFromTarget {
     public List<Integer> findClosestKElements(int[] a, int target, int k) {
         List<Integer> result = new ArrayList<>();
 
-        if (k > a.length || k == 0)
+        if (a == null || a.length == 0 || k > a.length || k == 0)
             return result;
 
         int index = findClosestIndex(a, target);

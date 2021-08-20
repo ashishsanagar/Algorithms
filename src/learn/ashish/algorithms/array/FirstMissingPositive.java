@@ -14,6 +14,10 @@ public class FirstMissingPositive {
         System.out.println(new FirstMissingPositive().find(nums));
     }
 
+    /**
+     * Time: O[n]
+     * Space: O[1]
+     */
     public int find(int[] nums) {
         if (nums.length == 1 && nums[0] > 1) return 1;
 

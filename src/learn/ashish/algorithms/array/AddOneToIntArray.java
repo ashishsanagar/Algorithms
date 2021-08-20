@@ -16,12 +16,14 @@ public class AddOneToIntArray {
     public static void main(String[] args) {
         AddOneToIntArray helper = new AddOneToIntArray();
 
-        int[] input = {9, 9, 9, 9};
-
-        System.out.println(Arrays.toString(input));
+        System.out.println(Arrays.toString(helper.addOne(new int[]{9, 9, 9, 9})));
         System.out.println(Arrays.toString(helper.addOne(new int[]{9, 9, 9, 8})));
     }
 
+    /**
+     * Time: O[n]
+     * Space: O[1]
+     */
     public int[] addOne(int[] nums) {
         int carry = 1;
 
@@ -36,8 +38,8 @@ public class AddOneToIntArray {
             int[] newArray = new int[nums.length + 1];
             newArray[0] = carry;
 
-            for (int i = 1; i < nums.length; i++)
-                newArray[i] = nums[i];
+            for (int i = 1; i < newArray.length; i++)
+                newArray[i] = nums[i - 1];
 
             return newArray;
         }

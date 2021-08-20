@@ -2,6 +2,16 @@ package learn.ashish.algorithms.tree;
 
 public class BinaryTreeLongestConsecutiveSequence {
 
+    /**
+     * Given the root of a binary tree, return the length of the longest consecutive sequence path.
+     * <p>
+     * The path refers to any sequence of nodes from some starting node to any node in the tree along the parent-child
+     * connections. The longest consecutive path needs to be from parent to child (cannot be the reverse).
+     * <p>
+     * Input: root = [1,null,3,2,4,null,null,null,5]
+     * Output: 3
+     * Explanation: Longest consecutive sequence path is 3-4-5, so return 3.
+     */
     public static void main(String[] args) {
         TreeNode root = new TreeNode(12);
         root.left = new TreeNode(10);

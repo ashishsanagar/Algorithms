@@ -13,11 +13,14 @@ public class CanPartitionArrayEqualSum {
     public static void main(String[] args) {
         int[] nums = {1, 5, 11, 5};
 
-        System.out.println(new CanPartitionArrayEqualSum().canPartition(nums));
+        System.out.println(new CanPartitionArrayEqualSum().canPartitionRecursive(nums));
         System.out.println(new CanPartitionArrayEqualSum().canPartitionDP(nums));
-
     }
 
+    /**
+     * Time: O[n * m] -> m = sum of nb elements
+     * Space: O[m]
+     */
     public boolean canPartitionDP(int[] nums) {
         if (nums == null || nums.length == 0)
             return true;
@@ -43,7 +46,11 @@ public class CanPartitionArrayEqualSum {
         return dp[target];
     }
 
-    public boolean canPartition(int[] nums) {
+    /**
+     * Time: O[2 ^ n]
+     * Space: O[n] -> memoization hashtable
+     */
+    public boolean canPartitionRecursive(int[] nums) {
         int total = 0;
         for (int num : nums)
             total += num;
@@ -51,27 +58,25 @@ public class CanPartitionArrayEqualSum {
         if (total % 2 != 0)
             return false;
 
-        int sum = 0;
-
         Map<String, Boolean> memo = new HashMap<>();
 
-        return find(nums, 0, sum, total, memo);
+        return find(nums, 0, 0, total / 2, memo);
     }
 
-    public boolean find(int[] nums, int index, int sum, int total, Map<String, Boolean> memo) {
-        String key = index + ":" + sum;
+    public boolean find(int[] nums, int index, int currSum, int target, Map<String, Boolean> memo) {
+        String key = index + ":" + currSum;
 
         if (memo.get(key) != null)
             return memo.get(key);
 
-        if (sum * 2 == total)
+        if (currSum == target)
             return true;
 
-        if (sum > total / 2 || index >= nums.length)
+        if (currSum > target || index >= nums.length)
             return false;
 
-        boolean result = find(nums, index + 1, sum + nums[index], total, memo) ||
-                find(nums, index + 1, sum, total, memo);
+        boolean result = find(nums, index + 1, currSum + nums[index], target, memo) ||
+                find(nums, index + 1, currSum, target, memo);
 
         memo.put(key, result);
 

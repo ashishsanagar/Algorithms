@@ -17,15 +17,15 @@ public class MakeStringParenthesisBalanced {
      * balance("(((((")->""
      */
     public static void main(String[] args) {
-        String str = "(()()()a(b(c((";
-
-        String result = new MakeStringParenthesisBalanced().balance(str);
-
-        System.out.println(result);
+        System.out.println(new MakeStringParenthesisBalanced().balance(")("));
+        System.out.println(new MakeStringParenthesisBalanced().balance("))(())"));
+        System.out.println(new MakeStringParenthesisBalanced().balance("(()()()a(b(c(("));
+        System.out.println(new MakeStringParenthesisBalanced().balance("()"));
+        System.out.println(new MakeStringParenthesisBalanced().balance("a(b)c)"));
     }
 
     private String deleteChar(String str, int index) {
-        return str.substring(0, index) + str.substring(index + 1);
+        return new StringBuilder(str).deleteCharAt(index).toString();
     }
 
     public String balance(String str) {
@@ -41,14 +41,9 @@ public class MakeStringParenthesisBalanced {
             if (nextChar == '(')
                 stack1.push(i);
             else if (nextChar == ')') {
-                if (!stack1.isEmpty()) {
-                    int fromStack = stack1.pop();
-
-                    if (str.charAt(fromStack) != '(') {
-                        stack2.push(i);
-                        stack2.push(fromStack);
-                    }
-                } else
+                if (!stack1.isEmpty())
+                    stack1.pop();
+                else
                     stack2.push(i);
             }
         }

@@ -20,14 +20,18 @@ public class ContiguousSubarrays {
      * Example:
      * arr = [3, 4, 1, 6, 2]
      * output = [1, 3, 1, 5, 1]
+     * <p>
+     * Time: O[n^2]
+     * Space: O[n]
      */
     int[] count(int[] arr) {
-        if (arr == null || arr.length < 1) return arr;
-
         int[] result = new int[arr.length];
 
+        if (arr == null || arr.length < 1)
+            return result;
+
         for (int i = 0; i < arr.length; i++) {
-            int count = 1; // include ith element to count as thats minimum subarray
+            int count = 1; // include ith element to count, as that's minimum subarray
             int k = i;
 
             // search elements on left side of index i

@@ -9,7 +9,7 @@ public class RemoveDupsFromSortedArray {
         System.out.println(new RemoveDupsFromSortedArray().removeDuplicates(nums));
         System.out.println(Arrays.toString(nums));
     }
-
+    
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
         int i = 0;
@@ -19,6 +19,8 @@ public class RemoveDupsFromSortedArray {
                 nums[i] = nums[j];
             }
         }
+
+        System.out.println(Arrays.toString(nums));
         return i + 1;
     }
 

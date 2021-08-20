@@ -21,11 +21,9 @@ public class SumOfLeftLeaves {
         if (root == null)
             return;
 
-        if (root.left == null && root.right == null) {
-            if (left)
-                sum[0] += root.data;
-            return;
-        }
+        // if its leaf and Left node, add
+        if (root.left == null && root.right == null && left)
+            sum[0] += root.data;
 
         find(root.left, true, sum);
         find(root.right, false, sum);

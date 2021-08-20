@@ -11,17 +11,13 @@ public class AddTwoLinkedLists {
     public static void main(String[] args) {
         //List 1
         Node list1 = new Node(1);
-        Node node2 = new Node(2);
-        Node node3 = new Node(3);
-        list1.next = node2;
-        node2.next = node3;
+        list1.next = new Node(2);
+        list1.next.next = new Node(3);
 
         //List 2
         Node list2 = new Node(3);
-        Node n2 = new Node(2);
-        Node n3 = new Node(1);
-        list2.next = n2;
-        n2.next = n3;
+        list2.next = new Node(2);
+        list2.next.next = new Node(1);
 
         Node result = new AddTwoLinkedLists().add(list1, list2);
 

@@ -41,9 +41,8 @@ public class kLargestElementsFromStream {
         PriorityQueue<Integer> queue = new PriorityQueue<>(k);
 
         list.stream().forEach(curr -> {
-            if (queue.size() >= k && curr > queue.peek()) {
+            if (queue.size() >= k && curr > queue.peek())
                 queue.remove();
-            }
 
             queue.add(curr);
         });

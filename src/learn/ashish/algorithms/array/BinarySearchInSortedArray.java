@@ -15,6 +15,10 @@ public class BinarySearchInSortedArray {
         System.out.println(exists);
     }
 
+    /**
+     * Time: O[n]
+     * Space: O[1]
+     */
     public boolean findElement(int[] array, int ele) {
         if (array == null || array.length == 0)
             return false;

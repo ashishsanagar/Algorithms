@@ -31,8 +31,6 @@ public class ShoppingOptions {
     }
 
     public int getNumberOfOptions(List<Integer> priceOfJeans, List<Integer> priceOfShoes, List<Integer> priceOfSkirts, List<Integer> priceOfTops, int dollars) {
-        // List<List<Integer>> options = List.of(priceOfJeans);
-
         List<List<Integer>> options = new ArrayList() {{
             add(priceOfJeans);
             add(priceOfShoes);

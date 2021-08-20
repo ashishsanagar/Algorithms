@@ -11,6 +11,9 @@ public class Knapsack {
 
     /**
      * choose weights <= capacity with maximum total value
+     * <p>
+     * Time: O[n * capacity]
+     * Space: O[n * capacity]
      */
     private int solve(int[] weights, int[] values, int capacity) {
         if (weights.length != values.length || capacity < 1)

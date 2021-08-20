@@ -32,10 +32,8 @@ public class TopologicalSort {
         Stack<Integer> stack = new Stack<>();
 
         for (int i = 0; i < graph.numberOfVertices; i++) {
-            if (visited[i])
-                continue;
-
-            topSort(graph, i, visited, stack);
+            if (!visited[i])
+                topSort(graph, i, visited, stack);
         }
 
         while (!stack.isEmpty())
@@ -48,10 +46,8 @@ public class TopologicalSort {
         visited[vertex] = true;
 
         for (int childVertex : graph.vertices[vertex]) {
-            if (visited[childVertex])
-                continue;
-
-            topSort(graph, childVertex, visited, stack);
+            if (!visited[childVertex])
+                topSort(graph, childVertex, visited, stack);
         }
 
         stack.push(vertex);

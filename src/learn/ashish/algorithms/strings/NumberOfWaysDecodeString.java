@@ -11,7 +11,7 @@ public class NumberOfWaysDecodeString {
      */
     public static void main(String[] args) {
         String encoded = "12";
-        System.out.println("recursive: " + new NumberOfWaysDecodeString().find(encoded));
+        System.out.println("recursive: " + new NumberOfWaysDecodeString().findRecursive(encoded));
         System.out.println("DP: " + new NumberOfWaysDecodeString().dp(encoded));
     }
 
@@ -36,7 +36,7 @@ public class NumberOfWaysDecodeString {
         return dp[encoded.length()];
     }
 
-    public int find(String encoded) {
+    public int findRecursive(String encoded) {
         if (encoded.startsWith("0"))
             return 0; // no mapping for 0 in encoding
 

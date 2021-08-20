@@ -7,6 +7,10 @@ public class LongestIncreasingSubsequence {
         System.out.println(new LongestIncreasingSubsequence().find(a));
     }
 
+    /**
+     * Time: O[n^2]
+     * Space: O[n]
+     */
     public int find(int[] a) {
         int[] result = new int[a.length];
         result[0] = 1; // base case as for first element only that element can be added

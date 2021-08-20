@@ -1,5 +1,7 @@
 package learn.ashish.algorithms.array;
 
+import java.util.Arrays;
+
 public class MinimumCostForTickets {
 
     /**
@@ -27,21 +29,20 @@ public class MinimumCostForTickets {
     public int mincostTickets(int[] days, int[] costs) {
         int n = days.length;
         int[] dp = new int[n + 1];
-        dp[0] = 0;
-
-        for (int i = 1; i < n; i++)
-            dp[i] = Integer.MAX_VALUE;
 
         for (int i = n - 1; i >= 0; --i) {
             int weekly = i;
             int monthly = i;
+            int daily = i + 1;
 
             while (weekly < n && days[weekly] < days[i] + 7)
                 ++weekly;
             while (monthly < n && days[monthly] < days[i] + 30)
                 ++monthly;
+            dp[i] = Math.min(costs[0] + dp[daily], Math.min(costs[1] + dp[weekly], costs[2] + dp[monthly]));
 
-            dp[i] = Math.min(costs[0] + dp[i + 1], Math.min(costs[1] + dp[weekly], costs[2] + dp[monthly]));
+            System.out.println(weekly + ", " + monthly);
+            System.out.println(Arrays.toString(dp));
         }
 
         return dp[0];

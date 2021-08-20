@@ -31,7 +31,7 @@ public class IterativePreOrderTraversal {
 
         stack.push(root);
 
-        while (stack.isEmpty() == false) {
+        while (!stack.isEmpty()) {
             TreeNode node = stack.pop();
 
             System.out.print(node.data + " ");

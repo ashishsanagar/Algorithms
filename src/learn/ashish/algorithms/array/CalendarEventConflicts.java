@@ -18,6 +18,9 @@ public class CalendarEventConflicts {
     /**
      * get separate arrays for start and end times. sort both arrays asc
      * if start of next meeting is is less than end time of previous meeting, there is conflict
+     * <p>
+     * Time: O[nlog(n)]
+     * Space:
      */
     public boolean hasConflicts(Event[] events, int k) {
         if (events == null || events.length <= k)

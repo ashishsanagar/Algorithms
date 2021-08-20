@@ -17,6 +17,10 @@ public class LeadersInArray {
         new LeadersInArray().printLeaders(array).forEach(System.out::println);
     }
 
+    /**
+     * Time: O[n]
+     * Space: O[1]
+     */
     public List<Integer> printLeaders(int[] array) {
         List<Integer> leaders = new ArrayList<>();
 

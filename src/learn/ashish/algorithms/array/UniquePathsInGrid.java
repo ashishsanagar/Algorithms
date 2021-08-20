@@ -23,7 +23,7 @@ public class UniquePathsInGrid {
         for (int j = 0; j < dp[0].length; j++)
             dp[0][j] = 1;
 
-        //recurrance relation dp[i][j] = dp[i][j-1] + dp[i-1][j]
+        //recurrence relation dp[i][j] = dp[i][j-1] + dp[i-1][j]
         for (int i = 1; i < dp.length; i++)
             for (int j = 1; j < dp[0].length; j++)
                 dp[i][j] = dp[i][j - 1] + dp[i - 1][j];

@@ -28,17 +28,12 @@ public class CombinationSum {
         List<List<Integer>> result = new ArrayList<>();
 
         recurse(1, new ArrayList<>(), result, n, k);
-
         return result;
     }
 
     private void recurse(int index, List<Integer> curr, List<List<Integer>> result, int n, int k) {
-        if (curr.size() == k) {
-            if (n == 0)
-                result.add(new ArrayList<>(curr));
-
-            return;
-        }
+        if (curr.size() == k && n == 0)
+            result.add(new ArrayList<>(curr));
 
         for (int i = index; i <= 9; i++) {
             curr.add(i);

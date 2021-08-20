@@ -23,9 +23,7 @@ public class RemoveDuplicateChars {
         StringBuilder sb = new StringBuilder();
 
         for (char c : str.toCharArray()) {
-            if (visited[c])
-                continue;
-            else {
+            if (!visited[c]) {
                 visited[c] = true;
                 sb.append(c);
             }

@@ -27,11 +27,11 @@ public class RotationCipher {
 
         for (Character c : input.toCharArray()) {
             if (Character.isLowerCase(c))
-                result += Character.toString((char) (((c - 'a' + rotationFactor) % 26) + 'a'));
+                result += String.valueOf((char) (((c - 'a' + rotationFactor) % 26) + 'a'));
             else if (Character.isUpperCase(c))
-                result += Character.toString((char) (((c - 'A' + rotationFactor) % 26) + 'A'));
+                result += String.valueOf((char) (((c - 'A' + rotationFactor) % 26) + 'A'));
             else if (Character.isDigit(c))
-                result += Character.toString((char) (((c - '0' + rotationFactor) % 10) + '0'));
+                result += String.valueOf((char) (((c - '0' + rotationFactor) % 10) + '0'));
             else
                 result += (char) c;
         }

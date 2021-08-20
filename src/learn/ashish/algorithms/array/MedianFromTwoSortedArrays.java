@@ -18,32 +18,29 @@ public class MedianFromTwoSortedArrays {
 
     public double findMedian(int[] firstArray, int[] secondArray) {
         if (firstArray.length > secondArray.length)
-            findMedian(secondArray, firstArray);
+            return findMedian(secondArray, firstArray);
 
-        int firstArrayLength = firstArray.length;
-        int secondArrayLength = secondArray.length;
+        int len1 = firstArray.length;
+        int len2 = secondArray.length;
 
         int low = 0;
-        int high = firstArrayLength - 1;
+        int high = len1 - 1;
 
         while (low <= high) {
             int partitionIndexX = low + (high - low) / 2;
-            int partitionIndexY = (firstArrayLength + secondArrayLength + 1) / 2 - partitionIndexX;
+            int partitionIndexY = (len1 + len2 + 1) / 2 - partitionIndexX;
 
             int maxLeftX = (partitionIndexX == 0) ? Integer.MIN_VALUE : firstArray[partitionIndexX - 1];
-            int minRightX = (partitionIndexX == firstArrayLength) ? Integer.MAX_VALUE : firstArray[partitionIndexX];
+            int minRightX = (partitionIndexX == len1) ? Integer.MAX_VALUE : firstArray[partitionIndexX];
 
             int maxLeftY = (partitionIndexY == 0) ? Integer.MIN_VALUE : secondArray[partitionIndexY - 1];
-            int minRightY = (partitionIndexY == secondArrayLength) ? Integer.MAX_VALUE : secondArray[partitionIndexY];
-
-            System.out.println("partitionIndexX: " + partitionIndexX + " | partitionIndexY: " + partitionIndexY);
-            System.out.println("maxLeftX: " + maxLeftX + " , minRightX:" + minRightX + " | maxLeftY:" + maxLeftY + " , minRightY:" + minRightY);
+            int minRightY = (partitionIndexY == len2) ? Integer.MAX_VALUE : secondArray[partitionIndexY];
 
             if (maxLeftX <= minRightY && maxLeftY <= minRightX) {
-                if ((firstArrayLength + secondArrayLength) % 2 == 0)
-                    return ((double) (Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY)) / 2);
+                if ((len1 + len2) % 2 == 0)
+                    return (double) Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY) / 2;
                 else
-                    return (double) (Math.max(maxLeftX, maxLeftY));
+                    return (double) Math.max(maxLeftX, maxLeftY);
             } else if (maxLeftX > minRightY)
                 high = partitionIndexX + 1;
             else

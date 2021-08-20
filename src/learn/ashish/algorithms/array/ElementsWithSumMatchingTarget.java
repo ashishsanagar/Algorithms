@@ -22,7 +22,7 @@ public class ElementsWithSumMatchingTarget {
     }
 
     /**
-     * Given a list of n integers arr[0..(n-1)], determine the number of different pairs of elements within it which sum to taget.
+     * Given a list of n integers arr[0..(n-1)], determine the number of different pairs of elements within it which sum to target.
      */
     public int allNumberOfWays(int[] arr, int target) {
         if (target < 1)
