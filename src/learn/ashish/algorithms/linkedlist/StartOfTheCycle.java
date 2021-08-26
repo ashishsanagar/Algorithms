@@ -3,10 +3,10 @@ package learn.ashish.algorithms.linkedlist;
 /**
  * @author Ashish Sanagar
  */
-public class StartOfTheLoop {
+public class StartOfTheCycle {
 
     public static void main(String[] args) {
-        StartOfTheLoop obj = new StartOfTheLoop();
+        StartOfTheCycle obj = new StartOfTheCycle();
 
         Node n1 = new Node(1);
         Node n2 = new Node(2);

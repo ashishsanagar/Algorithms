@@ -1,6 +1,6 @@
 package learn.ashish.algorithms.strings;
 
-public class MinLengthSubstring {
+public class MinimumWindowSubstring {
 
     /**
      * You are given two strings s and t. You can select any substring of string s and rearrange the characters of
@@ -15,7 +15,7 @@ public class MinLengthSubstring {
         String s = "dcbefebmce";
         String t = "fdm";
 
-        System.out.println(new MinLengthSubstring().minLengthSubstring(s, t));
+        System.out.println(new MinimumWindowSubstring().minLengthSubstring(s, t));
     }
 
     private boolean isAnagramModified(String t, String temp) {
