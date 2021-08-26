@@ -25,22 +25,22 @@ public class MinimumMeetingRooms {
      */
     public int minMeetingRooms(int[][] intervals) {
         int[] startIntervals = new int[intervals.length];
-        int[] endInterval = new int[intervals.length];
+        int[] endIntervals = new int[intervals.length];
 
         for (int i = 0; i < intervals.length; i++) {
             startIntervals[i] = intervals[i][0];
-            endInterval[i] = intervals[i][1];
+            endIntervals[i] = intervals[i][1];
         }
 
         Arrays.sort(startIntervals);
-        Arrays.sort(endInterval);
+        Arrays.sort(endIntervals);
 
         int rooms = 0;
         int endPointer = 0;
 
         for (int i = 0; i < startIntervals.length; i++) {
             // if there is no conflict, we dont need additional room, move end pointer as well
-            if (endInterval[endPointer] <= startIntervals[i])
+            if (endIntervals[endPointer] <= startIntervals[i])
                 endPointer++;
             else
                 rooms++; // there is a conflict
