@@ -24,7 +24,6 @@ public class PairSumNumberOfWays {
     }
 
     private static int numberOfWays(int[] arr, int k) {
-        // Write your code here
         if (k < 1) return 0;
 
         if (arr == null | arr.length == 0) return 0;
