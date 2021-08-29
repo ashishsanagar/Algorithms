@@ -4,8 +4,9 @@ public class MaxPathSum {
     int max = Integer.MIN_VALUE;
 
     /**
-     * A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them.
-     * A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.
+     * A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge
+     * connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass
+     * through the root.
      */
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

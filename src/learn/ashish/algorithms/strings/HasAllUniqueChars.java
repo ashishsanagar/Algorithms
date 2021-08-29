@@ -16,6 +16,10 @@ public class HasAllUniqueChars {
 
     /**
      * no additional data structure. Assumes string is lowercase
+     * keep setting bits and that bit is already set then there is duplicate char
+     * e.g. aa
+     * index 0, checker becomes 0001
+     * index 1, 0001 & (1 << 0) = 0001, means bit is already set and there is duplicate
      */
     public boolean hasAllUniqueCharsImproved(String str) {
         int checker = 0;
@@ -35,11 +39,11 @@ public class HasAllUniqueChars {
     }
 
     public boolean hasAllUniqueChars(String str) {
-        boolean[] visted = new boolean[256];
+        boolean[] visited = new boolean[256];
 
         for (char c : str.toCharArray()) {
-            if (visted[c] == false)
-                visted[c] = true;
+            if (!visited[c])
+                visited[c] = true;
             else
                 return false;
         }

@@ -26,7 +26,7 @@ public class AddOneRow {
 
     public TreeNode addOneRow(TreeNode root, int val, int depth) {
         if (root == null)
-            return root;
+            return null;
 
         if (depth == 1) {
             TreeNode curr = new TreeNode(val);

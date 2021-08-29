@@ -10,6 +10,9 @@ public class NumberToString {
         System.out.println(new NumberToString().convert(num));
     }
 
+    /**
+     * TODO - improve to generalize over bilion
+     */
     public String convert(int num) {
         String[] tens = {"Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
         String[] ones = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
@@ -37,7 +40,7 @@ public class NumberToString {
             if (num > 0)
                 oneStr = ones[(num % 10) - 1];
         } else
-            throw new IllegalArgumentException("Range no suported");
+            throw new IllegalArgumentException("Range not supported");
 
         return hundredStr + " " + tenStr + " " + oneStr;
     }

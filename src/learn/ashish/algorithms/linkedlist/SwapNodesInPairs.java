@@ -39,17 +39,13 @@ public class SwapNodesInPairs {
         dummy.next = head;
 
         while (head.next != null) {
-            if (pos == 0) {
+            if (pos % 2 == 0) {
                 int temp = head.data;
                 head.data = head.next.data;
                 head.next.data = temp;
             }
 
             pos++;
-
-            if (pos == 2)
-                pos = 0;
-
             head = head.next;
         }
 

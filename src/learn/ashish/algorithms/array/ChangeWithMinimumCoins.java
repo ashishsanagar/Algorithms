@@ -26,9 +26,9 @@ public class ChangeWithMinimumCoins {
         for (int i = 1; i < dp.length; i++) {
             dp[i] = Integer.MAX_VALUE;
 
-            for (int j = 0; j < coins.length; j++)
-                if (i - coins[j] >= 0)
-                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
+            for (int coin : coins)
+                if (i - coin >= 0)
+                    dp[i] = Math.min(dp[i], dp[i - coin] + 1);
         }
 
         return dp[money];

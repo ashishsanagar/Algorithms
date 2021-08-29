@@ -1,9 +1,8 @@
 package learn.ashish.algorithms.strings;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 /**
  * @author Ashish Sanagar
@@ -20,15 +19,20 @@ public class NthMostFrequentStringFromArray {
         if (array == null || n > array.length || array.length == 0)
             return "";
 
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> counts = new HashMap<>();
 
         for (int i = 0; i < array.length; i++)
-            map.put(array[i], map.getOrDefault(array[i], 0) + 1);
+            counts.put(array[i], counts.getOrDefault(array[i], 0) + 1);
 
-        List<Map.Entry> list = new ArrayList<>(map.entrySet());
+        //min heap sorted by counts
+        PriorityQueue<String> pq = new PriorityQueue<>((a, b) -> counts.get(a) - counts.get(b));
 
-        list.sort((x, y) -> (Integer) y.getValue() - (Integer) x.getValue());
+        for (String s : counts.keySet()) {
+            pq.add(s);
+            if (pq.size() > n)
+                pq.poll();
+        }
 
-        return (String) list.get(n - 1).getKey();
+        return pq.peek();
     }
 }

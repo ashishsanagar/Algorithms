@@ -1,7 +1,5 @@
 package learn.ashish.algorithms.array;
 
-import java.util.Arrays;
-
 public class MinimumCostForTickets {
 
     /**
@@ -13,7 +11,8 @@ public class MinimumCostForTickets {
      * a 7-day pass is sold for costs[1] dollars;
      * a 30-day pass is sold for costs[2] dollars.
      * <p>
-     * The passes allow that many days of consecutive travel.  For example, if we get a 7-day pass on day 2, then we can travel for 7 days: day 2, 3, 4, 5, 6, 7, and 8.
+     * The passes allow that many days of consecutive travel.  For example, if we get a 7-day pass on day 2, then we can
+     * travel for 7 days: day 2, 3, 4, 5, 6, 7, and 8.
      * <p>
      * Return the minimum number of dollars you need to travel every day in the given list of days.
      * <p>
@@ -23,26 +22,27 @@ public class MinimumCostForTickets {
     public static void main(String[] args) {
         int[] days = {1, 4, 6, 7, 8, 20};
         int[] costs = {2, 7, 15};
-        System.out.println(new MinimumCostForTickets().mincostTickets(days, costs));
+        System.out.println(new MinimumCostForTickets().findMinCostTickets(days, costs));
     }
 
-    public int mincostTickets(int[] days, int[] costs) {
+    public int findMinCostTickets(int[] days, int[] costs) {
         int n = days.length;
         int[] dp = new int[n + 1];
 
-        for (int i = n - 1; i >= 0; --i) {
+        for (int i = dp.length - 2; i >= 0; --i) {
             int weekly = i;
             int monthly = i;
+
+            // calculate positions of daily, weekly and monthly pointer from current 'i' position to the right
+            // calculate min by adding corresponding ticket prices
             int daily = i + 1;
 
             while (weekly < n && days[weekly] < days[i] + 7)
                 ++weekly;
             while (monthly < n && days[monthly] < days[i] + 30)
                 ++monthly;
-            dp[i] = Math.min(costs[0] + dp[daily], Math.min(costs[1] + dp[weekly], costs[2] + dp[monthly]));
 
-            System.out.println(weekly + ", " + monthly);
-            System.out.println(Arrays.toString(dp));
+            dp[i] = Math.min(costs[0] + dp[daily], Math.min(costs[1] + dp[weekly], costs[2] + dp[monthly]));
         }
 
         return dp[0];

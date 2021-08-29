@@ -16,7 +16,7 @@ public class StairsNumberOfWays {
         result[1] = 1; //1st step has 1 way
 
         // nth step got (n-1)th + (n-2)th ways
-        for (int i = 2; i <= n; i++)
+        for (int i = 2; i < result.length; i++)
             result[i] = result[i - 1] + result[i - 2];
 
         return result[n];

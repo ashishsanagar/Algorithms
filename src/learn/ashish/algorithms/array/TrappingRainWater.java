@@ -15,16 +15,16 @@ public class TrappingRainWater {
     }
 
     public int trap(int[] height) {
-        int count = 0;
+        int capacity = 0;
 
         if (height == null || height.length < 2)
-            return count;
+            return capacity;
 
 
         for (int i = 1; i < height.length - 1; i++)
-            count += capacityAtIndex(height, i);
+            capacity += capacityAtIndex(height, i);
 
-        return count;
+        return capacity;
     }
 
     private int capacityAtIndex(int[] height, int index) {

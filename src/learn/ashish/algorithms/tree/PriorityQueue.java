@@ -26,7 +26,7 @@ public class PriorityQueue {
      * rightChildIndex = 2 * parentIndex + 2
      * parentIndex = (childIndex -1)/2
      */
-    public static void main(String[] a) throws IllegalAccessException {
+    public static void main(String[] a) {
         PriorityQueue q = new PriorityQueue(8);
         q.push(5);
         q.push(14);

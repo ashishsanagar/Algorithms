@@ -31,7 +31,7 @@ public class MaxSubstringNoRepeatngChars {
         Set<Character> chars = new HashSet<>();
 
         while (i < input.length() && j < input.length()) {
-            if (chars.contains(input.charAt(j)) == false) {
+            if (!chars.contains(input.charAt(j))) {
                 chars.add(input.charAt(j));
                 j++;
                 max = Math.max(max, j - i);

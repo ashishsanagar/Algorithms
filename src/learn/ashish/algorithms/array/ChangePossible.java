@@ -42,9 +42,9 @@ public class ChangePossible {
         dp[0] = true;
 
         for (int i = 1; i < dp.length; i++) {
-            for (int j = 0; j < coins.length; j++) {
-                if (coins[j] <= i)
-                    dp[i] = dp[i] || dp[i - coins[j]];
+            for (int coin : coins) {
+                if (i >= coin)
+                    dp[i] = dp[i] || dp[i - coin];
             }
         }
 

@@ -21,7 +21,7 @@ public class kLargestElementsFromStream {
         list.add(40);
         list.add(50);
 
-        int k = 7;
+        int k = 2;
 
         new kLargestElementsFromStream().find(list, k);
     }
@@ -41,10 +41,10 @@ public class kLargestElementsFromStream {
         PriorityQueue<Integer> queue = new PriorityQueue<>(k);
 
         list.stream().forEach(curr -> {
-            if (queue.size() >= k && curr > queue.peek())
-                queue.remove();
-
             queue.add(curr);
+
+            if (queue.size() > k)
+                queue.remove();
         });
 
         queue.stream().forEach(System.out::println);

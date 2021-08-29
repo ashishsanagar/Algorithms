@@ -1,9 +1,10 @@
 package learn.ashish.algorithms.graph;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class GraphAnalysis {
-    int[] data;
+    int[] groups;
 
     public static void main(String[] args) {
         UndirectedGraph g = new UndirectedGraph(7);
@@ -17,43 +18,46 @@ public class GraphAnalysis {
         GraphAnalysis ga = new GraphAnalysis();
         ga.analyze(g);
 
-        for (int i = 0; i < ga.data.length; i++)
-            System.out.println(i + " : " + ga.data[i]);
+        for (int i = 0; i < ga.groups.length; i++)
+            System.out.println(i + " : " + ga.groups[i]);
 
         System.out.println("isConnected: " + ga.isConnected(0, 6));
     }
 
     public boolean isConnected(int src, int dest) {
-        return data[src] == data[dest];
+        return groups[src] == groups[dest];
     }
 
     /**
      * create groups of connected graphs
      */
     public void analyze(UndirectedGraph g) {
-        data = new int[g.numberOfVertices];
+        groups = new int[g.numberOfVertices];
+        Arrays.fill(groups, -1);
+
         int group = 0;
 
-        for (int i = 0; i < g.numberOfVertices; i++) {
-            LinkedList<Integer> vertices = g.vertices[i];
+        for (int vertex = 0; vertex < g.numberOfVertices; vertex++) {
+            LinkedList<Integer> neighbors = g.vertices[vertex];
 
-            int currGroup = data[i];
+            int currGroup = groups[vertex];
 
-            for (Integer vertex : vertices) {
-                if (data[vertex] != 0) {
-                    currGroup = data[vertex];
+            for (Integer neighbor : neighbors) {
+                if (groups[neighbor] != -1) {
+                    currGroup = groups[neighbor];
                     break;
                 }
             }
 
-            if (currGroup == 0) {
-                data[i] = ++group;
+            if (currGroup == -1) {
+                groups[vertex] = ++group;
                 currGroup = group;
-            } else
-                data[i] = currGroup;
+            } else {
+                groups[vertex] = currGroup;
+            }
 
-            for (Integer vertex : vertices)
-                data[vertex] = currGroup;
+            for (Integer neighbor : neighbors)
+                groups[neighbor] = currGroup;
         }
     }
 }

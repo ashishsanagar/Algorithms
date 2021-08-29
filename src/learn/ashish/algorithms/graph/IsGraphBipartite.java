@@ -32,27 +32,28 @@ public class IsGraphBipartite {
         int[] color = new int[len]; // holds -1, 0, 1.. if edge gets same color nodes, return false
         Arrays.fill(color, -1);
 
-        for (int i = 0; i < len; i++) {
-            if (color[i] == -1) {
-                Stack<Integer> stack = new Stack<>();
-                stack.push(i);
-                color[i] = 0;
+        for (int u = 0; u < len; u++) {
+            if (color[u] != -1) continue;
 
-                while (!stack.isEmpty()) {
-                    Integer node = stack.pop();
+            Stack<Integer> stack = new Stack<>();
+            stack.push(u);
+            color[u] = 0;
 
-                    // go through all neighbors and mark them with opposite color of current node.
-                    // if color already exists and its same as parent node, return false
-                    for (int nei : graph[node]) {
-                        if (color[nei] == -1) {
-                            color[nei] = color[node] ^ 1; // flips 0-> 1 or 1-> 0  parant node
-                            stack.push(nei);
-                        } else if (color[nei] == color[node]) {
-                            return false;
-                        }
+            while (!stack.isEmpty()) {
+                Integer node = stack.pop();
+
+                // go through all neighbors and mark them with opposite color of current node.
+                // if color already exists and its same as parent node, return false
+                for (int neighbor : graph[node]) {
+                    if (color[neighbor] == -1) {
+                        color[neighbor] = color[node] ^ 1; // flips 0-> 1 or 1-> 0  parent node
+                        stack.push(neighbor);
+                    } else if (color[neighbor] == color[node]) {
+                        return false;
                     }
                 }
             }
+
         }
 
         return true;

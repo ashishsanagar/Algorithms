@@ -37,6 +37,7 @@ public class CanPartitionArrayEqualSum {
 
         boolean[] dp = new boolean[target + 1];
         dp[0] = true;
+
         for (int i = 0; i < nums.length; i++) {
             for (int j = target; j >= nums[i]; j--) {
                 dp[j] = dp[j] | dp[j - nums[i]];

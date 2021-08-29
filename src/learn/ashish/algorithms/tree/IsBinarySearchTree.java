@@ -30,8 +30,8 @@ public class IsBinarySearchTree {
             return true;
         else if ((min != null && root.data <= min) || (max != null && root.data >= max))
             return false;
-        else
-            return verify(root.left, min, root.data)
-                    && verify(root.right, root.data, max);
+
+        return verify(root.left, min, root.data)
+                && verify(root.right, root.data, max);
     }
 }

@@ -32,7 +32,7 @@ public class SentenseMadeUpOfDictWords {
             for (int j = 0; j < i; j++) {
                 if (result[j] && dict.contains(phrase.substring(j, i))) {
                     result[i] = true;
-                    break; // as string till jthe position was valid and remaining string between
+                    break; // as string till j'th position was valid and remaining string between
                     // j and i is valid, string till i is valid
                 }
             }

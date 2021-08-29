@@ -24,6 +24,7 @@ public class TopologicalSort {
 
         for (int vertex : sorted)
             System.out.print(vertex + " -> ");
+        //6 -> 5 -> 7 -> 2 -> 1 -> 3 -> 4 -> 0 ->
     }
 
     public List<Integer> sort(DirectedGraph graph) {
@@ -45,9 +46,9 @@ public class TopologicalSort {
     private void topSort(DirectedGraph graph, int vertex, boolean[] visited, Stack<Integer> stack) {
         visited[vertex] = true;
 
-        for (int childVertex : graph.vertices[vertex]) {
-            if (!visited[childVertex])
-                topSort(graph, childVertex, visited, stack);
+        for (int neighbor : graph.vertices[vertex]) {
+            if (!visited[neighbor])
+                topSort(graph, neighbor, visited, stack);
         }
 
         stack.push(vertex);

@@ -39,9 +39,9 @@ public class PrintConnectedComponents {
 
         System.out.print(vertex + " ");
 
-        for (Integer connectedVertx : graph.vertices[vertex]) {
-            if (!visited[connectedVertx])
-                bfs(graph, connectedVertx, visited);
+        for (Integer neighbor : graph.vertices[vertex]) {
+            if (!visited[neighbor])
+                bfs(graph, neighbor, visited);
         }
     }
 }

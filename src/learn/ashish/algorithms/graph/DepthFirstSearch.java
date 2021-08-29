@@ -32,7 +32,7 @@ public class DepthFirstSearch {
             System.out.print(" " + vertex);
 
             for (Integer adjacentVertex : graph.vertices[vertex]) {
-                if (visited[adjacentVertex] == false) {
+                if (!visited[adjacentVertex]) {
                     visited[adjacentVertex] = true;
                     stack.push(adjacentVertex);
                 }

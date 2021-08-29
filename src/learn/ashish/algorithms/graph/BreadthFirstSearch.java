@@ -25,9 +25,9 @@ public class BreadthFirstSearch {
     }
 
     public void bfs(DirectedGraph graph, int startVertex) {
-        int numberOfVertices = graph.numberOfVertices;
+        int n = graph.numberOfVertices;
 
-        boolean[] visited = new boolean[numberOfVertices];
+        boolean[] visited = new boolean[n];
         visited[startVertex] = true;
 
         Queue<Integer> queue = new LinkedList<>();
@@ -39,7 +39,7 @@ public class BreadthFirstSearch {
             System.out.print(" " + vertex);
 
             for (Integer adjacentVertex : graph.vertices[vertex]) {
-                if (visited[adjacentVertex] == false) {
+                if (!visited[adjacentVertex]) {
                     queue.add(adjacentVertex);
                     visited[adjacentVertex] = true;
                 }

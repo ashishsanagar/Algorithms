@@ -1,8 +1,8 @@
 package learn.ashish.algorithms.strings;
 
-public class LongestPalindromicSubstring {
+public class LongestPalindromicSubStrImproved {
     public static void main(String[] args) {
-        System.out.println(new LongestPalindromicSubstring().find("tattarrattat"));
+        System.out.println(new LongestPalindromicSubStrImproved().find("tattarrattat"));
     }
 
     /**
