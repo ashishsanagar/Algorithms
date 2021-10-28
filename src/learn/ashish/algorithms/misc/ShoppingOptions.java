@@ -60,15 +60,16 @@ public class ShoppingOptions {
         int count = 0;
 
         for (int price : options.get(0)) {
-            if (price <= budget) {
-                List<Integer> inProcess = options.get(0);
-                options.remove(inProcess); // picked one price from the item, as we can have one item max,
-                // remove this item and reduce budget to find if budget can be met by picking remaining items
-                // note that, we can pick max one price for the item, in one purchase combination
-                count += findWays(options, budget - price);
+            if (price > budget) continue;
 
-                options.add(0, inProcess);
-            }
+            List<Integer> inProcess = options.get(0);
+            options.remove(inProcess); // picked one price from the item, as we can have one item max,
+            // remove this item and reduce budget to find if budget can be met by picking remaining items
+            // note that, we can pick max one price for the item, in one purchase combination
+            count += findWays(options, budget - price);
+
+            options.add(0, inProcess);
+
         }
 
         return count;

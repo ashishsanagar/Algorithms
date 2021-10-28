@@ -13,7 +13,7 @@ public class RegExMatch {
         result[0][0] = true; // base case,  empty string matches empty pattern
 
         // handles a*, a*b* etc
-        for (int j = 1; j < result[0].length; j++)
+        for (int j = 2; j < result[0].length; j++)
             if (pattern[j - 1] == '*')
                 result[0][j] = result[0][j - 2];
 

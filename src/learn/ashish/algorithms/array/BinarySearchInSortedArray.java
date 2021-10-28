@@ -16,7 +16,7 @@ public class BinarySearchInSortedArray {
     }
 
     /**
-     * Time: O[n]
+     * Time: O[log n]
      * Space: O[1]
      */
     public boolean findElement(int[] array, int ele) {

@@ -26,7 +26,7 @@ public class Knapsack {
                 // capacity is in range 0 to "capacity" input. we start from 1, which means
                 // current available intermediate capacity minus weight, if its >0
                 // chose max of value without addition of this weight and value if we add this current weight
-                if (weights[i - 1] <= j)
+                if (j - weights[i - 1] >= 0)
                     dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - weights[i - 1]] + values[i - 1]);
                 else
                     dp[i][j] = dp[i - 1][j];
